@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 
 import StringUtils from '../../utils/StringUtils';
 import dogsPhoto from '../../resources/Dogs.jpg';
-import willPhoto from '../../resources/Will.jpg';
+import willPhoto from '../../resources/WillLizard.jpg';
 import Photo from '../Photo';
-import TextWrapImage from './TextWrapImage';
+import TextWrapImage from './TextWrapPhoto';
 
 const DATA = {
   photoPath: dogsPhoto,
@@ -16,7 +16,7 @@ const DATA = {
 
 const TEXT = StringUtils.lorem.generateSentences(100);
 
-storiesOf('TextWrapImage', module)
+storiesOf('TextWrapPhoto', module)
   .add('Dog Photo Right, with Text', () => {
     return (
       <TextWrapImage text={TEXT} floatRight>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import willPhoto from '../../resources/Will.jpg';
+import willPhoto from '../../resources/WillLizard.jpg';
 import dogsPhoto from '../../resources/Dogs.jpg';
 import PhotoButton from './PhotoButton';
 

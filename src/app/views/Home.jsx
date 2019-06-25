@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import BasePage from './BasePage';
-import willPhoto from '../resources/Will.jpg';
+import willPhoto from '../resources/WillLizard.jpg';
 import Photo from '../components/Photo';
 
 const Home = props => {
@@ -9,12 +9,18 @@ const Home = props => {
 
   const pageContents = (
     <div className="home">
-      <Photo
-        photoPath={willPhoto}
-        photoText="WillProfile"
-        width="300px"
-        fit="cover"
-      />
+      <div className="profile-photo-container">
+        <div className="profile-photo">
+          <Photo
+            photoPath={willPhoto}
+            photoText="WillProfile"
+            width="400px"
+            fit="cover"
+            position="50% 3%"
+            scale={1.2}
+          />
+        </div>
+      </div>
     </div>
   );
 

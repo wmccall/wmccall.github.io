@@ -6,9 +6,17 @@ const BasePage = props => {
   const { pages, children } = props;
 
   return (
-    <div>
-      <NavBar>{pages}</NavBar>
-      <div>{children}</div>
+    <div className="base-page-container">
+      <div className="base-page">
+        <div className="base-page-inner">
+          <div className="nav-bar-container">
+            <NavBar>{pages}</NavBar>
+          </div>
+          <div className="children-container">
+            <div>{children}</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

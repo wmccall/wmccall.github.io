@@ -34,19 +34,31 @@ const PhotoText = styled.div`
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode',
     'Lucida Sans', sans-serif;
   font-size: 30px;
+  margin-top: 5px;
   display: inline-block;
   color: black;
 `;
 
 const PhotoButton = props => {
-  const { children, fit, photoPath, photoText, width } = props;
+  const {
+    children,
+    fit,
+    photoPath,
+    photoText,
+    width,
+    radius,
+    position,
+    scale,
+  } = props;
   return (
-    <PhotoButtonContainer>
+    <PhotoButtonContainer radius={radius}>
       <Photo
         photoPath={photoPath}
         photoText={photoText}
         width={width}
         fit={fit}
+        position={position}
+        scale={scale}
       />
       <PhotoTextContainer>
         <PhotoText>{photoText}</PhotoText>
@@ -63,10 +75,14 @@ PhotoButton.propTypes = {
   photoText: PropTypes.string.isRequired,
   radius: PropTypes.string,
   width: PropTypes.string.isRequired,
+  scale: PropTypes.number,
+  position: PropTypes.string,
 };
 
 PhotoButton.defaultProps = {
   fit: 'contain',
+  scale: 1,
+  position: '50% 50%',
   radius: '0px',
 };
 
