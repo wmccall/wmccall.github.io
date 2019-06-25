@@ -7,7 +7,6 @@ const ImageContainer = styled.div`
 `;
 
 const TextWrapImage = props => {
-  console.log(props);
   const { children, floatRight, text } = props;
   return (
     <div>
