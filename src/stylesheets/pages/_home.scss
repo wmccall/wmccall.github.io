@@ -1,7 +1,29 @@
 .home {
-  .profile-photo-container {
+  .profile-container {
+    margin-top: 30px;
+
     .profile-photo {
-      padding-left: 10px;
+      height: 1000px;
+      float: right;
+    }
+
+    .photo-overlay {
+      width: 30%;
+      position: relative;
+      top: -1020px;
+      left: -325px;
+      display: inline-block;
+      border-right: 400px solid transparent;
+      border-top: 1040px solid #000;
+      padding-left: 0;
+
+      .profile-text {
+        position: relative;
+        top: -930px;
+        .profile-name {
+          color: white;
+        }
+      }
     }
   }
 }
