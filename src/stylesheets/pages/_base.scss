@@ -1,5 +1,3 @@
-$pageWidth: 1500px;
-
 .base-page-container {
   width: 100%;
   text-align: center;
@@ -16,7 +14,7 @@ $pageWidth: 1500px;
       .nav-bar-container {
         margin-left: 10px;
         z-index: 1;
-        float: left;
+        left: 55px;
         position: fixed;
       }
 
