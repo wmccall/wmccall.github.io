@@ -2,7 +2,6 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import BasePage from './BasePage';
 import willPhoto from '../resources/WillHoodie.jpg';
-import Photo from '../components/Photo';
 
 const Home = props => {
   const { pages } = props;
