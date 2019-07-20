@@ -1,29 +1,35 @@
-import React from 'react';
-import { PropTypes } from 'prop-types';
-import BasePage from './BasePage';
-import willPhoto from '../resources/WillHoodie.jpg';
+import React, { useState } from 'react';
+import Emoji from 'a11y-react-emoji';
+import BlurryCode from '../resources/BlurryCode.png';
+import WillHoodie from '../resources/WillHoodie.jpg';
+import Logo from '../resources/LogoWhiteBackground.png';
 
-const Home = props => {
-  const { pages } = props;
-
-  const pageContents = (
+const Home = () => {
+  return (
     <div className="home">
+      <div className="code-container">
+        <img className="code-picture" src={BlurryCode} alt="Code" />
+      </div>
       <div className="profile-container">
-        <img className="profile-photo" src={willPhoto} alt="Profile" />
-        <div className="photo-overlay">
-          <div className="profile-text">
-            <h1 className="profile-name">Will McCall</h1>
-          </div>
-        </div>
+        <img
+          className="profile-picture"
+          src={WillHoodie}
+          alt="Will's profile"
+        />
+      </div>
+      <div className="action-buttons">
+        <button className="skills-button" type="button">
+          what are my skills
+        </button>
+        <button className="interests-button" type="button">
+          what are my interests
+        </button>
+        <button className="achievements-button" type="button">
+          what are my achievements
+        </button>
       </div>
     </div>
   );
-
-  return <BasePage pages={pages}>{pageContents}</BasePage>;
-};
-
-Home.propTypes = {
-  pages: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Home;

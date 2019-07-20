@@ -2,25 +2,24 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 import Home from './views/Home';
-import Projects from './views/Projects';
+import BasePage from './views/BasePage';
 
 const PAGES = {
   home: Home,
-  projects: Projects,
 };
-
-const PAGE_NAMES = Object.keys(PAGES).map(
-  page => page.charAt(0).toUpperCase() + page.slice(1),
-);
 
 const renderPage = pageName => {
   const Page = PAGES[pageName];
-  return <Page pages={PAGE_NAMES} />;
+  return <Page />;
 };
 
 const App = props => {
   const { page } = props;
-  return <div className="app">{renderPage(page)}</div>;
+  return (
+    <div className="app">
+      <BasePage>{renderPage(page)}</BasePage>
+    </div>
+  );
 };
 
 App.propTypes = {

@@ -1,30 +1,4 @@
 .base-page-container {
   width: 100%;
   text-align: center;
-
-  .base-page {
-    display: inline-block;
-    max-width: $pageWidth;
-    width: 100%;
-    height: 100vh;
-
-    .base-page-inner {
-      margin-top: 10px;
-
-      .nav-bar-container {
-        margin-left: 10px;
-        z-index: 1;
-        left: 55px;
-        position: fixed;
-      }
-
-      .children-container {
-        padding-left: 10px;
-        padding-top: 60px;
-        display: inline-block;
-        max-width: $pageWidth;
-        width: 100%;
-      }
-    }
-  }
 }
