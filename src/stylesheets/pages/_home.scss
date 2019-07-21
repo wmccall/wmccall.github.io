@@ -19,8 +19,11 @@ $profile-image-height: 375px;
     margin-left: auto;
     margin-right: auto;
     height: $profile-image-height;
+    transition: all 0.15s ease-in-out;
+    &.opaque {
+      opacity: 0;
+    }
     .profile-picture {
-      transition: all 0.15s ease-in-out;
       border-radius: $profile-image-height;
       border: solid 3px $white;
       max-width: 100%;
