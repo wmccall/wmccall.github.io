@@ -2,12 +2,47 @@ $profile-image-height: 375px;
 
 .home {
   .code-container {
+    display: flex;
     overflow: hidden;
     height: 100vh;
-    .code-picture {
-      display: block;
-      width: 100%;
-      margin-top: -20vh;
+    background-color: $darker-gray;
+    .pseudo-code {
+      user-select: none;
+      display: flex;
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 5px 0 5px 0;
+      div {
+        transition: text-shadow 0.15s ease-in-out;
+        display: inline-block;
+        padding: 0 5px 0 5px;
+        &.pseudo-reserved {
+          color: transparent;
+          text-shadow: 0 0 15px $variable-red;
+          &.visible {
+            text-shadow: 0 0 0px $variable-red;
+          }
+        }
+        &.pseudo-string {
+          color: transparent;
+          text-shadow: 0 0 15px $string-green;
+          &.visible {
+            text-shadow: 0 0 0px $string-green;
+          }
+        }
+        &.pseudo-global {
+          color: transparent;
+          text-shadow: 0 0 15px $global-purple;
+          &.visible {
+            text-shadow: 0 0 0px $global-purple;
+          }
+        }
+        .semi-colon {
+          padding: 0;
+          color: transparent;
+          text-shadow: 0 0 15px $gray;
+        }
+      }
     }
   }
   .profile-container {

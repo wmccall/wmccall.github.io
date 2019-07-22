@@ -4,14 +4,28 @@ import BlurryCode from '../resources/BlurryCode.png';
 import WillHoodie from '../resources/WillHoodie.jpg';
 import Logo from '../resources/LogoWhiteBackground.png';
 
+import pseudoCode from '../constants/pseudoCode';
+
 const Home = () => {
-  const [actionHover, setActionHover] = useState(false);
+  const [skillHover, setSkillHover] = useState(false);
+  const [interestHover, setInterestHover] = useState(false);
+  const [achievementHover, setAchievementHover] = useState(false);
+
+  const actionHovers = { skillHover, interestHover, achievementHover };
   return (
     <div className="home">
       <div className="code-container">
-        <img className="code-picture" src={BlurryCode} alt="Code" />
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+          actionHovers,
+        )}
       </div>
-      <div className={`profile-container ${actionHover ? 'opaque' : 'show'}`}>
+      <div
+        className={`profile-container ${
+          skillHover || interestHover || achievementHover ? 'opaque' : 'show'
+        }`}
+      >
         <img
           className="profile-picture"
           src={WillHoodie}
@@ -22,24 +36,24 @@ const Home = () => {
         <button
           className="skills-button"
           type="button"
-          onMouseEnter={() => setActionHover(true)}
-          onMouseLeave={() => setActionHover(false)}
+          onMouseEnter={() => setSkillHover(true)}
+          onMouseLeave={() => setSkillHover(false)}
         >
           what are my skills
         </button>
         <button
           className="interests-button"
           type="button"
-          onMouseEnter={() => setActionHover(true)}
-          onMouseLeave={() => setActionHover(false)}
+          onMouseEnter={() => setInterestHover(true)}
+          onMouseLeave={() => setInterestHover(false)}
         >
           what are my interests
         </button>
         <button
           className="achievements-button"
           type="button"
-          onMouseEnter={() => setActionHover(true)}
-          onMouseLeave={() => setActionHover(false)}
+          onMouseEnter={() => setAchievementHover(true)}
+          onMouseLeave={() => setAchievementHover(false)}
         >
           what are my achievements
         </button>
