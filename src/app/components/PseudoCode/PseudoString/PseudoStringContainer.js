@@ -3,6 +3,8 @@ import PseudoString from './PseudoString';
 
 const mapStateToProps = state => ({
   skillVisible: state.homeState.skillVisible,
+  interestVisible: state.homeState.interestVisible,
+  achievementVisible: state.homeState.AchievementVisible,
 });
 
 const mapDispatchToProps = {};

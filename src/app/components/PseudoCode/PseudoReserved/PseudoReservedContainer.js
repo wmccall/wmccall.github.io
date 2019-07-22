@@ -2,7 +2,9 @@ import { connect } from 'react-redux';
 import PseudoReserved from './PseudoReserved';
 
 const mapStateToProps = state => ({
-  achievementVisible: state.homeState.achievementVisible,
+  skillVisible: state.homeState.skillVisible,
+  interestVisible: state.homeState.interestVisible,
+  achievementVisible: state.homeState.AchievementVisible,
 });
 
 const mapDispatchToProps = {};

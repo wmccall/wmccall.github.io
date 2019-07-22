@@ -21,6 +21,77 @@ const Home = props => {
           { type: 'skill', word: 'React' },
           { type: 'interest', word: 'react' },
         )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
+        {pseudoCode.pseudoImport(
+          { type: 'skill', word: 'React' },
+          { type: 'interest', word: 'react' },
+        )}
+        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
       </div>
       <div className={`profile-container ${isActionHover ? 'opaque' : 'show'}`}>
         <img

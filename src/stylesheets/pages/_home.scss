@@ -3,6 +3,8 @@ $profile-image-height: 375px;
 .home {
   .code-container {
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     overflow: hidden;
     height: 100vh;
     background-color: $darker-gray;
@@ -10,6 +12,8 @@ $profile-image-height: 375px;
       user-select: none;
       display: flex;
       font-size: 20px;
+      height: 20px;
+      width: fit-content;
       font-family: 'Courier New', Courier, monospace;
       padding: 5px 0 5px 0;
       div {
@@ -37,7 +41,14 @@ $profile-image-height: 375px;
             text-shadow: 0 0 0px $global-purple;
           }
         }
-        .semi-colon {
+        &.pseudo-method {
+          color: transparent;
+          text-shadow: 0 0 15px $pastel-blue;
+          &.visible {
+            text-shadow: 0 0 0px $pastel-blue;
+          }
+        }
+        &.none-type-code {
           padding: 0;
           color: transparent;
           text-shadow: 0 0 15px $gray;
