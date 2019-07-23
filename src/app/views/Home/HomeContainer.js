@@ -1,21 +1,15 @@
 import { connect } from 'react-redux';
 import Home from './Home';
-import {
-  setSkillVisible,
-  setInterestVisible,
-  setAchievementVisible,
-} from './ducks/HomeActions';
+import { setHoverCategory, setPermanentCategory } from './ducks/HomeActions';
 
 const mapStateToProps = state => ({
-  skillVisible: state.homeState.skillVisible,
-  interestVisible: state.homeState.interestVisible,
-  achievementVisible: state.homeState.achievementVisible,
+  hoverCategory: state.homeState.hoverCategory,
+  permanentCategory: state.homeState.permanentCategory,
 });
 
 const mapDispatchToProps = {
-  setSkillVisible,
-  setInterestVisible,
-  setAchievementVisible,
+  setHoverCategory,
+  setPermanentCategory,
 };
 
 export default connect(

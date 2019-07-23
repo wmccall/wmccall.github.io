@@ -1,27 +1,19 @@
 import produce from 'immer';
-import {
-  SET_SKILL_VISIBLE,
-  SET_INTEREST_VISIBLE,
-  SET_ACHIEVEMENT_VISIBLE,
-} from './HomeActions';
+import { SET_HOVER_CATEGORY, SET_PERMANENT_CATEGORY } from './HomeActions';
 
 export const initialState = {
-  skillVisible: false,
-  interestVisible: false,
-  achievementVisible: false,
+  hoverCategory: null,
+  permanentCategory: null,
 };
 
 export default (baseState = initialState, action) =>
   produce(baseState, draftState => {
     switch (action.type) {
-      case SET_SKILL_VISIBLE:
-        draftState.skillVisible = action.isVisible;
+      case SET_HOVER_CATEGORY:
+        draftState.hoverCategory = action.category;
         return draftState;
-      case SET_INTEREST_VISIBLE:
-        draftState.interestVisible = action.isVisible;
-        return draftState;
-      case SET_ACHIEVEMENT_VISIBLE:
-        draftState.achievementVisible = action.isVisible;
+      case SET_PERMANENT_CATEGORY:
+        draftState.permanentCategory = action.category;
         return draftState;
       default:
         return draftState;

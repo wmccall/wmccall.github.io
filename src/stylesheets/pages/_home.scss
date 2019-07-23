@@ -26,12 +26,18 @@ $profile-image-height: 375px;
           &.visible {
             text-shadow: 0 0 0px $variable-red;
           }
+          &.underline {
+            text-decoration: underline;
+          }
         }
         &.pseudo-string {
           color: transparent;
           text-shadow: 0 0 15px $string-green;
           &.visible {
             text-shadow: 0 0 0px $string-green;
+          }
+          &.underline {
+            text-decoration: underline;
           }
         }
         &.pseudo-global {
@@ -40,12 +46,18 @@ $profile-image-height: 375px;
           &.visible {
             text-shadow: 0 0 0px $global-purple;
           }
+          &.underline {
+            text-decoration: underline;
+          }
         }
         &.pseudo-method {
           color: transparent;
           text-shadow: 0 0 15px $pastel-blue;
           &.visible {
             text-shadow: 0 0 0px $pastel-blue;
+          }
+          &.underline {
+            text-decoration: underline;
           }
         }
         &.none-type-code {

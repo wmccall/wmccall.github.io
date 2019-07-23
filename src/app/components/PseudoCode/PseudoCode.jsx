@@ -24,8 +24,9 @@ const pseudoMethodCall = (methodName = mockWord, argumentName = mockWord) =>
     PseudoCodeUtils.equalsSign,
     <PseudoMethod word={methodName} />,
     PseudoCodeUtils.leftParen,
-    <PseudoString word={argumentName} last />,
+    <PseudoString word={argumentName} />,
     PseudoCodeUtils.rightParen,
+    PseudoCodeUtils.semiColon,
   ]);
 
 const pseudoStringDefinition = (

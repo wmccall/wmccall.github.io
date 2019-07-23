@@ -3,19 +3,7 @@ import { PropTypes } from 'prop-types';
 import PseudoCodeUtils from '../../../utils/PseudoCodeUtils';
 
 const PseudoString = props => {
-  const {
-    word,
-    last,
-    skillVisible,
-    interestVisible,
-    achievementVisible,
-  } = props;
-
-  const typeToState = {
-    skill: skillVisible,
-    interest: interestVisible,
-    achievement: achievementVisible,
-  };
+  const { word, last, hoverCategory, permanentCategory } = props;
 
   const typeToClass = {
     skill: 'pseudo-string',
@@ -27,12 +15,16 @@ const PseudoString = props => {
     <div
       className={`${
         typeToClass[word.type] ? typeToClass[word.type] : 'pseudo-string'
-      } ${typeToState[word.type] ? 'visible' : 'blur'}`}
+      } ${
+        hoverCategory === word.type || permanentCategory === word.type
+          ? 'visible'
+          : 'blur'
+      } ${permanentCategory === word.type ? 'underline' : 'noline'}`}
     >
       {"'"}
       {word.word}
       {"'"}
-      {PseudoCodeUtils.semiColon(last)}
+      {last && PseudoCodeUtils.semiColon}
     </div>
   );
 };
@@ -40,9 +32,8 @@ const PseudoString = props => {
 PseudoString.propTypes = {
   word: PropTypes.shape({ word: PropTypes.string, type: PropTypes.string })
     .isRequired,
-  skillVisible: PropTypes.bool.isRequired,
-  interestVisible: PropTypes.bool.isRequired,
-  achievementVisible: PropTypes.bool.isRequired,
+  hoverCategory: PropTypes.string.isRequired,
+  permanentCategory: PropTypes.string.isRequired,
   last: PropTypes.bool,
 };
 

@@ -1,18 +1,11 @@
-export const SET_SKILL_VISIBLE = 'SET_SKILL_VISIBLE';
-export const SET_INTEREST_VISIBLE = 'SET_INTEREST_VISIBLE';
-export const SET_ACHIEVEMENT_VISIBLE = 'SET_ACHIEVEMENT_VISIBLE';
+export const SET_HOVER_CATEGORY = 'SET_HOVER_CATEGORY';
+export const SET_PERMANENT_CATEGORY = 'SET_PERMANENT_CATEGORY';
 
-export const setSkillVisible = isVisible => ({
-  type: SET_SKILL_VISIBLE,
-  isVisible,
+export const setHoverCategory = category => ({
+  type: SET_HOVER_CATEGORY,
+  category,
 });
-
-export const setInterestVisible = isVisible => ({
-  type: SET_INTEREST_VISIBLE,
-  isVisible,
-});
-
-export const setAchievementVisible = isVisible => ({
-  type: SET_ACHIEVEMENT_VISIBLE,
-  isVisible,
+export const setPermanentCategory = category => ({
+  type: SET_PERMANENT_CATEGORY,
+  category,
 });

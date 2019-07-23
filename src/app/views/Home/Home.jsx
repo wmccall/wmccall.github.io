@@ -9,10 +9,14 @@ import Logo from '../../resources/LogoWhiteBackground.png';
 import pseudoCode from '../../components/PseudoCode';
 
 const Home = props => {
-  const { setSkillVisible, setInterestVisible, setAchievementVisible } = props;
-  const { skillVisible, interestVisible, achievementVisible } = props;
+  const {
+    setHoverCategory,
+    setPermanentCategory,
+    hoverCategory,
+    permanentCategory,
+  } = props;
 
-  const isActionHover = skillVisible || interestVisible || achievementVisible;
+  const hideProfile = hoverCategory || permanentCategory;
 
   return (
     <div className="home">
@@ -22,78 +26,8 @@ const Home = props => {
           { type: 'interest', word: 'react' },
         )}
         {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
       </div>
-      <div className={`profile-container ${isActionHover ? 'opaque' : 'show'}`}>
+      <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
         <img
           className="profile-picture"
           src={WillHoodie}
@@ -104,24 +38,37 @@ const Home = props => {
         <button
           className="skills-button"
           type="button"
-          onMouseEnter={() => setSkillVisible(true)}
-          onMouseLeave={() => setSkillVisible(false)}
+          onMouseEnter={() => setHoverCategory('skill')}
+          onMouseLeave={() => setHoverCategory(null)}
+          onClick={() =>
+            setPermanentCategory(permanentCategory === 'skill' ? null : 'skill')
+          }
         >
           what are my skills
         </button>
         <button
           className="interests-button"
           type="button"
-          onMouseEnter={() => setInterestVisible(true)}
-          onMouseLeave={() => setInterestVisible(false)}
+          onMouseEnter={() => setHoverCategory('interest')}
+          onMouseLeave={() => setHoverCategory(null)}
+          onClick={() =>
+            setPermanentCategory(
+              permanentCategory === 'interest' ? null : 'interest',
+            )
+          }
         >
           what are my interests
         </button>
         <button
           className="achievements-button"
           type="button"
-          onMouseEnter={() => setAchievementVisible(true)}
-          onMouseLeave={() => setAchievementVisible(false)}
+          onMouseEnter={() => setHoverCategory('achievement')}
+          onMouseLeave={() => setHoverCategory(null)}
+          onClick={() =>
+            setPermanentCategory(
+              permanentCategory === 'achievement' ? null : 'achievement',
+            )
+          }
         >
           what are my achievements
         </button>
@@ -131,12 +78,10 @@ const Home = props => {
 };
 
 Home.propTypes = {
-  setSkillVisible: PropTypes.func.isRequired,
-  setInterestVisible: PropTypes.func.isRequired,
-  setAchievementVisible: PropTypes.func.isRequired,
-  skillVisible: PropTypes.bool.isRequired,
-  interestVisible: PropTypes.bool.isRequired,
-  achievementVisible: PropTypes.bool.isRequired,
+  setHoverCategory: PropTypes.func.isRequired,
+  hoverCategory: PropTypes.shape({}).isRequired,
+  setPermanentCategory: PropTypes.func.isRequired,
+  permanentCategory: PropTypes.shape({}).isRequired,
 };
 
 export default Home;

@@ -2,9 +2,8 @@ import { connect } from 'react-redux';
 import PseudoMethod from './PseudoMethod';
 
 const mapStateToProps = state => ({
-  skillVisible: state.homeState.skillVisible,
-  interestVisible: state.homeState.interestVisible,
-  achievementVisible: state.homeState.AchievementVisible,
+  hoverCategory: state.homeState.hoverCategory,
+  permanentCategory: state.homeState.permanentCategory,
 });
 
 const mapDispatchToProps = {};
