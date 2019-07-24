@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import App from './App';
-import { NavBarActions } from './components/NavBar';
+import { ViewsActions } from './views/ducks';
 
 const mapStateToProps = state => ({
-  page: state.navState.page,
+  page: state.viewState.page,
 });
 
 const mapDispatchToProps = {
-  changePage: NavBarActions.changePage,
+  changePage: ViewsActions.changePage,
 };
 
 export default connect(

@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import Home from './Home';
-import { setHoverCategory, setPermanentCategory } from './ducks/HomeActions';
+import { setHoverCategory, setPermanentCategory } from '../ducks/ViewsActions';
 
 const mapStateToProps = state => ({
-  hoverCategory: state.homeState.hoverCategory,
-  permanentCategory: state.homeState.permanentCategory,
-  allWords: state.homeState.allWords,
+  hoverCategory: state.viewState.hoverCategory,
+  permanentCategory: state.viewState.permanentCategory,
+  allWords: state.viewState.allWords,
 });
 
 const mapDispatchToProps = {

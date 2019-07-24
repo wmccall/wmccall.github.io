@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import PseudoString from './PseudoString';
 
 const mapStateToProps = state => ({
-  hoverCategory: state.homeState.hoverCategory,
-  permanentCategory: state.homeState.permanentCategory,
+  hoverCategory: state.viewState.hoverCategory,
+  permanentCategory: state.viewState.permanentCategory,
 });
 
 const mapDispatchToProps = {};
