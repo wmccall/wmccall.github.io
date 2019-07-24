@@ -82,6 +82,7 @@ $profile-image-height: 375px;
       opacity: 0;
     }
     .profile-picture {
+      user-select: none;
       border-radius: $profile-image-height;
       border: solid 3px $white;
       max-width: 100%;
