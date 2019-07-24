@@ -1,9 +1,11 @@
 import produce from 'immer';
+import allWords from '../../../constants/allWords';
 import { SET_HOVER_CATEGORY, SET_PERMANENT_CATEGORY } from './HomeActions';
 
 export const initialState = {
   hoverCategory: null,
   permanentCategory: null,
+  allWords: allWords(),
 };
 
 export default (baseState = initialState, action) =>

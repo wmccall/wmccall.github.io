@@ -1,12 +1,9 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-import Emoji from 'a11y-react-emoji';
-import BlurryCode from '../../resources/BlurryCode.png';
-import WillHoodie from '../../resources/WillHoodie.jpg';
-import Logo from '../../resources/LogoWhiteBackground.png';
+import backgroundCode from '../../constants/backgroundCode';
 
-import pseudoCode from '../../components/PseudoCode';
+import WillHoodie from '../../resources/WillHoodie.jpg';
 
 const Home = props => {
   const {
@@ -14,19 +11,14 @@ const Home = props => {
     setPermanentCategory,
     hoverCategory,
     permanentCategory,
+    allWords,
   } = props;
 
   const hideProfile = hoverCategory || permanentCategory;
 
   return (
     <div className="home">
-      <div className="code-container">
-        {pseudoCode.pseudoImport(
-          { type: 'skill', word: 'React' },
-          { type: 'interest', word: 'react' },
-        )}
-        {pseudoCode.pseudoMethodCall({ type: 'interest', word: 'Photography' })}
-      </div>
+      <div className="code-container">{backgroundCode(allWords)}</div>
       <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
         <img
           className="profile-picture"
@@ -79,9 +71,15 @@ const Home = props => {
 
 Home.propTypes = {
   setHoverCategory: PropTypes.func.isRequired,
-  hoverCategory: PropTypes.shape({}).isRequired,
+  hoverCategory: PropTypes.string,
   setPermanentCategory: PropTypes.func.isRequired,
-  permanentCategory: PropTypes.shape({}).isRequired,
+  permanentCategory: PropTypes.string,
+  allWords: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+};
+
+Home.defaultProps = {
+  hoverCategory: null,
+  permanentCategory: null,
 };
 
 export default Home;

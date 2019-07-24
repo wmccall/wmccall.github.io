@@ -40,17 +40,22 @@ const pseudoStringDefinition = (
     <PseudoString word={pseudoPackage} last />,
   ]);
 
-const pseudoReturn = (pseudoModule = mockWord, pseudoPackage = mockWord) =>
+const pseudoReturnMethod = (methodName = mockWord) =>
   pseudoCode([
-    <PseudoReserved word={{ word: 'import' }} />,
-    <PseudoGlobal word={pseudoModule} />,
-    <PseudoReserved word={{ word: 'from' }} />,
-    <PseudoString word={pseudoPackage} last />,
+    <PseudoGlobal word={{ word: 'return' }} />,
+    <PseudoMethod word={methodName} last />,
+  ]);
+
+const pseudoReturnString = (stringName = mockWord) =>
+  pseudoCode([
+    <PseudoGlobal word={{ word: 'return' }} />,
+    <PseudoString word={stringName} last />,
   ]);
 
 export default {
   pseudoImport,
   pseudoMethodCall,
   pseudoStringDefinition,
-  pseudoReturn,
+  pseudoReturnMethod,
+  pseudoReturnString,
 };

@@ -30,12 +30,14 @@ const PseudoReserved = props => {
 PseudoReserved.propTypes = {
   word: PropTypes.shape({ word: PropTypes.string, type: PropTypes.string })
     .isRequired,
-  hoverCategory: PropTypes.string.isRequired,
-  permanentCategory: PropTypes.string.isRequired,
+  hoverCategory: PropTypes.string,
+  permanentCategory: PropTypes.string,
   last: PropTypes.bool,
 };
 
 PseudoReserved.defaultProps = {
+  hoverCategory: null,
+  permanentCategory: null,
   last: false,
 };
 

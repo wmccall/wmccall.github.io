@@ -4,6 +4,7 @@ const INTERESTS_WORDS = [
   'illustrator',
   'photoshop',
   'music',
+  'movies',
   'video_games',
 ];
 

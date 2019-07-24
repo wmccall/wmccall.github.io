@@ -32,12 +32,14 @@ const PseudoString = props => {
 PseudoString.propTypes = {
   word: PropTypes.shape({ word: PropTypes.string, type: PropTypes.string })
     .isRequired,
-  hoverCategory: PropTypes.string.isRequired,
-  permanentCategory: PropTypes.string.isRequired,
+  hoverCategory: PropTypes.string,
+  permanentCategory: PropTypes.string,
   last: PropTypes.bool,
 };
 
 PseudoString.defaultProps = {
+  hoverCategory: null,
+  permanentCategory: null,
   last: false,
 };
 

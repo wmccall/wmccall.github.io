@@ -5,6 +5,7 @@ import { setHoverCategory, setPermanentCategory } from './ducks/HomeActions';
 const mapStateToProps = state => ({
   hoverCategory: state.homeState.hoverCategory,
   permanentCategory: state.homeState.permanentCategory,
+  allWords: state.homeState.allWords,
 });
 
 const mapDispatchToProps = {

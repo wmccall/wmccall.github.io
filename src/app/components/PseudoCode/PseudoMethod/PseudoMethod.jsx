@@ -30,12 +30,14 @@ const PseudoMethod = props => {
 PseudoMethod.propTypes = {
   word: PropTypes.shape({ word: PropTypes.string, type: PropTypes.string })
     .isRequired,
-  hoverCategory: PropTypes.string.isRequired,
-  permanentCategory: PropTypes.string.isRequired,
+  hoverCategory: PropTypes.string,
+  permanentCategory: PropTypes.string,
   last: PropTypes.bool,
 };
 
 PseudoMethod.defaultProps = {
+  hoverCategory: null,
+  permanentCategory: null,
   last: false,
 };
 
