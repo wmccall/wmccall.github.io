@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PseudoString from './PseudoString';
+import PseudoElement from './PseudoElement';
 
 const mapStateToProps = state => ({
   hoverCategory: state.viewState.hoverCategory,
@@ -11,4 +11,4 @@ const mapDispatchToProps = {};
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(PseudoString);
+)(PseudoElement);
