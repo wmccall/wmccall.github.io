@@ -28,7 +28,9 @@ const Home = props => {
       </div>
       <div className="action-buttons">
         <button
-          className="skills-button"
+          className={`skills-button ${
+            permanentCategory === 'skill' ? 'active' : ''
+          }`}
           type="button"
           onMouseEnter={() => setHoverCategory('skill')}
           onMouseLeave={() => setHoverCategory(null)}
@@ -39,7 +41,9 @@ const Home = props => {
           what are my skills
         </button>
         <button
-          className="interests-button"
+          className={`interests-button ${
+            permanentCategory === 'interest' ? 'active' : ''
+          }`}
           type="button"
           onMouseEnter={() => setHoverCategory('interest')}
           onMouseLeave={() => setHoverCategory(null)}
@@ -52,7 +56,9 @@ const Home = props => {
           what are my interests
         </button>
         <button
-          className="achievements-button"
+          className={`achievements-button ${
+            permanentCategory === 'achievement' ? 'active' : ''
+          }`}
           type="button"
           onMouseEnter={() => setHoverCategory('achievement')}
           onMouseLeave={() => setHoverCategory(null)}

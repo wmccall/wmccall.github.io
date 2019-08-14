@@ -1,5 +1,5 @@
 const ACHIEVEMENTS_WORDS = [
-  'RIT_Presidential_Scholarship',
+  'RIT Presidential Scholarship',
   '{DeansList:[2015,2016,2017,2018,2019]}',
 ];
 

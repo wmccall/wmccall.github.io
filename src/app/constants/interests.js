@@ -5,7 +5,7 @@ const INTERESTS_WORDS = [
   'photoshop',
   'music',
   'movies',
-  'video_games',
+  'video games',
 ];
 
 const interests = INTERESTS_WORDS.map(word => ({ type: 'interest', word }));
