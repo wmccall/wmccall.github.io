@@ -11,15 +11,19 @@ $profile-image-height: 375px;
     .pseudo-code {
       user-select: none;
       display: flex;
-      font-size: 23px;
-      height: 23px;
-      width: fit-content;
-      font-family: 'Courier New', Courier, monospace;
-      padding: 5px 0 5px 0;
+      padding: 0 3px 0 3px;
+      button,
       div {
+        font-size: 24px;
+        width: fit-content;
+        font-family: 'Courier New', Courier, monospace;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        margin-top: 2px;
+        padding: 0 5px 0 5px;
         transition: text-shadow 0.15s ease-in-out;
         display: inline-block;
-        padding: 0 5px 0 5px;
         &.pseudo-reserved {
           color: transparent;
           text-shadow: 0 0 15px $variable-red;
@@ -78,8 +82,10 @@ $profile-image-height: 375px;
     margin-right: auto;
     height: $profile-image-height;
     transition: all 0.15s ease-in-out;
+    z-index: 100;
     &.opaque {
       opacity: 0;
+      z-index: -1;
     }
     .profile-picture {
       user-select: none;

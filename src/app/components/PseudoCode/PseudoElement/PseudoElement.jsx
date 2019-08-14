@@ -14,7 +14,7 @@ const PseudoElement = props => {
   const defaultClass = `pseudo-${defaultType}`;
 
   return (
-    <div
+    <button
       className={`${
         typeToClass[word.type] ? typeToClass[word.type] : defaultClass
       } ${
@@ -24,10 +24,11 @@ const PseudoElement = props => {
       } ${permanentCategory === word.type ? 'underline' : 'noline'} ${
         word.tags ? word.tags.join('') : ''
       }`}
+      type="button"
     >
       {word.word}
       {last && PseudoCodeUtils.semiColon}
-    </div>
+    </button>
   );
 };
 
