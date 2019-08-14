@@ -1,6 +1,6 @@
 const ACHIEVEMENTS_WORDS = [
-  { word: 'RIT Presidential Scholarship', tags: [] },
-  { word: '{DeansList:[2015,2016,2017,2018,2019]}', tags: [] },
+  { word: 'RIT Presidential Scholarship', tags: ['academics'] },
+  { word: '{DeansList:[2015,2016,2017,2018,2019]}', tags: ['academics'] },
 ];
 
 const achievements = ACHIEVEMENTS_WORDS.map(wordObject => ({

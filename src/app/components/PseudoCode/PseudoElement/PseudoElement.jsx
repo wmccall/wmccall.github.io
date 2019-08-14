@@ -3,7 +3,15 @@ import { PropTypes } from 'prop-types';
 import PseudoCodeUtils from '../../../utils/PseudoCodeUtils';
 
 const PseudoElement = props => {
-  const { word, last, hoverCategory, permanentCategory, defaultType } = props;
+  const {
+    word,
+    last,
+    hoverCategory,
+    permanentCategory,
+    defaultType,
+    setCurrentTags,
+    currentTags,
+  } = props;
 
   const typeToClass = {
     skill: 'pseudo-string',
@@ -24,6 +32,7 @@ const PseudoElement = props => {
       } ${permanentCategory === word.type ? 'underline' : 'noline'} ${
         word.tags ? word.tags.join('') : ''
       }`}
+      onClick={() => setCurrentTags(word.tags)}
       type="button"
     >
       {word.word}
@@ -38,6 +47,8 @@ PseudoElement.propTypes = {
     type: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
+  setCurrentTags: PropTypes.func.isRequired,
+  currentTags: PropTypes.arrayOf(PropTypes.string),
   defaultType: PropTypes.string.isRequired,
   hoverCategory: PropTypes.string,
   permanentCategory: PropTypes.string,
@@ -46,6 +57,7 @@ PseudoElement.propTypes = {
 
 PseudoElement.defaultProps = {
   hoverCategory: null,
+  currentTags: null,
   permanentCategory: null,
   last: false,
 };

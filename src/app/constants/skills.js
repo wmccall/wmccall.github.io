@@ -1,10 +1,10 @@
 const SKILLS_WORDS = [
   { word: 'Java', tags: ['language'] },
   { word: 'Python', tags: ['language'] },
-  { word: 'React', tags: ['web'] },
-  { word: 'CSS', tags: ['web'] },
+  { word: 'React', tags: ['web development'] },
+  { word: 'CSS', tags: ['web development'] },
   { word: 'AWS', tags: ['infrastructure'] },
-  { word: 'Git', tags: [] },
+  { word: 'Git', tags: ['version-control'] },
   { word: 'C#', tags: ['language'] },
   { word: 'Terraform', tags: ['infrastructure'] },
   { word: 'Serverless', tags: ['infrastructure'] },
