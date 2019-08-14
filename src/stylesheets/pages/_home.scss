@@ -29,6 +29,9 @@ $profile-image-height: 375px;
           text-shadow: 0 0 15px $variable-red;
           &.visible {
             text-shadow: 0 0 0px $variable-red;
+            &:hover {
+              cursor: pointer;
+            }
           }
           &.underline {
             text-decoration: underline;
@@ -39,6 +42,9 @@ $profile-image-height: 375px;
           text-shadow: 0 0 15px $string-green;
           &.visible {
             text-shadow: 0 0 0px $string-green;
+            &:hover {
+              cursor: pointer;
+            }
           }
           &.underline {
             text-decoration: underline;
@@ -49,6 +55,9 @@ $profile-image-height: 375px;
           text-shadow: 0 0 15px $global-purple;
           &.visible {
             text-shadow: 0 0 0px $global-purple;
+            &:hover {
+              cursor: pointer;
+            }
           }
           &.underline {
             text-decoration: underline;
@@ -59,6 +68,9 @@ $profile-image-height: 375px;
           text-shadow: 0 0 15px $pastel-blue;
           &.visible {
             text-shadow: 0 0 0px $pastel-blue;
+            &:hover {
+              cursor: pointer;
+            }
           }
           &.underline {
             text-decoration: underline;
@@ -131,6 +143,9 @@ $profile-image-height: 375px;
       &.achievements-button.active {
         color: $variable-red;
         border: solid 3px $variable-red;
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }

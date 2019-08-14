@@ -21,18 +21,18 @@ const PseudoElement = props => {
 
   const defaultClass = `pseudo-${defaultType}`;
 
+  const isCategoryActive = () => permanentCategory === word.type;
+
   return (
     <button
       className={`${
         typeToClass[word.type] ? typeToClass[word.type] : defaultClass
       } ${
-        hoverCategory === word.type || permanentCategory === word.type
-          ? 'visible'
-          : 'blur'
-      } ${permanentCategory === word.type ? 'underline' : 'noline'} ${
+        hoverCategory === word.type || isCategoryActive() ? 'visible' : 'blur'
+      } ${isCategoryActive() ? 'underline' : 'noline'} ${
         word.tags ? word.tags.join('') : ''
       }`}
-      onClick={() => setCurrentTags(word.tags)}
+      onClick={() => isCategoryActive() && setCurrentTags(word.tags)}
       type="button"
     >
       {word.word}
