@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import { NavBarReducer } from './app/components/NavBar';
+import { ViewsReducer } from './app/views/ducks';
 
 export default combineReducers({
-  navState: NavBarReducer,
+  viewState: ViewsReducer,
 });
