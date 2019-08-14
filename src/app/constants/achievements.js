@@ -1,11 +1,12 @@
 const ACHIEVEMENTS_WORDS = [
-  'RIT Presidential Scholarship',
-  '{DeansList:[2015,2016,2017,2018,2019]}',
+  { word: 'RIT Presidential Scholarship', tags: [] },
+  { word: '{DeansList:[2015,2016,2017,2018,2019]}', tags: [] },
 ];
 
-const achievements = ACHIEVEMENTS_WORDS.map(word => ({
+const achievements = ACHIEVEMENTS_WORDS.map(wordObject => ({
   type: 'achievement',
-  word,
+  word: wordObject.word,
+  tags: wordObject.tags,
 }));
 
 export default achievements;

@@ -19,7 +19,9 @@ const PseudoString = props => {
         hoverCategory === word.type || permanentCategory === word.type
           ? 'visible'
           : 'blur'
-      } ${permanentCategory === word.type ? 'underline' : 'noline'}`}
+      } ${permanentCategory === word.type ? 'underline' : 'noline'} ${
+        word.tags ? word.tags.join('') : ''
+      }`}
     >
       {"'"}
       {word.word}
@@ -30,8 +32,11 @@ const PseudoString = props => {
 };
 
 PseudoString.propTypes = {
-  word: PropTypes.shape({ word: PropTypes.string, type: PropTypes.string })
-    .isRequired,
+  word: PropTypes.shape({
+    word: PropTypes.string,
+    type: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
   hoverCategory: PropTypes.string,
   permanentCategory: PropTypes.string,
   last: PropTypes.bool,

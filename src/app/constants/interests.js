@@ -1,13 +1,17 @@
 const INTERESTS_WORDS = [
-  'ceramics',
-  'photography',
-  'illustrator',
-  'photoshop',
-  'music',
-  'movies',
-  'video games',
+  { word: 'ceramics', tags: [] },
+  { word: 'photography', tags: [] },
+  { word: 'illustrator', tags: [] },
+  { word: 'photoshop', tags: [] },
+  { word: 'music', tags: [] },
+  { word: 'movies', tags: [] },
+  { word: 'video games', tags: [] },
 ];
 
-const interests = INTERESTS_WORDS.map(word => ({ type: 'interest', word }));
+const interests = INTERESTS_WORDS.map(wordObject => ({
+  type: 'interest',
+  word: wordObject.word,
+  tags: wordObject.tags,
+}));
 
 export default interests;
