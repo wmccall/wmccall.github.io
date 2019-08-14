@@ -5,6 +5,8 @@ import backgroundCode from '../../constants/backgroundCode';
 
 import WillHoodie from '../../resources/WillHoodie.jpg';
 
+const ACTIONS_BUTTONS_TYPES = ['skill', 'interest', 'achievement'];
+
 const Home = props => {
   const {
     setHoverCategory,
@@ -27,49 +29,23 @@ const Home = props => {
         />
       </div>
       <div className="action-buttons">
-        <button
-          className={`skills-button ${
-            permanentCategory === 'skill' ? 'active' : ''
-          }`}
-          type="button"
-          onMouseEnter={() => setHoverCategory('skill')}
-          onMouseLeave={() => setHoverCategory(null)}
-          onClick={() =>
-            setPermanentCategory(permanentCategory === 'skill' ? null : 'skill')
-          }
-        >
-          what are my skills
-        </button>
-        <button
-          className={`interests-button ${
-            permanentCategory === 'interest' ? 'active' : ''
-          }`}
-          type="button"
-          onMouseEnter={() => setHoverCategory('interest')}
-          onMouseLeave={() => setHoverCategory(null)}
-          onClick={() =>
-            setPermanentCategory(
-              permanentCategory === 'interest' ? null : 'interest',
-            )
-          }
-        >
-          what are my interests
-        </button>
-        <button
-          className={`achievements-button ${
-            permanentCategory === 'achievement' ? 'active' : ''
-          }`}
-          type="button"
-          onMouseEnter={() => setHoverCategory('achievement')}
-          onMouseLeave={() => setHoverCategory(null)}
-          onClick={() =>
-            setPermanentCategory(
-              permanentCategory === 'achievement' ? null : 'achievement',
-            )
-          }
-        >
-          what are my achievements
-        </button>
+        {ACTIONS_BUTTONS_TYPES.map(actType => (
+          <button
+            className={`${actType}s-button ${
+              permanentCategory === actType ? 'active' : ''
+            }`}
+            type="button"
+            onMouseEnter={() => setHoverCategory(actType)}
+            onMouseLeave={() => setHoverCategory(null)}
+            onClick={() =>
+              setPermanentCategory(
+                permanentCategory === actType ? null : actType,
+              )
+            }
+          >
+            {`what are my ${actType}s`}
+          </button>
+        ))}
       </div>
     </div>
   );

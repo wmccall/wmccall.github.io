@@ -1,5 +1,7 @@
 import pseudoCode from '../components/PseudoCode';
 
+// Distribute the words into the background code with
+// filler code to take up more space
 const backgroundCode = words => {
   const allCode = [];
   let wordCount = 0;

@@ -1,13 +1,20 @@
 import React from 'react';
 
-const semiColon = <div className="none-type-code">;</div>;
-const equalsSign = <div className="none-type-code">=</div>;
-const leftParen = <div className="none-type-code">(</div>;
-const rightParen = <div className="none-type-code">)</div>;
+const NON_CODE_SYMBOLS = {
+  semiColon: ';',
+  equalsSign: '=',
+  leftParen: '(',
+  rightParen: ')',
+};
+
+const nonCodeSymbols = Object.keys(NON_CODE_SYMBOLS).reduce(
+  (obj, key) => ({
+    ...obj,
+    [key]: <div className="none-type-code">{NON_CODE_SYMBOLS[key]}</div>,
+  }),
+  {},
+);
 
 export default {
-  semiColon,
-  equalsSign,
-  leftParen,
-  rightParen,
+  ...nonCodeSymbols,
 };
