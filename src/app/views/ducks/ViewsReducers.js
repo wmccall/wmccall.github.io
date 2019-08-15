@@ -11,6 +11,7 @@ export const initialState = {
   page: 'home',
   tags: null,
   tagType: null,
+  word: null,
   hoverCategory: null,
   permanentCategory: null,
   allWords: allWords(),
@@ -31,6 +32,7 @@ export default (baseState = initialState, action) =>
       case SET_CURRENT_TAGS:
         draftState.tags = action.tags;
         draftState.tagType = action.tagType;
+        draftState.word = action.word;
         return draftState;
       default:
         return draftState;

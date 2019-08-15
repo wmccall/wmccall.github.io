@@ -1,11 +1,11 @@
 const INTERESTS_WORDS = [
-  { word: 'ceramics', tags: ['Art'] },
-  { word: 'photography', tags: ['Art'] },
-  { word: 'illustrator', tags: ['Art'] },
-  { word: 'photoshop', tags: ['Art'] },
-  { word: 'music', tags: ['Entertainment'] },
-  { word: 'movies', tags: ['Entertainment'] },
-  { word: 'video games', tags: ['Entertainment'] },
+  { word: 'Ceramics', tags: ['Art'] },
+  { word: 'Photography', tags: ['Art'] },
+  { word: 'Illustrator', tags: ['Art'] },
+  { word: 'Photoshop', tags: ['Art'] },
+  { word: 'Music', tags: ['Entertainment'] },
+  { word: 'Movies', tags: ['Entertainment'] },
+  { word: 'Video Games', tags: ['Entertainment'] },
 ];
 
 const interests = INTERESTS_WORDS.map(wordObject => ({

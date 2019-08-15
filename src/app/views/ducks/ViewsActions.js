@@ -8,8 +8,9 @@ export const setCurrentPage = page => ({
   page,
 });
 
-export const setCurrentTags = (tags, tagType) => ({
+export const setCurrentTags = (word, tags, tagType) => ({
   type: SET_CURRENT_TAGS,
+  word,
   tags,
   tagType,
 });

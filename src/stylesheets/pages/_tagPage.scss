@@ -20,12 +20,24 @@
       width: fit-content;
       &:hover {
         cursor: pointer;
+        &.skill {
+          color: $string-green;
+        }
+        &.interest {
+          color: $pastel-blue;
+        }
+        &.achievement {
+          color: $variable-red;
+        }
       }
     }
     .tag-title {
       font-size: 35px;
       margin-top: 10px;
       padding: 0 10px 0 5px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
       &.skill {
         color: $string-green;
       }
@@ -34,6 +46,9 @@
       }
       &.achievement {
         color: $variable-red;
+      }
+      .title-main {
+        margin-left: 8px;
       }
     }
   }

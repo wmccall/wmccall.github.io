@@ -13,6 +13,7 @@ const containsTag = (word, currentTags, currentTagType) => {
 const TagPage = props => {
   const {
     setCurrentTags,
+    currentWord,
     currentTags,
     currentTagType,
     allWords,
@@ -20,18 +21,23 @@ const TagPage = props => {
   } = props;
 
   const backArrow = '<=';
+  const forwardArrow = '=>';
 
   const wordsWithCurrentTags = () => {
     return allWords
-      .filter(word => containsTag(word, currentTags, currentTagType))
+      .filter(
+        word =>
+          containsTag(word, currentTags, currentTagType) &&
+          word.word !== currentWord,
+      )
       .map(word => word.word);
   };
 
   const backButton = () => (
     <button
-      className="clear-tags"
+      className={`clear-tags ${currentTagType}`}
       type="button"
-      onClick={() => setCurrentTags(null, null) && setCurrentPage('home')}
+      onClick={() => setCurrentTags(null, null, null) && setCurrentPage('home')}
     >
       {backArrow}
     </button>
@@ -42,11 +48,13 @@ const TagPage = props => {
       <div className="top-bar">
         {backButton()}
         <div className={`tag-title ${currentTagType}`}>
-          {currentTags.join(', ')}
+          <div className="title-main">{currentWord}</div>
+          <div className="title-main">{forwardArrow}</div>
+          <div className="title-main">{currentTags.join(', ')}</div>
         </div>
       </div>
       <div className="page-inner">
-        <div className="words">{wordsWithCurrentTags().join(', ')}</div>
+        <div className="words">+ {wordsWithCurrentTags().join(', ')}</div>
       </div>
     </div>
   );
@@ -57,10 +65,12 @@ TagPage.propTypes = {
   setCurrentPage: PropTypes.func.isRequired,
   currentTags: PropTypes.arrayOf(PropTypes.string),
   currentTagType: PropTypes.string,
+  currentWord: PropTypes.string,
   allWords: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 TagPage.defaultProps = {
+  currentWord: null,
   currentTags: null,
   currentTagType: null,
 };

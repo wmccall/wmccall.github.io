@@ -34,7 +34,7 @@ const PseudoElement = props => {
       }`}
       onClick={() =>
         isCategoryActive() &&
-        setCurrentTags(word.tags, word.type) &&
+        setCurrentTags(word.word, word.tags, word.type) &&
         setCurrentPage('tag')
       }
       type="button"

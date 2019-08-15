@@ -4,6 +4,7 @@ import { setCurrentTags, setCurrentPage } from '../ducks/ViewsActions';
 
 const mapStateToProps = state => ({
   allWords: state.viewState.allWords,
+  currentWord: state.viewState.word,
   currentTags: state.viewState.tags,
   currentTagType: state.viewState.tagType,
 });
