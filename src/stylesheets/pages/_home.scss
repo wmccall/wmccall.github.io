@@ -22,21 +22,50 @@ $profile-image-height: 375px;
       padding: 17px 21px 17px 21px;
       background-color: $darker-gray;
       transition: border 0.15s ease-in-out, color 0.15s ease-in-out,
-        margin-top 0.15s ease-in-out;
-      &.skills-button:hover,
+        margin-top 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        margin-bottom 0.15s ease-in-out, margin-top 0.15s ease-in-out;
+      box-shadow: 0px 9px 0px $dark-gray;
+      &.skills-button:hover {
+        color: $string-green;
+        border: solid 3px $string-green;
+        box-shadow: 0px 6px 0px $dark-string-green;
+        margin-bottom: -3px;
+        margin-top: 3px;
+      }
       &.skills-button.active {
         color: $string-green;
         border: solid 3px $string-green;
+        box-shadow: 0px 3px 0px $dark-string-green;
+        margin-bottom: -6px;
+        margin-top: 6px;
       }
-      &.interests-button:hover,
+      &.interests-button:hover {
+        color: $pastel-blue;
+        border: solid 3px $pastel-blue;
+        box-shadow: 0px 6px 0px $dark-pastel-blue;
+        margin-bottom: -3px;
+        margin-top: 3px;
+      }
       &.interests-button.active {
         color: $pastel-blue;
         border: solid 3px $pastel-blue;
+        box-shadow: 0px 3px 0px $dark-pastel-blue;
+        margin-bottom: -6px;
+        margin-top: 6px;
       }
-      &.achievements-button:hover,
+      &.achievements-button:hover {
+        color: $variable-red;
+        border: solid 3px $variable-red;
+        box-shadow: 0px 6px 0px $dark-variable-red;
+        margin-bottom: -3px;
+        margin-top: 3px;
+      }
       &.achievements-button.active {
         color: $variable-red;
         border: solid 3px $variable-red;
+        box-shadow: 0px 3px 0px $dark-variable-red;
+        margin-bottom: -6px;
+        margin-top: 6px;
       }
       &:hover {
         cursor: pointer;

@@ -27,15 +27,28 @@ const TagPage = props => {
   const leftBracket = '[';
   const rightBracket = ']';
   const singleQuote = "'";
+  const comma = ',';
 
   const wordsWithCurrentTags = () => {
-    return allWords
-      .filter(
-        word =>
-          containsTag(word, currentTags, currentTagType) &&
-          word.word !== currentWord,
-      )
-      .map(word => word.word);
+    const filteredWords = allWords.filter(
+      word =>
+        containsTag(word, currentTags, currentTagType) &&
+        word.word !== currentWord,
+    );
+    return filteredWords.map((word, index) => (
+      <>
+        <button
+          className={`word ${currentTagType}`}
+          type="button"
+          onClick={() => setCurrentTags(word.word, currentTags, currentTagType)}
+        >
+          {word.word}
+        </button>
+        {index !== filteredWords.length - 1 && (
+          <div className="later-comma">{comma}</div>
+        )}
+      </>
+    ));
   };
 
   const backButton = () => (
@@ -59,7 +72,7 @@ const TagPage = props => {
             <div className="bracket">{leftBracket}</div>
             <div className="title-main">{currentWord}</div>
             {showExtraWords() && (
-              <div className="words">, {wordsWithCurrentTags().join(', ')}</div>
+              <div className="words">, {wordsWithCurrentTags()}</div>
             )}
             <div className="bracket">{rightBracket}</div>
           </div>
@@ -69,6 +82,9 @@ const TagPage = props => {
           <div className="tag">
             {leftCurlyBrace}Topic: {singleQuote}
             {currentTags.join(', ')}
+            {singleQuote}
+            {comma} Focus: {singleQuote}
+            {currentWord}
             {singleQuote}
             {rightCurlyBrace}
           </div>

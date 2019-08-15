@@ -49,7 +49,34 @@
         margin: auto;
         text-align: center;
         margin-left: 1px;
-        color: $light-gray;
+        .word {
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+          font-family: 'Courier New', Courier, monospace;
+          color: $light-gray;
+          font-size: 20px;
+          line-height: 20px;
+          text-decoration: underline;
+          padding: 0;
+          &:hover {
+            cursor: pointer;
+            &.skill {
+              color: $string-green;
+            }
+            &.interest {
+              color: $pastel-blue;
+            }
+            &.achievement {
+              color: $variable-red;
+            }
+          }
+        }
+        .later-comma {
+          padding-right: 10px;
+          display: inline;
+          color: $light-gray;
+        }
       }
       .bracket {
         color: $light-gray;
