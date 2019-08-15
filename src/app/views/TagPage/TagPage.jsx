@@ -24,6 +24,8 @@ const TagPage = props => {
   const nextArrow = '╚>';
   const leftCurlyBrace = '{';
   const rightCurlyBrace = '}';
+  const leftBracket = '[';
+  const rightBracket = ']';
   const singleQuote = "'";
 
   const wordsWithCurrentTags = () => {
@@ -54,10 +56,12 @@ const TagPage = props => {
         <div className="level-one ">
           {backButton()}
           <div className="tag-title ">
+            <div className="bracket">{leftBracket}</div>
             <div className="title-main">{currentWord}</div>
             {showExtraWords() && (
               <div className="words">, {wordsWithCurrentTags().join(', ')}</div>
             )}
+            <div className="bracket">{rightBracket}</div>
           </div>
         </div>
         <div className="level-two">
