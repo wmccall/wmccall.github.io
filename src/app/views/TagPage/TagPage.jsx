@@ -21,7 +21,10 @@ const TagPage = props => {
   } = props;
 
   const backArrow = '<=';
-  const forwardArrow = '=>';
+  const nextArrow = '╚>';
+  const leftCurlyBrace = '{';
+  const rightCurlyBrace = '}';
+  const singleQuote = "'";
 
   const wordsWithCurrentTags = () => {
     return allWords
@@ -43,18 +46,32 @@ const TagPage = props => {
     </button>
   );
 
+  const showExtraWords = () => wordsWithCurrentTags().length > 0;
+
   return (
     <div className="tag-page">
-      <div className="top-bar">
-        {backButton()}
-        <div className={`tag-title ${currentTagType}`}>
-          <div className="title-main">{currentWord}</div>
-          <div className="title-main">{forwardArrow}</div>
-          <div className="title-main">{currentTags.join(', ')}</div>
+      <div className={`top-bar ${currentTagType}`}>
+        <div className="level-one ">
+          {backButton()}
+          <div className="tag-title ">
+            <div className="title-main">{currentWord}</div>
+            {showExtraWords() && (
+              <div className="words">, {wordsWithCurrentTags().join(', ')}</div>
+            )}
+          </div>
+        </div>
+        <div className="level-two">
+          <div className="arrow">{nextArrow}</div>
+          <div className="tag">
+            {leftCurlyBrace}Topic: {singleQuote}
+            {currentTags.join(', ')}
+            {singleQuote}
+            {rightCurlyBrace}
+          </div>
         </div>
       </div>
-      <div className="page-inner">
-        <div className="words">+ {wordsWithCurrentTags().join(', ')}</div>
+      <div className="page-container">
+        <div className="page-inner"></div>
       </div>
     </div>
   );

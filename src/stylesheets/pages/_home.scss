@@ -1,6 +1,48 @@
 $profile-image-height: 375px;
 
 .home {
+  .action-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      color: $white;
+      outline: 0;
+      border-radius: 100px;
+      border: solid 3px $white;
+      font-size: 25px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 17px 21px 17px 21px;
+      background-color: $darker-gray;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out,
+        margin-top 0.15s ease-in-out;
+      &.skills-button:hover,
+      &.skills-button.active {
+        color: $string-green;
+        border: solid 3px $string-green;
+      }
+      &.interests-button:hover,
+      &.interests-button.active {
+        color: $pastel-blue;
+        border: solid 3px $pastel-blue;
+      }
+      &.achievements-button:hover,
+      &.achievements-button.active {
+        color: $variable-red;
+        border: solid 3px $variable-red;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
   .code-container {
     display: flex;
     flex-wrap: wrap;
@@ -105,48 +147,6 @@ $profile-image-height: 375px;
       border: solid 3px $white;
       max-width: 100%;
       height: 100%;
-    }
-  }
-  .action-buttons {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vh;
-    display: flex;
-    justify-content: space-around;
-
-    button {
-      color: $white;
-      outline: 0;
-      border-radius: 100px;
-      border: solid 3px $white;
-      font-size: 25px;
-      font-family: 'Courier New', Courier, monospace;
-      padding: 17px 21px 17px 21px;
-      background-color: $darker-gray;
-      transition: border 0.15s ease-in-out, color 0.15s ease-in-out,
-        margin-top 0.15s ease-in-out;
-      &.skills-button:hover,
-      &.skills-button.active {
-        color: $string-green;
-        border: solid 3px $string-green;
-      }
-      &.interests-button:hover,
-      &.interests-button.active {
-        color: $pastel-blue;
-        border: solid 3px $pastel-blue;
-      }
-      &.achievements-button:hover,
-      &.achievements-button.active {
-        color: $variable-red;
-        border: solid 3px $variable-red;
-      }
-      &:hover {
-        cursor: pointer;
-      }
     }
   }
 }
