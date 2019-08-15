@@ -10,6 +10,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   setCurrentTags: ViewsActions.setCurrentTags,
+  setCurrentPage: ViewsActions.setCurrentPage,
 };
 
 export default connect(

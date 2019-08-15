@@ -18,35 +18,37 @@ const Home = props => {
 
   const hideProfile = hoverCategory || permanentCategory;
 
+  const profile = () => (
+    <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
+      <img className="profile-picture" src={WillHoodie} alt="Will's profile" />
+    </div>
+  );
+
+  const actionButtons = () => (
+    <div className="action-buttons">
+      {ACTIONS_BUTTONS_TYPES.map(actType => (
+        <button
+          className={`${actType}s-button ${
+            permanentCategory === actType ? 'active' : ''
+          }`}
+          type="button"
+          onMouseEnter={() => setHoverCategory(actType)}
+          onMouseLeave={() => setHoverCategory(null)}
+          onClick={() =>
+            setPermanentCategory(permanentCategory === actType ? null : actType)
+          }
+        >
+          {`what are my ${actType}s`}
+        </button>
+      ))}
+    </div>
+  );
+
   return (
     <div className="home">
       <div className="code-container">{backgroundCode(allWords)}</div>
-      <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
-        <img
-          className="profile-picture"
-          src={WillHoodie}
-          alt="Will's profile"
-        />
-      </div>
-      <div className="action-buttons">
-        {ACTIONS_BUTTONS_TYPES.map(actType => (
-          <button
-            className={`${actType}s-button ${
-              permanentCategory === actType ? 'active' : ''
-            }`}
-            type="button"
-            onMouseEnter={() => setHoverCategory(actType)}
-            onMouseLeave={() => setHoverCategory(null)}
-            onClick={() =>
-              setPermanentCategory(
-                permanentCategory === actType ? null : actType,
-              )
-            }
-          >
-            {`what are my ${actType}s`}
-          </button>
-        ))}
-      </div>
+      {profile()}
+      {actionButtons()}
     </div>
   );
 };

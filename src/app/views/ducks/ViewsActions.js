@@ -8,9 +8,10 @@ export const setCurrentPage = page => ({
   page,
 });
 
-export const setCurrentTags = tags => ({
+export const setCurrentTags = (tags, tagType) => ({
   type: SET_CURRENT_TAGS,
   tags,
+  tagType,
 });
 
 export const setHoverCategory = category => ({

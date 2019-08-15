@@ -1,14 +1,14 @@
 const SKILLS_WORDS = [
-  { word: 'Java', tags: ['language'] },
-  { word: 'Python', tags: ['language'] },
-  { word: 'React', tags: ['web development'] },
-  { word: 'CSS', tags: ['web development'] },
-  { word: 'AWS', tags: ['infrastructure'] },
-  { word: 'Git', tags: ['version-control'] },
-  { word: 'C#', tags: ['language'] },
-  { word: 'Terraform', tags: ['infrastructure'] },
-  { word: 'Serverless', tags: ['infrastructure'] },
-  { word: 'Docker', tags: ['infrastructure'] },
+  { word: 'Java', tags: ['Languages'] },
+  { word: 'Python', tags: ['Languages'] },
+  { word: 'React', tags: ['Web Development'] },
+  { word: 'CSS', tags: ['Web Development'] },
+  { word: 'AWS', tags: ['Infrastructure'] },
+  { word: 'Git', tags: ['Version-Control'] },
+  { word: 'C#', tags: ['Languages'] },
+  { word: 'Terraform', tags: ['Infrastructure'] },
+  { word: 'Serverless', tags: ['Infrastructure'] },
+  { word: 'Docker', tags: ['Infrastructure'] },
 ];
 
 const skills = SKILLS_WORDS.map(wordObject => ({

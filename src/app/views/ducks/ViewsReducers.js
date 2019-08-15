@@ -10,6 +10,7 @@ import {
 export const initialState = {
   page: 'home',
   tags: null,
+  tagType: null,
   hoverCategory: null,
   permanentCategory: null,
   allWords: allWords(),
@@ -29,6 +30,7 @@ export default (baseState = initialState, action) =>
         return draftState;
       case SET_CURRENT_TAGS:
         draftState.tags = action.tags;
+        draftState.tagType = action.tagType;
         return draftState;
       default:
         return draftState;
