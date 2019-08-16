@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 
 import backgroundCode from '../../constants/backgroundCode';
 
-import WillHoodie from '../../resources/WillHoodie.jpg';
+import ProfilePhoto from '../../resources/WillBeanie.jpg';
 
 const ACTIONS_BUTTONS_TYPES = ['skill', 'interest', 'achievement'];
 
@@ -20,7 +20,11 @@ const Home = props => {
 
   const profile = () => (
     <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
-      <img className="profile-picture" src={WillHoodie} alt="Will's profile" />
+      <img
+        className="profile-picture"
+        src={ProfilePhoto}
+        alt="Will's profile"
+      />
     </div>
   );
 
