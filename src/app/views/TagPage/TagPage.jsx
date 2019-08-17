@@ -1,6 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import union from 'lodash.union';
+import Gallery from 'react-grid-gallery';
 
 const containsTag = (word, currentTags, currentTagType) => {
   if (word.type === currentTagType) {
@@ -91,7 +92,19 @@ const TagPage = props => {
         </div>
       </div>
       <div className="page-container">
-        <div className="page-inner"></div>
+        <div className="page-inner">
+          <div className="top-padding" />
+
+          <div className="topic-discussion"></div>
+          <div className="focus-discussion"></div>
+          <div className="image-gallery">
+            {/* TODO: Add images */}
+            {/* <Gallery images={IMAGES} enableImageSelection={false} /> */}
+          </div>
+
+          <div className="bottom-padding"></div>
+        </div>
+        <div className="bottom-cover"></div>
       </div>
     </div>
   );

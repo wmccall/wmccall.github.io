@@ -3,111 +3,141 @@
   height: 100vh;
   background-color: $darker-gray;
   font-family: 'Courier New', Courier, monospace;
-  .level-one {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 100%;
-    .clear-tags {
-      color: white;
-      background: $darkest-gray;
-      border: 0;
-      outline: 0;
-      margin: 5px 5px 5px 5px;
-      padding: 5px 10px 5px 10px;
-      font-size: 30px;
-      height: fit-content;
-      width: fit-content;
-      &:hover {
-        cursor: pointer;
-        &.skill {
-          color: $string-green;
-        }
-        &.interest {
-          color: $pastel-blue;
-        }
-        &.achievement {
-          color: $variable-red;
-        }
-      }
-    }
-    .tag-title {
-      font-size: 20px;
-      line-height: 20px;
-      padding-top: 8px;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-left: 8px;
+  .top-bar {
+    z-index: 10;
+    position: fixed;
+    background-color: $darker-gray;
+    width: calc(100% - 15px);
+    height: 110px;
+    .level-one {
       display: flex;
       flex-wrap: wrap;
       align-content: flex-start;
-      .title-main {
-        margin: auto;
-        text-align: center;
-      }
-      .words {
-        margin: auto;
-        text-align: center;
-        margin-left: 1px;
-        .word {
-          background-color: transparent;
-          border: 0;
-          outline: 0;
-          font-family: 'Courier New', Courier, monospace;
-          color: $light-gray;
-          font-size: 20px;
-          line-height: 20px;
-          text-decoration: underline;
-          padding: 0;
-          &:hover {
-            cursor: pointer;
-            &.skill {
-              color: $string-green;
-            }
-            &.interest {
-              color: $pastel-blue;
-            }
-            &.achievement {
-              color: $variable-red;
-            }
+      width: 100%;
+      .clear-tags {
+        color: $light-gray;
+        background: $darkest-gray;
+        border: 0;
+        outline: 0;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 10px 5px 10px;
+        font-size: 30px;
+        height: fit-content;
+        width: fit-content;
+        &:hover {
+          cursor: pointer;
+          &.skill {
+            color: $string-green;
+          }
+          &.interest {
+            color: $pastel-blue;
+          }
+          &.achievement {
+            color: $variable-red;
           }
         }
-        .later-comma {
-          padding-right: 10px;
-          display: inline;
+      }
+      .tag-title {
+        font-size: 20px;
+        line-height: 20px;
+        padding-top: 8px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        .title-main {
+          margin: auto;
+          text-align: center;
+        }
+        .words {
+          margin: auto;
+          text-align: center;
+          margin-left: 1px;
+          .word {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: $light-gray;
+            font-size: 20px;
+            line-height: 20px;
+            text-decoration: underline;
+            padding: 0;
+            &:hover {
+              cursor: pointer;
+              &.skill {
+                color: $string-green;
+              }
+              &.interest {
+                color: $pastel-blue;
+              }
+              &.achievement {
+                color: $variable-red;
+              }
+            }
+          }
+          .later-comma {
+            padding-right: 10px;
+            display: inline;
+            color: $light-gray;
+          }
+        }
+        .bracket {
           color: $light-gray;
         }
       }
-      .bracket {
-        color: $light-gray;
-      }
     }
-  }
-  .level-two {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 100%;
-    padding-left: 90px;
-    font-size: 24px;
-    div {
-      margin-right: 15px;
-      &.tag {
-        font-size: 27px;
-        font-style: italic;
+    .level-two {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      width: 100%;
+      padding-left: 90px;
+      font-size: 24px;
+      div {
+        margin-right: 15px;
+        &.tag {
+          font-size: 27px;
+          font-style: italic;
+        }
       }
     }
   }
   .page-container {
-    padding-top: 15px;
     padding-left: 90px;
-    padding-right: 90px;
-    height: calc(100% - 124px);
+    height: 100%;
     text-align: left;
     font-size: 24px;
     .page-inner {
+      overflow-y: auto;
       height: 100%;
+      width: 100%;
       background-color: $darkest-gray;
+      box-shadow: inset -90px 0 0 0 $darker-gray;
+      z-index: 3;
+      .top-padding {
+        background-color: $darker-gray;
+        height: 110px;
+      }
+      .topic-discussion,
+      .focus-discussion,
+      .image-gallery {
+        padding-right: 80px;
+        overflow: auto;
+      }
+      .bottom-padding {
+        height: 30px;
+      }
+    }
+    .bottom-cover {
+      position: absolute;
+      height: 30px;
+      bottom: 0px;
+      width: calc(100% - 170px);
+      z-index: 10;
+      background-color: $darker-gray;
     }
   }
   .skill {
