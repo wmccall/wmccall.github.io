@@ -10,6 +10,7 @@ const PseudoElement = props => {
     permanentCategory,
     defaultType,
     setCurrentTags,
+    setCurrentWord,
     setCurrentPage,
   } = props;
 
@@ -34,7 +35,8 @@ const PseudoElement = props => {
       }`}
       onClick={() =>
         isCategoryActive() &&
-        setCurrentTags(word.word, word.tags, word.type) &&
+        setCurrentTags(word.tags, word.type) &&
+        setCurrentWord(word.word) &&
         setCurrentPage('tag')
       }
       type="button"
@@ -52,6 +54,7 @@ PseudoElement.propTypes = {
     tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   setCurrentTags: PropTypes.func.isRequired,
+  setCurrentWord: PropTypes.func.isRequired,
   setCurrentPage: PropTypes.func.isRequired,
   defaultType: PropTypes.string.isRequired,
   hoverCategory: PropTypes.string,

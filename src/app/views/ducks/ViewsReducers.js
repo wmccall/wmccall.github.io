@@ -5,6 +5,7 @@ import {
   SET_PERMANENT_CATEGORY,
   SET_CURRENT_PAGE,
   SET_CURRENT_TAGS,
+  SET_CURRENT_WORD,
 } from './ViewsActions';
 
 export const initialState = {
@@ -29,10 +30,12 @@ export default (baseState = initialState, action) =>
       case SET_CURRENT_PAGE:
         draftState.page = action.page;
         return draftState;
+      case SET_CURRENT_WORD:
+        draftState.word = action.word;
+        return draftState;
       case SET_CURRENT_TAGS:
         draftState.tags = action.tags;
         draftState.tagType = action.tagType;
-        draftState.word = action.word;
         return draftState;
       default:
         return draftState;

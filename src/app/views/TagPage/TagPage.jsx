@@ -3,6 +3,8 @@ import { PropTypes } from 'prop-types';
 import union from 'lodash.union';
 import Gallery from 'react-grid-gallery';
 
+import Definition from '../../components/Definition';
+
 const containsTag = (word, currentTags, currentTagType) => {
   if (word.type === currentTagType) {
     const allTags = union(word.tags, currentTags);
@@ -14,6 +16,7 @@ const containsTag = (word, currentTags, currentTagType) => {
 const TagPage = props => {
   const {
     setCurrentTags,
+    setCurrentWord,
     currentWord,
     currentTags,
     currentTagType,
@@ -41,7 +44,10 @@ const TagPage = props => {
         <button
           className={`word ${currentTagType}`}
           type="button"
-          onClick={() => setCurrentTags(word.word, currentTags, currentTagType)}
+          onClick={() =>
+            setCurrentTags(currentTags, currentTagType) &&
+            setCurrentWord(word.word)
+          }
         >
           {word.word}
         </button>
@@ -56,7 +62,11 @@ const TagPage = props => {
     <button
       className={`clear-tags ${currentTagType}`}
       type="button"
-      onClick={() => setCurrentTags(null, null, null) && setCurrentPage('home')}
+      onClick={() =>
+        setCurrentTags(null, null) &&
+        setCurrentWord(null) &&
+        setCurrentPage('home')
+      }
     >
       {backArrow}
     </button>
@@ -95,7 +105,9 @@ const TagPage = props => {
         <div className="page-inner">
           <div className="top-padding" />
 
-          <div className="topic-discussion"></div>
+          <div className="topic-discussion">
+            <Definition />
+          </div>
           <div className="focus-discussion"></div>
           <div className="image-gallery">
             {/* TODO: Add images */}
@@ -112,6 +124,7 @@ const TagPage = props => {
 
 TagPage.propTypes = {
   setCurrentTags: PropTypes.func.isRequired,
+  setCurrentWord: PropTypes.func.isRequired,
   setCurrentPage: PropTypes.func.isRequired,
   currentTags: PropTypes.arrayOf(PropTypes.string),
   currentTagType: PropTypes.string,
