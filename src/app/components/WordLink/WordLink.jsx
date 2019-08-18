@@ -15,9 +15,10 @@ const WordLink = ({
 }) => {
   const shouldLink = !wordAndTagSame(word, currentWord, type, currentType);
 
-  const linkClasses = `${type} underline`;
+  const linkClasses = `${type} link`;
 
   const clickHandler = () => {
+    console.log(word, tag, type);
     if (shouldLink) {
       setCurrentWord(word);
       setCurrentTag(tag, type);
@@ -27,7 +28,7 @@ const WordLink = ({
   return (
     <button
       type="button"
-      className={`WordLink ${shouldLink ? linkClasses : ''}`}
+      className={`WordLink ${shouldLink ? linkClasses : 'no-link'}`}
       onClick={clickHandler}
     >
       {word}

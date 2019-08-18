@@ -3,8 +3,16 @@ const ACHIEVEMENTS_WORDS = {
   '{DeansList:[2015,2016,2017,2018,2019]}': 'Academic',
 };
 
-export default Object.keys(ACHIEVEMENTS_WORDS).map(word => ({
+const achievements = Object.keys(ACHIEVEMENTS_WORDS).map(word => ({
   type: 'achievement',
   word,
   tag: ACHIEVEMENTS_WORDS[word],
 }));
+
+export const achievementObjects = achievements.reduce((obj, item) => {
+  // eslint-disable-next-line no-param-reassign
+  obj[item.word] = item;
+  return obj;
+}, {});
+
+export default achievements;
