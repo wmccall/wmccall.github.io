@@ -1,24 +1,22 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import union from 'lodash.union';
 import Gallery from 'react-grid-gallery';
 
 import Definition from '../../components/Definition';
 
-const containsTag = (word, currentTags, currentTagType) => {
+const containsTag = (word, currentTag, currentTagType) => {
   if (word.type === currentTagType) {
-    const allTags = union(word.tags, currentTags);
-    return allTags.length < word.tags.length + currentTags.length;
+    return word.tag === currentTag;
   }
   return false;
 };
 
 const TagPage = props => {
   const {
-    setCurrentTags,
+    setCurrentTag,
     setCurrentWord,
     currentWord,
-    currentTags,
+    currentTag,
     currentTagType,
     allWords,
     setCurrentPage,
@@ -33,10 +31,10 @@ const TagPage = props => {
   const singleQuote = "'";
   const comma = ',';
 
-  const wordsWithCurrentTags = () => {
+  const wordsWithCurrentTag = () => {
     const filteredWords = allWords.filter(
       word =>
-        containsTag(word, currentTags, currentTagType) &&
+        containsTag(word, currentTag, currentTagType) &&
         word.word !== currentWord,
     );
     return filteredWords.map((word, index) => (
@@ -45,7 +43,7 @@ const TagPage = props => {
           className={`word ${currentTagType}`}
           type="button"
           onClick={() =>
-            setCurrentTags(currentTags, currentTagType) &&
+            setCurrentTag(currentTag, currentTagType) &&
             setCurrentWord(word.word)
           }
         >
@@ -60,10 +58,10 @@ const TagPage = props => {
 
   const backButton = () => (
     <button
-      className={`clear-tags ${currentTagType}`}
+      className={`clear-tag ${currentTagType}`}
       type="button"
       onClick={() =>
-        setCurrentTags(null, null) &&
+        setCurrentTag(null, null) &&
         setCurrentWord(null) &&
         setCurrentPage('home')
       }
@@ -72,7 +70,7 @@ const TagPage = props => {
     </button>
   );
 
-  const showExtraWords = () => wordsWithCurrentTags().length > 0;
+  const showExtraWords = () => wordsWithCurrentTag().length > 0;
 
   return (
     <div className="tag-page">
@@ -83,7 +81,7 @@ const TagPage = props => {
             <div className="bracket">{leftBracket}</div>
             <div className="title-main">{currentWord}</div>
             {showExtraWords() && (
-              <div className="words">, {wordsWithCurrentTags()}</div>
+              <div className="words">, {wordsWithCurrentTag()}</div>
             )}
             <div className="bracket">{rightBracket}</div>
           </div>
@@ -92,7 +90,7 @@ const TagPage = props => {
           <div className="arrow">{nextArrow}</div>
           <div className="tag">
             {leftCurlyBrace}Topic: {singleQuote}
-            {currentTags.join(', ')}
+            {currentTag}
             {singleQuote}
             {comma} Focus: {singleQuote}
             {currentWord}
@@ -123,10 +121,10 @@ const TagPage = props => {
 };
 
 TagPage.propTypes = {
-  setCurrentTags: PropTypes.func.isRequired,
+  setCurrentTag: PropTypes.func.isRequired,
   setCurrentWord: PropTypes.func.isRequired,
   setCurrentPage: PropTypes.func.isRequired,
-  currentTags: PropTypes.arrayOf(PropTypes.string),
+  currentTag: PropTypes.string,
   currentTagType: PropTypes.string,
   currentWord: PropTypes.string,
   allWords: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
@@ -134,7 +132,7 @@ TagPage.propTypes = {
 
 TagPage.defaultProps = {
   currentWord: null,
-  currentTags: null,
+  currentTag: null,
   currentTagType: null,
 };
 

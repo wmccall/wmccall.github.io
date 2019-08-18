@@ -3,7 +3,7 @@ import Definition from './Definition';
 
 const mapStateToProps = state => ({
   type: state.viewState.tagType,
-  word: state.viewState.tags,
+  word: state.viewState.tag,
 });
 
 const mapDispatchToProps = {};

@@ -9,7 +9,7 @@ const PseudoElement = props => {
     hoverCategory,
     permanentCategory,
     defaultType,
-    setCurrentTags,
+    setCurrentTag,
     setCurrentWord,
     setCurrentPage,
   } = props;
@@ -30,12 +30,10 @@ const PseudoElement = props => {
         typeToClass[word.type] ? typeToClass[word.type] : defaultClass
       } ${
         hoverCategory === word.type || isCategoryActive() ? 'visible' : 'blur'
-      } ${isCategoryActive() ? 'underline' : 'noline'} ${
-        word.tags ? word.tags.join('') : ''
-      }`}
+      } ${isCategoryActive() ? 'underline' : 'noline'}`}
       onClick={() =>
         isCategoryActive() &&
-        setCurrentTags(word.tags, word.type) &&
+        setCurrentTag(word.tag, word.type) &&
         setCurrentWord(word.word) &&
         setCurrentPage('tag')
       }
@@ -51,9 +49,9 @@ PseudoElement.propTypes = {
   word: PropTypes.shape({
     word: PropTypes.string,
     type: PropTypes.string,
-    tags: PropTypes.arrayOf(PropTypes.string),
+    tag: PropTypes.string,
   }).isRequired,
-  setCurrentTags: PropTypes.func.isRequired,
+  setCurrentTag: PropTypes.func.isRequired,
   setCurrentWord: PropTypes.func.isRequired,
   setCurrentPage: PropTypes.func.isRequired,
   defaultType: PropTypes.string.isRequired,

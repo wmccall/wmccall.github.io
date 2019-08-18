@@ -1,7 +1,7 @@
 export const SET_HOVER_CATEGORY = 'SET_HOVER_CATEGORY';
 export const SET_PERMANENT_CATEGORY = 'SET_PERMANENT_CATEGORY';
 export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
-export const SET_CURRENT_TAGS = 'SET_CURRENT_TAGS';
+export const SET_CURRENT_TAG = 'SET_CURRENT_TAG';
 export const SET_CURRENT_WORD = 'SET_CURRENT_WORD';
 
 export const setCurrentPage = page => ({
@@ -9,9 +9,9 @@ export const setCurrentPage = page => ({
   page,
 });
 
-export const setCurrentTags = (tags, tagType) => ({
-  type: SET_CURRENT_TAGS,
-  tags,
+export const setCurrentTag = (tag, tagType) => ({
+  type: SET_CURRENT_TAG,
+  tag,
   tagType,
 });
 

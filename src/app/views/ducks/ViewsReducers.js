@@ -4,13 +4,13 @@ import {
   SET_HOVER_CATEGORY,
   SET_PERMANENT_CATEGORY,
   SET_CURRENT_PAGE,
-  SET_CURRENT_TAGS,
+  SET_CURRENT_TAG,
   SET_CURRENT_WORD,
 } from './ViewsActions';
 
 export const initialState = {
   page: 'home',
-  tags: null,
+  tag: null,
   tagType: null,
   word: null,
   hoverCategory: null,
@@ -33,8 +33,8 @@ export default (baseState = initialState, action) =>
       case SET_CURRENT_WORD:
         draftState.word = action.word;
         return draftState;
-      case SET_CURRENT_TAGS:
-        draftState.tags = action.tags;
+      case SET_CURRENT_TAG:
+        draftState.tag = action.tag;
         draftState.tagType = action.tagType;
         return draftState;
       default:

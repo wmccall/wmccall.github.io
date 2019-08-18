@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import TagPage from './TagPage';
 import {
-  setCurrentTags,
+  setCurrentTag,
   setCurrentWord,
   setCurrentPage,
 } from '../ducks/ViewsActions';
@@ -9,12 +9,12 @@ import {
 const mapStateToProps = state => ({
   allWords: state.viewState.allWords,
   currentWord: state.viewState.word,
-  currentTags: state.viewState.tags,
+  currentTag: state.viewState.tag,
   currentTagType: state.viewState.tagType,
 });
 
 const mapDispatchToProps = {
-  setCurrentTags,
+  setCurrentTag,
   setCurrentWord,
   setCurrentPage,
 };

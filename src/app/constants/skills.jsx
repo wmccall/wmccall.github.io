@@ -1,23 +1,23 @@
 import React from 'react';
 
 const SKILLS_WORDS = [
-  { word: 'React', tags: ['Web Development'] },
-  { word: 'Python', tags: ['Language'] },
-  { word: 'AWS', tags: ['Infrastructure'] },
-  { word: 'Javascript', tags: ['Language'] },
-  { word: 'Git', tags: ['Version-Control'] },
-  { word: 'C#', tags: ['Language'] },
-  { word: 'Terraform', tags: ['Infrastructure'] },
-  { word: 'CSS', tags: ['Web Development'] },
-  { word: 'Serverless', tags: ['Infrastructure'] },
-  { word: 'Java', tags: ['Language'] },
-  { word: 'Docker', tags: ['Infrastructure'] },
+  { word: 'React', tag: 'Web Development' },
+  { word: 'Python', tag: 'Language' },
+  { word: 'AWS', tag: 'Infrastructure' },
+  { word: 'Javascript', tag: 'Language' },
+  { word: 'Git', tag: 'Version-Control' },
+  { word: 'C#', tag: 'Language' },
+  { word: 'Terraform', tag: 'Infrastructure' },
+  { word: 'CSS', tag: 'Web Development' },
+  { word: 'Serverless', tag: 'Infrastructure' },
+  { word: 'Java', tag: 'Language' },
+  { word: 'Docker', tag: 'Infrastructure' },
 ];
 
 const skills = SKILLS_WORDS.map(wordObject => ({
   type: 'skill',
   word: wordObject.word,
-  tags: wordObject.tags,
+  tag: wordObject.tag,
 }));
 
 export const skillDefinitions = {

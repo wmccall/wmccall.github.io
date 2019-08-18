@@ -1,19 +1,19 @@
 import React from 'react';
 
 const INTERESTS_WORDS = [
-  { word: 'Ceramics', tags: ['Art'] },
-  { word: 'Photography', tags: ['Art'] },
-  { word: 'Illustrator', tags: ['Art'] },
-  { word: 'Photoshop', tags: ['Art'] },
-  { word: 'Music', tags: ['Entertainment'] },
-  { word: 'Movies', tags: ['Entertainment'] },
-  { word: 'Video Games', tags: ['Entertainment'] },
+  { word: 'Ceramics', tag: 'Art' },
+  { word: 'Photography', tag: 'Art' },
+  { word: 'Illustrator', tag: 'Art' },
+  { word: 'Photoshop', tag: 'Art' },
+  { word: 'Music', tag: 'Entertainment' },
+  { word: 'Movies', tag: 'Entertainment' },
+  { word: 'Video Games', tag: 'Entertainment' },
 ];
 
 const interests = INTERESTS_WORDS.map(wordObject => ({
   type: 'interest',
   word: wordObject.word,
-  tags: wordObject.tags,
+  tag: wordObject.tag,
 }));
 
 export const interestDefinitions = {
