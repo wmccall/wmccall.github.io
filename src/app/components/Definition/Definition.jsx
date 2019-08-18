@@ -3,12 +3,12 @@ import { PropTypes } from 'prop-types';
 
 import { skillTagDefinitions } from '../../constants/skillsDefinitions';
 import { interestTagDefinitions } from '../../constants/interestsDefinitions';
-import { achievementTagDefinitions } from '../../constants/achievementsDefinitions';
+import { projectTagDefinitions } from '../../constants/projectsDefinitions';
 
 const definitions = {
   skill: skillTagDefinitions,
   interest: interestTagDefinitions,
-  achievement: achievementTagDefinitions,
+  project: projectTagDefinitions,
 };
 
 const Definition = ({ type, word }) => {

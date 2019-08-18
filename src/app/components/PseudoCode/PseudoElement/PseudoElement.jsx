@@ -17,7 +17,7 @@ const PseudoElement = props => {
   const typeToClass = {
     skill: 'pseudo-string',
     interest: 'pseudo-method',
-    achievement: 'pseudo-reserved',
+    project: 'pseudo-reserved',
   };
 
   const defaultClass = `pseudo-${defaultType}`;
