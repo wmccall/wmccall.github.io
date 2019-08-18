@@ -1,26 +1,6 @@
 import React from 'react';
 
-const SKILLS_WORDS = [
-  { word: 'React', tag: 'Web Development' },
-  { word: 'Python', tag: 'Language' },
-  { word: 'AWS', tag: 'Infrastructure' },
-  { word: 'Javascript', tag: 'Language' },
-  { word: 'Git', tag: 'Version-Control' },
-  { word: 'C#', tag: 'Language' },
-  { word: 'Terraform', tag: 'Infrastructure' },
-  { word: 'CSS', tag: 'Web Development' },
-  { word: 'Serverless', tag: 'Infrastructure' },
-  { word: 'Java', tag: 'Language' },
-  { word: 'Docker', tag: 'Infrastructure' },
-];
-
-const skills = SKILLS_WORDS.map(wordObject => ({
-  type: 'skill',
-  word: wordObject.word,
-  tag: wordObject.tag,
-}));
-
-export const skillDefinitions = {
+export const skillTagDefinitions = {
   Language: {
     partOfSpeech: 'noun',
     pronunciation: '/ˈlaNGɡwij/',
@@ -53,4 +33,4 @@ export const skillDefinitions = {
   },
 };
 
-export default skills;
+export const skillDefinitions = {};

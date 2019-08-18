@@ -1,14 +1,14 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-import { skillDefinitions } from '../../constants/skills';
-import { interestDefinitions } from '../../constants/interests';
-import { achievementDefinitions } from '../../constants/achievements';
+import { skillTagDefinitions } from '../../constants/skillsDefinitions';
+import { interestTagDefinitions } from '../../constants/interestsDefinitions';
+import { achievementTagDefinitions } from '../../constants/achievementsDefinitions';
 
 const definitions = {
-  skill: skillDefinitions,
-  interest: interestDefinitions,
-  achievement: achievementDefinitions,
+  skill: skillTagDefinitions,
+  interest: interestTagDefinitions,
+  achievement: achievementTagDefinitions,
 };
 
 const Definition = ({ type, word }) => {
