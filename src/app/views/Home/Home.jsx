@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 
 import backgroundCode from '../../constants/backgroundCode';
 
-import ProfilePhoto from '../../resources/WillKeeb.jpg';
+import ProfilePhoto from '../../resources/WillKeeb-min.jpg';
 
 const ACTIONS_BUTTONS_TYPES = ['skill', 'interest', 'project'];
 
