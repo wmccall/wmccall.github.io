@@ -1,11 +1,11 @@
 const PROJECTS_WORDS = {
-  "Q'd Up": 'Mobile',
-  'Quick Search': 'Plugin',
-  'This Website': 'Web',
   PictoCrypt: 'Desktop Application',
   BulkPing: 'Desktop Application',
   'Clear Downloads': 'Desktop Application',
   'Program Snapshot': 'Desktop Application',
+  "Q'd Up": 'Mobile',
+  'Quick Search': 'Plugin',
+  'This Website': 'Web',
 };
 
 const projects = Object.keys(PROJECTS_WORDS).map(word => ({

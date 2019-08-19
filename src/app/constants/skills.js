@@ -1,16 +1,16 @@
 const SKILLS_WORDS = {
-  React: 'Web Development',
   Python: 'Language',
-  AWS: 'Infrastructure',
   Javascript: 'Language',
-  Git: 'Version-Control',
   'C#': 'Language',
+  Java: 'Language',
+  AWS: 'Infrastructure',
   Terraform: 'Infrastructure',
+  Serverless: 'Infrastructure',
+  Docker: 'Infrastructure',
+  Git: 'Version-Control',
+  React: 'Web Development',
   CSS: 'Web Development',
   HTML: 'Web Development',
-  Serverless: 'Infrastructure',
-  Java: 'Language',
-  Docker: 'Infrastructure',
 };
 
 const skills = Object.keys(SKILLS_WORDS).map(word => ({
