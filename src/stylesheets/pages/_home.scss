@@ -137,6 +137,19 @@ $profile-image-height: 375px;
             text-decoration: underline;
           }
         }
+        &.pseudo-constant {
+          color: transparent;
+          text-shadow: 0 0 15px $constant-yellow;
+          &.visible {
+            text-shadow: 0 0 0px $constant-yellow;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          &.underline {
+            text-decoration: underline;
+          }
+        }
         &.pseudo-string {
           color: transparent;
           text-shadow: 0 0 15px $string-green;

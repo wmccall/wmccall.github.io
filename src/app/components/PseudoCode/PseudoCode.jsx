@@ -4,6 +4,8 @@ import PseudoCodeUtils from '../../utils/PseudoCodeUtils';
 import PseudoElement from './PseudoElement';
 
 const mockWord = { word: 'theGrid' };
+const mockConstant = { word: 'DIGITAL_FRONTIER' };
+const mockString = { word: "'break it to me'" };
 
 const pseudoCode = code => <div className="pseudo-code">{code}</div>;
 
@@ -26,15 +28,15 @@ const pseudoMethodCall = (methodName = mockWord, argumentName = mockWord) =>
     PseudoCodeUtils.semiColon,
   ]);
 
-const pseudoStringDefinition = (
-  pseudoModule = mockWord,
-  pseudoPackage = mockWord,
+const pseudoStringConstDefinition = (
+  pseudoConst = mockConstant,
+  pseudoString = mockString,
 ) =>
   pseudoCode([
-    <PseudoElement defaultType="reserved" word={{ word: 'import' }} />,
-    <PseudoElement defaultType="global" word={pseudoModule} />,
-    <PseudoElement defaultType="reserved" word={{ word: 'from' }} />,
-    <PseudoElement defaultType="string" word={pseudoPackage} last />,
+    <PseudoElement defaultType="reserved" word={{ word: 'const' }} />,
+    <PseudoElement defaultType="constant" word={pseudoConst} />,
+    PseudoCodeUtils.equalsSign,
+    <PseudoElement defaultType="string" word={pseudoString} last />,
   ]);
 
 const pseudoReturnMethod = (methodName = mockWord) =>
@@ -52,7 +54,7 @@ const pseudoReturnString = (stringName = mockWord) =>
 export default {
   pseudoImport,
   pseudoMethodCall,
-  pseudoStringDefinition,
+  pseudoStringConstDefinition,
   pseudoReturnMethod,
   pseudoReturnString,
 };

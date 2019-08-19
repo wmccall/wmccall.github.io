@@ -26,6 +26,9 @@ const backgroundCode = words => {
     if (codeCount % 4 === 0) {
       allCode.push(pseudoCode.pseudoReturnString());
     }
+    if (codeCount % 10 === 0) {
+      allCode.push(pseudoCode.pseudoStringConstDefinition());
+    }
   }
   return allCode;
 };
