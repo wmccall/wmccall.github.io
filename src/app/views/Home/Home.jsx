@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 
 import backgroundCode from '../../constants/backgroundCode';
@@ -18,12 +18,19 @@ const Home = props => {
 
   const hideProfile = hoverCategory || permanentCategory;
 
+  const [loaded, setLoaded] = useState(false);
+
   const profile = () => (
-    <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
+    <div
+      className={`profile-container ${
+        hideProfile || !loaded ? 'opaque' : 'show'
+      }`}
+    >
       <img
         className="profile-picture"
         src={ProfilePhoto}
         alt="Will's profile"
+        onLoad={() => setLoaded(true)}
       />
     </div>
   );
@@ -51,7 +58,7 @@ const Home = props => {
   );
 
   return (
-    <div className="home">
+    <div className={`home ${!loaded ? 'opaque' : 'show'}`}>
       <div className="code-container">{backgroundCode(allWords)}</div>
       {profile()}
       {actionButtons()}

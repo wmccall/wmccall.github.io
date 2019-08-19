@@ -1,6 +1,11 @@
 $profile-image-height: 375px;
 
 .home {
+  transition: opacity 0.15s ease-in-out 0.05s;
+
+  &.opaque {
+    opacity: 0;
+  }
   .action-buttons {
     position: absolute;
     bottom: 0;
