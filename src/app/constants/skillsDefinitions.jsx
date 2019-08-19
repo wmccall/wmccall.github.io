@@ -25,17 +25,17 @@ export const skillTagDefinitions = {
   'Web Development': {
     partOfSpeech: 'noun',
     pronunciation: '/web dəˈveləpmənt/',
-    description: <div></div>,
+    description: <></>,
   },
   Infrastructure: {
     partOfSpeech: 'noun',
     pronunciation: '/ˈinfrəˌstrək(t)SHər/',
-    description: <div></div>,
+    description: <></>,
   },
   'Version-Control': {
     partOfSpeech: 'noun',
     pronunciation: '/ˈvərZHən kənˈtrōl/',
-    description: <div></div>,
+    description: <></>,
   },
 };
 

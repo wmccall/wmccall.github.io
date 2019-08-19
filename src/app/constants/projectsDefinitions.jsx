@@ -4,22 +4,22 @@ export const projectTagDefinitions = {
   Mobile: {
     partOfSpeech: 'noun',
     pronunciation: '/ˈmōbəl,ˈmōˌbīl/',
-    description: <div></div>,
+    description: <></>,
   },
   Plugin: {
     partOfSpeech: 'noun',
     pronunciation: '/ˈpləɡ ˌin/',
-    description: <div></div>,
+    description: <></>,
   },
   Web: {
     partOfSpeech: 'noun',
     pronunciation: '/web/',
-    description: <div></div>,
+    description: <></>,
   },
   'Desktop Application': {
     partOfSpeech: 'noun',
     pronunciation: '/ˈdeskˌtäp ˌapləˈkāSH(ə)n/',
-    description: <div></div>,
+    description: <></>,
   },
 };
 

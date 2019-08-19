@@ -4,12 +4,12 @@ export const interestTagDefinitions = {
   Art: {
     partOfSpeech: 'noun',
     pronunciation: '/ärt/',
-    description: <div></div>,
+    description: <></>,
   },
   Entertainment: {
     partOfSpeech: 'noun',
     pronunciation: '/ˌen(t)ərˈtānmənt/',
-    description: <div></div>,
+    description: <></>,
   },
 };
 
