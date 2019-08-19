@@ -42,7 +42,9 @@ const Home = props => {
             setPermanentCategory(permanentCategory === actType ? null : actType)
           }
         >
-          {`what are my ${actType}s`}
+          <span className="button-will">Will</span>
+          <span className="button-dot">.</span>
+          <span className="button-type">{`${actType}s`}</span>
         </button>
       ))}
     </div>

@@ -10,14 +10,14 @@ export const skillTagDefinitions = {
     description: (
       <>
         I started working with programming languages in 2011 when I took my
-        first <WordLink {...skillObjects['Java']} /> course. I then spent the
-        most of my time working with Java off and on again up until 2016 when I
-        was formally introduced to <WordLink {...skillObjects['Python']} /> and{' '}
+        first <WordLink {...skillObjects.Java} /> course. I then spent the most
+        of my time working with Java off and on again up until 2016 when I was
+        formally introduced to <WordLink {...skillObjects.Python} /> and{' '}
         <WordLink {...skillObjects['C#']} />. Python quickly became my favorite
         language to work with because of its ease in prototyping and quick
         scripting. Most recently I have been using{' '}
-        <WordLink {...skillObjects['Javascript']} /> to work with{' '}
-        <WordLink {...skillObjects['React']} /> to build webpages personally and
+        <WordLink {...skillObjects.Javascript} /> to work with{' '}
+        <WordLink {...skillObjects.React} /> to build webpages personally and
         professionally.
       </>
     ),

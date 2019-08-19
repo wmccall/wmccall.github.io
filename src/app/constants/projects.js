@@ -14,8 +14,6 @@ const projects = Object.keys(PROJECTS_WORDS).map(word => ({
   tag: PROJECTS_WORDS[word],
 }));
 
-console.log(projects);
-
 export const projectObjects = projects.reduce((obj, item) => {
   // eslint-disable-next-line no-param-reassign
   obj[item.word] = item;

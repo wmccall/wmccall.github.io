@@ -18,7 +18,6 @@ const WordLink = ({
   const linkClasses = `${type} link`;
 
   const clickHandler = () => {
-    console.log(word, tag, type);
     if (shouldLink) {
       setCurrentWord(word);
       setCurrentTag(tag, type);
