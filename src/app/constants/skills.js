@@ -7,6 +7,7 @@ const SKILLS_WORDS = {
   'C#': 'Language',
   Terraform: 'Infrastructure',
   CSS: 'Web Development',
+  HTML: 'Web Development',
   Serverless: 'Infrastructure',
   Java: 'Language',
   Docker: 'Infrastructure',
