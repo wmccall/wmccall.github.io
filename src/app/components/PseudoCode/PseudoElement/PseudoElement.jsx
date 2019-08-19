@@ -9,9 +9,7 @@ const PseudoElement = props => {
     hoverCategory,
     permanentCategory,
     defaultType,
-    setCurrentTag,
-    setCurrentWord,
-    setCurrentPage,
+    goForwardPage,
   } = props;
 
   const typeToClass = {
@@ -33,9 +31,7 @@ const PseudoElement = props => {
       } ${isCategoryActive() ? 'underline' : 'noline'}`}
       onClick={() =>
         isCategoryActive() &&
-        setCurrentTag(word.tag, word.type) &&
-        setCurrentWord(word.word) &&
-        setCurrentPage('tag')
+        goForwardPage('tag', word.tag, word.type, word.word)
       }
       type="button"
     >
@@ -51,9 +47,7 @@ PseudoElement.propTypes = {
     type: PropTypes.string,
     tag: PropTypes.string,
   }).isRequired,
-  setCurrentTag: PropTypes.func.isRequired,
-  setCurrentWord: PropTypes.func.isRequired,
-  setCurrentPage: PropTypes.func.isRequired,
+  goForwardPage: PropTypes.func.isRequired,
   defaultType: PropTypes.string.isRequired,
   hoverCategory: PropTypes.string,
   permanentCategory: PropTypes.string,

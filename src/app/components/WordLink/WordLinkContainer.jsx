@@ -3,13 +3,12 @@ import WordLink from './WordLink';
 import { ViewsActions } from '../../views/ducks';
 
 const mapStateToProps = state => ({
-  currentWord: state.viewState.word,
-  currentType: state.viewState.tagType,
+  currentWord: state.viewState.pageSequence.slice(-1)[0].word,
+  currentType: state.viewState.pageSequence.slice(-1)[0].tagType,
 });
 
 const mapDispatchToProps = {
-  setCurrentTag: ViewsActions.setCurrentTag,
-  setCurrentWord: ViewsActions.setCurrentWord,
+  goForwardPage: ViewsActions.goForwardPage,
 };
 
 export default connect(

@@ -11,8 +11,7 @@ const WordLink = ({
   type,
   currentWord,
   currentType,
-  setCurrentWord,
-  setCurrentTag,
+  goForwardPage,
 }) => {
   const shouldLink = !wordAndTagSame(word, currentWord, type, currentType);
 
@@ -20,8 +19,7 @@ const WordLink = ({
 
   const clickHandler = () => {
     if (shouldLink) {
-      setCurrentWord(word);
-      setCurrentTag(tag, type);
+      goForwardPage('tag', tag, type, word);
     }
   };
 
@@ -42,8 +40,7 @@ WordLink.propTypes = {
   type: PropTypes.string.isRequired,
   currentWord: PropTypes.string.isRequired,
   currentType: PropTypes.string.isRequired,
-  setCurrentWord: PropTypes.func.isRequired,
-  setCurrentTag: PropTypes.func.isRequired,
+  goForwardPage: PropTypes.func.isRequired,
 };
 
 WordLink.defaultProps = {

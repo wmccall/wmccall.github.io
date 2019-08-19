@@ -13,13 +13,12 @@ const containsTag = (word, currentTag, currentTagType) => {
 
 const TagPage = props => {
   const {
-    setCurrentTag,
-    setCurrentWord,
     currentWord,
     currentTag,
     currentTagType,
     allWords,
-    setCurrentPage,
+    goForwardPage,
+    goBackPage,
   } = props;
 
   const backArrow = '<=';
@@ -44,8 +43,7 @@ const TagPage = props => {
           className={`word ${currentTagType}`}
           type="button"
           onClick={() =>
-            setCurrentTag(currentTag, currentTagType) &&
-            setCurrentWord(word.word)
+            goForwardPage('tag', currentTag, currentTagType, word.word)
           }
         >
           {word.word}
@@ -61,11 +59,7 @@ const TagPage = props => {
     <button
       className={`clear-tag ${currentTagType}`}
       type="button"
-      onClick={() =>
-        setCurrentTag(null, null) &&
-        setCurrentWord(null) &&
-        setCurrentPage('home')
-      }
+      onClick={() => goBackPage()}
     >
       {backArrow}
     </button>
@@ -138,9 +132,8 @@ const TagPage = props => {
 };
 
 TagPage.propTypes = {
-  setCurrentTag: PropTypes.func.isRequired,
-  setCurrentWord: PropTypes.func.isRequired,
-  setCurrentPage: PropTypes.func.isRequired,
+  goForwardPage: PropTypes.func.isRequired,
+  goBackPage: PropTypes.func.isRequired,
   currentTag: PropTypes.string,
   currentTagType: PropTypes.string,
   currentWord: PropTypes.string,

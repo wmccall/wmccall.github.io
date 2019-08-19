@@ -1,22 +1,17 @@
 import { connect } from 'react-redux';
 import TagPage from './TagPage';
-import {
-  setCurrentTag,
-  setCurrentWord,
-  setCurrentPage,
-} from '../ducks/ViewsActions';
+import { goForwardPage, goBackPage } from '../ducks/ViewsActions';
 
 const mapStateToProps = state => ({
   allWords: state.viewState.allWords,
-  currentWord: state.viewState.word,
-  currentTag: state.viewState.tag,
-  currentTagType: state.viewState.tagType,
+  currentWord: state.viewState.pageSequence.slice(-1)[0].word,
+  currentTag: state.viewState.pageSequence.slice(-1)[0].tag,
+  currentTagType: state.viewState.pageSequence.slice(-1)[0].tagType,
 });
 
 const mapDispatchToProps = {
-  setCurrentTag,
-  setCurrentWord,
-  setCurrentPage,
+  goForwardPage,
+  goBackPage,
 };
 
 export default connect(
