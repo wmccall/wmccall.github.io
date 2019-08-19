@@ -103,6 +103,12 @@
           font-style: italic;
         }
       }
+      .neutral {
+        color: $light-gray;
+      }
+      .constant {
+        color: $constant-yellow;
+      }
     }
   }
   .page-container {

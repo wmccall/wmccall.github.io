@@ -29,6 +29,7 @@ const TagPage = props => {
   const leftBracket = '[';
   const rightBracket = ']';
   const singleQuote = "'";
+  const doubleQuote = '"';
   const comma = ',';
 
   const wordsWithCurrentTag = () => {
@@ -72,6 +73,12 @@ const TagPage = props => {
 
   const showExtraWords = () => wordsWithCurrentTag().length > 0;
 
+  const containsSingleQuote = word => word.search("'") > 0;
+
+  const doubleQuoteTag = containsSingleQuote(currentTag);
+
+  const doubleQuoteWord = containsSingleQuote(currentWord);
+
   return (
     <div className="tag-page">
       <div className={`top-bar ${currentTagType}`}>
@@ -89,13 +96,19 @@ const TagPage = props => {
         <div className="level-two">
           <div className="arrow">{nextArrow}</div>
           <div className="tag">
-            {leftCurlyBrace}Topic: {singleQuote}
+            <span className="neutral">{leftCurlyBrace}</span>
+            <span className="constant">TOPIC</span>
+            <span className="neutral">: </span>
+            {doubleQuoteTag ? doubleQuote : singleQuote}
             {currentTag}
-            {singleQuote}
-            {comma} Focus: {singleQuote}
+            {doubleQuoteTag ? doubleQuote : singleQuote}
+            <span className="neutral">{comma} </span>
+            <span className="constant">FOCUS</span>
+            <span className="neutral">: </span>
+            {doubleQuoteWord ? doubleQuote : singleQuote}
             {currentWord}
-            {singleQuote}
-            {rightCurlyBrace}
+            {doubleQuoteWord ? doubleQuote : singleQuote}
+            <span className="neutral">{rightCurlyBrace}</span>
           </div>
         </div>
       </div>
