@@ -5,12 +5,18 @@
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
-  &.no-link {
-    color: $light-gray;
-  }
+  .word {
+    margin: 0;
+    &.no-link {
+      color: $light-gray;
+    }
 
-  &.link {
-    text-decoration: underline;
-    cursor: pointer;
+    &.link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .punctuation {
+    color: $light-gray;
   }
 }

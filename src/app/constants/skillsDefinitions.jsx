@@ -13,9 +13,9 @@ export const skillTagDefinitions = {
         first <WordLink {...skillObjects.Java} /> course. I then spent the most
         of my time working with Java off and on again up until 2016 when I was
         formally introduced to <WordLink {...skillObjects.Python} /> and{' '}
-        <WordLink {...skillObjects['C#']} />. Python quickly became my favorite
-        language to work with because of its ease in prototyping and quick
-        scripting. Most recently I have been using{' '}
+        <WordLink {...skillObjects['C#']} punc="." /> Python quickly became my
+        favorite language to work with because of its ease in prototyping and
+        quick scripting. Most recently I have been using{' '}
         <WordLink {...skillObjects.Javascript} /> to work with{' '}
         <WordLink {...skillObjects.React} /> to build webpages personally and
         professionally.
@@ -31,10 +31,10 @@ export const skillTagDefinitions = {
         taken on. With little experience until 2019 I saw web dev work as
         complicated and misaligned with my interests in logic. This changed when
         I worked for a education technology company, Amplify, where I learned
-        about <WordLink {...skillObjects.React} />. React turned out to be the
-        perfect blend of logic and UI for me. It beautifully combined{' '}
-        <WordLink {...skillObjects.Javascript} />,{' '}
-        <WordLink {...skillObjects.CSS} />, and{' '}
+        about <WordLink {...skillObjects.React} punc="." /> React turned out to
+        be the perfect blend of logic and UI for me. It beautifully combined{' '}
+        <WordLink {...skillObjects.Javascript} punc="," />{' '}
+        <WordLink {...skillObjects.CSS} punc="," /> and{' '}
         <WordLink {...skillObjects.HTML} /> into a straight forward mechanism
         for building websites, and since then I&apos;ve been hooked on web
         development.
@@ -64,9 +64,9 @@ export const skillTagDefinitions = {
       <>
         Version control has likely become my favorite tool within software
         development. Managing new development branches with{' '}
-        <WordLink {...skillObjects.git} />, tracking down when a bug arose by
-        blaming in <WordLink {...skillObjects.GitHub} />, and hashing out
-        differing thoughts on a PR all made for simple and effective
+        <WordLink {...skillObjects.git} punc="," /> tracking down when a bug
+        arose by blaming in <WordLink {...skillObjects.GitHub} punc="," /> and
+        hashing out differing thoughts on a PR all made for simple and effective
         collaboration between developers. No more are the days of manually
         searching through code changes between &quot;Project1&quot;,
         &quot;Project1_Final&quot;, &quot;Project1_Final2&quot; and so on.

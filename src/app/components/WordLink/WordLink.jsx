@@ -5,6 +5,7 @@ const wordAndTagSame = (word, currentWord, type, currentType) =>
   word === currentWord && type === currentType;
 
 const WordLink = ({
+  punc,
   word,
   tag,
   type,
@@ -25,17 +26,17 @@ const WordLink = ({
   };
 
   return (
-    <button
-      type="button"
-      className={`WordLink ${shouldLink ? linkClasses : 'no-link'}`}
-      onClick={clickHandler}
-    >
-      {word}
+    <button type="button" className="WordLink" onClick={clickHandler}>
+      <span className={`word ${shouldLink ? linkClasses : 'no-link'}`}>
+        {word}
+      </span>
+      <span className="punctuation">{punc}</span>
     </button>
   );
 };
 
 WordLink.propTypes = {
+  punc: PropTypes.string,
   word: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
@@ -43,6 +44,10 @@ WordLink.propTypes = {
   currentType: PropTypes.string.isRequired,
   setCurrentWord: PropTypes.func.isRequired,
   setCurrentTag: PropTypes.func.isRequired,
+};
+
+WordLink.defaultProps = {
+  punc: '',
 };
 
 export default WordLink;
