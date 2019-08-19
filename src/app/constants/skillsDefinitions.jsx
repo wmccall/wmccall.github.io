@@ -44,12 +44,34 @@ export const skillTagDefinitions = {
   Infrastructure: {
     partOfSpeech: 'noun',
     pronunciation: '/ˈinfrəˌstrək(t)SHər/',
-    description: <></>,
+    description: (
+      <>
+        Putting services on the cloud can be cumbersome, but after working with{' '}
+        <WordLink {...skillObjects.AWS} /> in a professional setting, I became
+        quite familiar with the tools of the trade. I launched API lambdas
+        quickly with <WordLink {...skillObjects.Serverless} />, deployed
+        webpages to S3 buckets using <WordLink {...skillObjects.Terraform} />{' '}
+        built AWS Pipelines, and helped shrink down a frustratingly large
+        Vagrant server into lightweight <WordLink {...skillObjects.Docker} />{' '}
+        images.
+      </>
+    ),
   },
-  'Version-Control': {
+  'Version Control': {
     partOfSpeech: 'noun',
     pronunciation: '/ˈvərZHən kənˈtrōl/',
-    description: <></>,
+    description: (
+      <>
+        Version control has likely become my favorite tool within software
+        development. Managing new development branches with{' '}
+        <WordLink {...skillObjects.git} />, tracking down when a bug arose by
+        blaming in <WordLink {...skillObjects.GitHub} />, and hashing out
+        differing thoughts on a PR all made for simple and effective
+        collaboration between developers. No more are the days of manually
+        searching through code changes between &quot;Project1&quot;,
+        &quot;Project1_Final&quot;, &quot;Project1_Final2&quot; and so on.
+      </>
+    ),
   },
 };
 
