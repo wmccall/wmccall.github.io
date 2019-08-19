@@ -42,12 +42,12 @@ export const projectTagDefinitions = {
         initial dive into building a website was a raw{' '}
         <WordLink {...skillObjects.HTML} /> and light{' '}
         <WordLink {...skillObjects.CSS} /> site I can only hope has not been
-        captured by the internet archive machine. Oh no, it has... Anyway, that
-        abomination initially turned me off of trying to develop websites
-        because I just hadn&apos;t grasped the power of effective CSS. As well,
-        I was more interested in logic and at the time of writing my first site,
-        I found that little logic was in play - I was building a very static
-        site of links. Since then I have learned a thing or two about{' '}
+        captured by Internet Archive&apos;s Wayback Machine. Oh no, it has...
+        Anyway, that abomination initially turned me off from trying to develop
+        websites because I just hadn&apos;t grasped the power of effective CSS.
+        As well, I was more interested in logic and at the time of writing my
+        first site, I found that little logic was in play - I was building a
+        static site of links. Since then I have learned a thing or two about{' '}
         <WordLink {...skillObjects.Javascript} /> and{' '}
         <WordLink {...skillObjects.React} /> and now know that I can get
         seriously logical about developing websites.
