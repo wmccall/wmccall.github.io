@@ -48,9 +48,9 @@ $profile-image-height: 375px;
       }
       &.skills-button:hover {
         border: solid 3px $string-green;
-        box-shadow: 0px 6px 0px $dark-string-green;
-        margin-bottom: -3px;
-        margin-top: 3px;
+        box-shadow: 0px 7px 0px $dark-string-green;
+        margin-bottom: -2px;
+        margin-top: 2px;
       }
       &.skills-button.active {
         border: solid 3px $string-green;
@@ -67,9 +67,9 @@ $profile-image-height: 375px;
       }
       &.interests-button:hover {
         border: solid 3px $pastel-blue;
-        box-shadow: 0px 6px 0px $dark-pastel-blue;
-        margin-bottom: -3px;
-        margin-top: 3px;
+        box-shadow: 0px 7px 0px $dark-pastel-blue;
+        margin-bottom: -2px;
+        margin-top: 2px;
       }
       &.interests-button.active {
         border: solid 3px $pastel-blue;
@@ -86,9 +86,9 @@ $profile-image-height: 375px;
       }
       &.projects-button:hover {
         border: solid 3px $variable-red;
-        box-shadow: 0px 6px 0px $dark-variable-red;
-        margin-bottom: -3px;
-        margin-top: 3px;
+        box-shadow: 0px 7px 0px $dark-variable-red;
+        margin-bottom: -2px;
+        margin-top: 2px;
       }
       &.projects-button.active {
         border: solid 3px $variable-red;
