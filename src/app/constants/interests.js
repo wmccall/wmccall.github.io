@@ -6,6 +6,7 @@ const INTERESTS_WORDS = {
   Music: 'Entertainment',
   Movies: 'Entertainment',
   'Video Games': 'Entertainment',
+  'Mechanical Keyboards': 'Technology',
 };
 
 const interests = Object.keys(INTERESTS_WORDS).map(word => ({
