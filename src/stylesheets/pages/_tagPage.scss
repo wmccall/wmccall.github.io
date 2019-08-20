@@ -14,7 +14,8 @@
       flex-wrap: wrap;
       align-content: flex-start;
       width: 100%;
-      .clear-tag {
+      .back-button {
+        transition: color 0.15s ease-in-out;
         color: $light-gray;
         background: $darkest-gray;
         border: 0;
@@ -34,6 +35,10 @@
           }
           &.project {
             color: $variable-red;
+          }
+          &.home {
+            // TODO: Decide what color to use to signify going back to home;
+            color: $light-gray;
           }
         }
       }

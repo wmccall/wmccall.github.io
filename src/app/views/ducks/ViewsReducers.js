@@ -11,10 +11,6 @@ import {
 
 export const initialState = {
   pageSequence: [{ page: 'home', tag: null, tagType: null, word: null }],
-  page: 'home',
-  tag: null,
-  tagType: null,
-  word: null,
   hoverCategory: null,
   permanentCategory: null,
   allWords: allWords(),

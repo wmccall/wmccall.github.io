@@ -16,6 +16,7 @@ const TagPage = props => {
     currentWord,
     currentTag,
     currentTagType,
+    previousTagType,
     allWords,
     goForwardPage,
     goBackPage,
@@ -57,11 +58,11 @@ const TagPage = props => {
 
   const backButton = () => (
     <button
-      className={`clear-tag ${currentTagType}`}
+      className={`back-button ${previousTagType || 'home'}`}
       type="button"
       onClick={() => goBackPage()}
     >
-      {backArrow}
+      <span>{backArrow}</span>
     </button>
   );
 
@@ -136,6 +137,7 @@ TagPage.propTypes = {
   goBackPage: PropTypes.func.isRequired,
   currentTag: PropTypes.string,
   currentTagType: PropTypes.string,
+  previousTagType: PropTypes.string,
   currentWord: PropTypes.string,
   allWords: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
@@ -144,6 +146,7 @@ TagPage.defaultProps = {
   currentWord: null,
   currentTag: null,
   currentTagType: null,
+  previousTagType: null,
 };
 
 export default TagPage;

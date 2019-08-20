@@ -22,17 +22,6 @@ export const goBackPage = () => ({
   type: GO_BACK_PAGE,
 });
 
-export const setCurrentTag = (tag, tagType) => ({
-  type: SET_CURRENT_TAG,
-  tag,
-  tagType,
-});
-
-export const setCurrentWord = word => ({
-  type: SET_CURRENT_WORD,
-  word,
-});
-
 export const setHoverCategory = category => ({
   type: SET_HOVER_CATEGORY,
   category,

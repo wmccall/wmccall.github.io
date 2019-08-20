@@ -7,6 +7,7 @@ const mapStateToProps = state => ({
   currentWord: state.viewState.pageSequence.slice(-1)[0].word,
   currentTag: state.viewState.pageSequence.slice(-1)[0].tag,
   currentTagType: state.viewState.pageSequence.slice(-1)[0].tagType,
+  previousTagType: state.viewState.pageSequence.slice(-2)[0].tagType,
 });
 
 const mapDispatchToProps = {
