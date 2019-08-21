@@ -140,8 +140,9 @@
         box-shadow: inset -10px 0 0 0 $darker-gray;
       }
 
-      .Definition {
-        padding: 25px;
+      .Definition,
+      .Discussion {
+        padding: 25px 25px 0px 25px;
       }
 
       .bottom-padding {

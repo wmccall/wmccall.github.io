@@ -1,0 +1,28 @@
+.Discussion {
+  .word {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 26px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-bottom: 2px solid $light-gray;
+    padding-bottom: 8px;
+  }
+
+  .description {
+    display: inline-block;
+    color: $light-gray;
+    padding: 10px;
+    font-size: 22px;
+    div {
+      display: inline-block;
+    }
+  }
+
+  .tab {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+}

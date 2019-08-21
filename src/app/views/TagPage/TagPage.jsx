@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import Gallery from 'react-grid-gallery';
 
 import Definition from '../../components/Definition';
+import Discussion from '../../components/Discussion';
 
 const containsTag = (word, currentTag, currentTagType) => {
   if (word.type === currentTagType) {
@@ -118,7 +119,9 @@ const TagPage = props => {
           <div className="topic-discussion">
             <Definition />
           </div>
-          <div className="focus-discussion"></div>
+          <div className="focus-discussion">
+            <Discussion />
+          </div>
           <div className="image-gallery">
             {/* TODO: Add images */}
             {/* <Gallery images={IMAGES} enableImageSelection={false} /> */}

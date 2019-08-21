@@ -51,4 +51,13 @@ export const interestTagDefinitions = {
   },
 };
 
-export const interestDefinitions = {};
+export const interestWordDiscussions = {
+  Ceramics: { description: <></> },
+  Photography: { description: <></> },
+  Illustrator: { description: <></> },
+  Photoshop: { description: <></> },
+  Music: { description: <></> },
+  Movies: { description: <></> },
+  'Video Games': { description: <></> },
+  'Mechanical Keyboards': { description: <></> },
+};

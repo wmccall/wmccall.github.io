@@ -75,4 +75,18 @@ export const skillTagDefinitions = {
   },
 };
 
-export const skillDefinitions = {};
+export const skillWordDiscussions = {
+  Python: { description: <></> },
+  Javascript: { description: <></> },
+  'C#': { description: <></> },
+  Java: { description: <></> },
+  AWS: { description: <></> },
+  Terraform: { description: <></> },
+  Serverless: { description: <></> },
+  Docker: { description: <></> },
+  git: { description: <></> },
+  GitHub: { description: <></> },
+  React: { description: <></> },
+  CSS: { description: <></> },
+  HTML: { description: <></> },
+};

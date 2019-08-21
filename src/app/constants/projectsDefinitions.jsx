@@ -76,4 +76,12 @@ export const projectTagDefinitions = {
   },
 };
 
-export const projectDefinitions = {};
+export const projectWordDiscussions = {
+  PictoCrypt: { description: <></> },
+  BulkPing: { description: <></> },
+  'Clear Downloads': { description: <></> },
+  'Program Snapshot': { description: <></> },
+  "Q'd Up": { description: <></> },
+  'Quick Search': { description: <></> },
+  'This Website': { description: <></> },
+};
