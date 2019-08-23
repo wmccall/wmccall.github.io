@@ -1,38 +1,94 @@
 .Discussion {
-  .main-word {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 26px;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-right: 20px;
-    border-bottom: 2px solid $light-gray;
-    padding-bottom: 8px;
-    div{
+  .main-topic {
+    .word {
       display: inline-block;
-      padding-right: 10px;
+      margin-right: 10px;
+      font-size: 26px;
+      margin-top: 5px;
+      padding-left: 10px;
+      padding-right: 20px;
+      border-bottom: 2px solid $light-gray;
+      padding-bottom: 8px;
+      div{
+        display: inline-block;
+        padding-right: 10px;
+      }
+      .neutral {
+        color: $light-gray;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .small{
+        font-size: 18px;
+      }
     }
-    .neutral {
+  
+    .description {
+      display: block;
       color: $light-gray;
-    }
-    .italic {
-      font-style: italic;
-    }
-    .small{
+      padding: 10px;
       font-size: 18px;
+      div {
+        display: inline-block;
+      }
+      .new-line {
+        display: block;
+      }
+      .tab:not(:first-child) {
+        padding-top: 10px;
+      }      
     }
   }
-
-  .main-description {
-    display: inline-block;
-    color: $light-gray;
-    padding: 10px;
-    font-size: 22px;
-    div {
+  .sub-topic {
+    padding-top: 10px;
+    .word {
       display: inline-block;
+      margin-right: 10px;
+      font-size: 20px;
+      margin-top: 5px;
+      padding-left: 10px;
+      padding-right: 20px;
+      border-bottom: 2px solid $light-gray;
+      padding-bottom: 8px;
+      div{
+        display: inline-block;
+        padding-right: 10px;
+      }
+      .neutral {
+        color: $light-gray;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .small{
+        font-size: 18px;
+      }
+    }
+  
+    .description {
+      display: block;
+      color: $light-gray;
+      padding: 10px;
+      font-size: 18px;
+      div {
+        display: inline-block;
+      }
+      .new-line {
+        display: block;
+      }
+      .tab:not(:first-child) {
+        padding-top: 10px;
+      }
+  
+      iframe {
+        padding-top: 10px;
+        width: 640px;
+        height: 360px;
+      }
+      
     }
   }
-
   .tab {
     display: inline-block;
     width: 20px;

@@ -80,7 +80,48 @@ export const projectWordDiscussions = {
   PictoCrypt: [
     {
       title: 'Visual Photo Encrypter',
-      description: <></>,
+      description: (
+        <>
+          PictoCrypt was written after a &quot;shower thought&quot; I had about
+          seeing encryption in action. I started out by researching key-based
+          permutations since I wanted a calculated rearrangement of pixels based
+          on a password. As I was researching, I found this{' '}
+          <a href="https://pdfs.semanticscholar.org/3372/5b376865f37d2fc9f71e8c2e0bfbbdaf4a6f.pdf">
+            article
+          </a>
+          , which I then used as my ground work for writing the program. In a
+          nutshell, it uses the integer values of the password&apos;s ASCII
+          characters to generate the permutation. A permutation should only be
+          created by a single string, however I have not tested it enough to
+          verify this. The program was not written to be a serious encryption,
+          but rather a program to play with the idea of seeing encryption.
+          <div className="new-line" />
+          <div className="tab" />
+          To use the program, an image must be given along with a password. Once
+          both are supplied, the user can click Encrypt to start the permutation
+          process which updates in the screen as it progresses. Once it is done,
+          it will output an image with the original title and suffix
+          &quot;-encrypted&quot; in the original directory. The user may then
+          open the encrypted image in the program and decrypt it using the same
+          password that was used to encrypt it.
+          <div className="new-line" />
+        </>
+      ),
+      photoElements: [],
+    },
+    {
+      title: 'Video Demo',
+      description: (
+        <>
+          <iframe
+            title="PictoCrypt Video"
+            src="https://www.youtube.com/embed/1VpYCKk_Dq4"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </>
+      ),
       photoElements: [],
     },
   ],

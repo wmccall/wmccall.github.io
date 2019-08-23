@@ -51,14 +51,14 @@ const Discussion = ({ type, word }) => {
   return (
     <div className="Discussion">
       <div className="main-topic">
-        <div className={`main-word ${type}`}>
+        <div className={`word ${type}`}>
           {generateMainTopicTitle(type, word, mainTopic.title)}
         </div>
-        <div className="main-description">
+        <div className="description">
           <div className="tab" />
           {mainTopic.description}
         </div>
-        <div className="main-photos">
+        <div className="photos">
           <Gallery images={mainTopic.photoElements} />
         </div>
       </div>
