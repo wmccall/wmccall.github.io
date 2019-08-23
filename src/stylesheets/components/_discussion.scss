@@ -1,5 +1,5 @@
 .Discussion {
-  .word {
+  .main-word {
     display: inline-block;
     margin-right: 10px;
     font-size: 26px;
@@ -10,7 +10,7 @@
     padding-bottom: 8px;
   }
 
-  .description {
+  .main-description {
     display: inline-block;
     color: $light-gray;
     padding: 10px;

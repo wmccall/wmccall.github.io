@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import Gallery from 'react-grid-gallery';
 
 import { skillWordDiscussions } from '../../constants/skillsDefinitions';
 import { interestWordDiscussions } from '../../constants/interestsDefinitions';
@@ -11,18 +12,43 @@ const discussions = {
   project: projectWordDiscussions,
 };
 
-const Discussion = ({ type, word }) => {
-  const { description } = discussions[type][word];
+const separateMainAndSubTopics = topicDiscussions => ({
+  mainTopic: topicDiscussions[0],
+  subTopics: topicDiscussions.slice(1),
+});
 
-  return (
-    <div className="Discussion">
-      <div className="word-and-speech">
-        <div className={`word ${type}`}>{word}</div>
-      </div>
+const generateSubTopics = (type, subTopics) =>
+  subTopics.map(({ title, description, photoElements }, index) => (
+    <div className="sub-topic" key={`st_${index.toString()}_${title}`}>
+      <div className={`word ${type}`}>{title}</div>
       <div className="description">
         <div className="tab" />
         {description}
       </div>
+      <div className="main-photos">
+        <Gallery images={photoElements} />
+      </div>
+    </div>
+  ));
+
+const Discussion = ({ type, word }) => {
+  const { mainTopic, subTopics } = separateMainAndSubTopics(
+    discussions[type][word],
+  );
+
+  return (
+    <div className="Discussion">
+      <div className="main-topic">
+        <div className={`main-word ${type}`}>{word}</div>
+        <div className="main-description">
+          <div className="tab" />
+          {mainTopic.description}
+        </div>
+        <div className="main-photos">
+          <Gallery images={mainTopic.photoElements} />
+        </div>
+      </div>
+      <div className="sub-topics">{generateSubTopics(type, subTopics)}</div>
     </div>
   );
 };

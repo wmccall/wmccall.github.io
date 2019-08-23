@@ -76,17 +76,95 @@ export const skillTagDefinitions = {
 };
 
 export const skillWordDiscussions = {
-  Python: { description: <></> },
-  Javascript: { description: <></> },
-  'C#': { description: <></> },
-  Java: { description: <></> },
-  AWS: { description: <></> },
-  Terraform: { description: <></> },
-  Serverless: { description: <></> },
-  Docker: { description: <></> },
-  git: { description: <></> },
-  GitHub: { description: <></> },
-  React: { description: <></> },
-  CSS: { description: <></> },
-  HTML: { description: <></> },
+  Python: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  Javascript: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  'C#': [
+    {
+      title: 'C#',
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  Java: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  AWS: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  Terraform: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  Serverless: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  Docker: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  git: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  GitHub: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  React: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  CSS: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  HTML: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
 };

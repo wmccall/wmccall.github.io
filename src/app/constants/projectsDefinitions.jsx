@@ -77,11 +77,53 @@ export const projectTagDefinitions = {
 };
 
 export const projectWordDiscussions = {
-  PictoCrypt: { description: <></> },
-  BulkPing: { description: <></> },
-  'Clear Downloads': { description: <></> },
-  'Program Snapshot': { description: <></> },
-  "Q'd Up": { description: <></> },
-  'Quick Search': { description: <></> },
-  'This Website': { description: <></> },
+  PictoCrypt: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  BulkPing: [
+    {
+      title: null,
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  'Clear Downloads': [
+    {
+      title: 'Clear Downloads',
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  'Program Snapshot': [
+    {
+      title: 'Program Snapshot',
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  "Q'd Up": [
+    {
+      title: "Q'd Up",
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  'Quick Search': [
+    {
+      title: 'Quick Search',
+      description: <></>,
+      photoElements: [],
+    },
+  ],
+  'This Website': [
+    {
+      title: 'This Website',
+      description: <></>,
+      photoElements: [],
+    },
+  ],
 };
