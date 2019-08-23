@@ -33,10 +33,7 @@ const generateSubTopics = (type, subTopics) =>
   subTopics.map(({ title, description, photoElements }, index) => (
     <div className="sub-topic" key={`st_${index.toString()}_${title}`}>
       <div className={`word ${type}`}>{title}</div>
-      <div className="description">
-        <div className="tab" />
-        {description}
-      </div>
+      <div className="description">{description}</div>
       <div className="main-photos">
         <Gallery images={photoElements} />
       </div>
@@ -54,10 +51,7 @@ const Discussion = ({ type, word }) => {
         <div className={`word ${type}`}>
           {generateMainTopicTitle(type, word, mainTopic.title)}
         </div>
-        <div className="description">
-          <div className="tab" />
-          {mainTopic.description}
-        </div>
+        <div className="description">{mainTopic.description}</div>
         <div className="photos">
           <Gallery images={mainTopic.photoElements} />
         </div>

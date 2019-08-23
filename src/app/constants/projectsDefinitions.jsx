@@ -82,6 +82,7 @@ export const projectWordDiscussions = {
       title: 'Visual Photo Encrypter',
       description: (
         <>
+          <div className="tab" />
           PictoCrypt was written after a &quot;shower thought&quot; I had about
           seeing encryption in action. I started out by researching key-based
           permutations since I wanted a calculated rearrangement of pixels based
