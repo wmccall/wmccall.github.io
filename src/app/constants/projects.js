@@ -5,7 +5,7 @@ const PROJECTS_WORDS = {
   'Program Snapshot': 'Desktop Application',
   "Q'd Up": 'Mobile',
   'Quick Search': 'Plugin',
-  'This Website': 'Web',
+  'WillMcCall.com': 'Web',
 };
 
 const projects = Object.keys(PROJECTS_WORDS).map(word => ({

@@ -79,49 +79,49 @@ export const projectTagDefinitions = {
 export const projectWordDiscussions = {
   PictoCrypt: [
     {
-      title: null,
+      title: 'Visual Photo Encrypter',
       description: <></>,
       photoElements: [],
     },
   ],
   BulkPing: [
     {
-      title: null,
+      title: 'Mass Pinging GUI Utility',
       description: <></>,
       photoElements: [],
     },
   ],
   'Clear Downloads': [
     {
-      title: 'Clear Downloads',
+      title: 'Downloads Cleaner',
       description: <></>,
       photoElements: [],
     },
   ],
   'Program Snapshot': [
     {
-      title: 'Program Snapshot',
+      title: 'Program Launcher',
       description: <></>,
       photoElements: [],
     },
   ],
   "Q'd Up": [
     {
-      title: "Q'd Up",
+      title: 'Android App for Parties',
       description: <></>,
       photoElements: [],
     },
   ],
   'Quick Search': [
     {
-      title: 'Quick Search',
+      title: 'Firefox Plugin',
       description: <></>,
       photoElements: [],
     },
   ],
-  'This Website': [
+  'WillMcCall.com': [
     {
-      title: 'This Website',
+      title: 'Personal Website',
       description: <></>,
       photoElements: [],
     },

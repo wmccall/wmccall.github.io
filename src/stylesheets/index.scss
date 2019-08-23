@@ -2,15 +2,15 @@
 
 @import './variables';
 
+// components
+@import './components/wordLink';
+@import './components/definition';
+@import './components/discussion';
+
 // pages
 @import './pages/base';
 @import './pages/home';
 @import './pages/tagPage';
-
-// components
-@import './components/definition';
-@import './components/discussion';
-@import './components/wordLink';
 
 // scroll bar
 *::-webkit-scrollbar-track {

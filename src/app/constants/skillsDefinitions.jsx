@@ -92,7 +92,7 @@ export const skillWordDiscussions = {
   ],
   'C#': [
     {
-      title: 'C#',
+      title: null,
       description: <></>,
       photoElements: [],
     },

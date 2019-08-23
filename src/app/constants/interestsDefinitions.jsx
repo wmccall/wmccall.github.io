@@ -96,14 +96,14 @@ export const interestWordDiscussions = {
   ],
   'Video Games': [
     {
-      title: 'Video Games',
+      title: null,
       description: <></>,
       photoElements: [],
     },
   ],
   'Mechanical Keyboards': [
     {
-      title: 'Mechanical Keyboards',
+      title: null,
       description: <></>,
       photoElements: [],
     },

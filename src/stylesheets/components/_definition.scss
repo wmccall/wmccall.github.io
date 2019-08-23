@@ -1,15 +1,17 @@
 .Definition {
-  .word {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 20px;
-  }
-  .part-of-speech {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 16px;
-    color: $light-gray;
-    font-style: italic;
+  .word-and-speech{
+    .word {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    .part-of-speech {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 16px;
+      color: $light-gray;
+      font-style: italic;
+    }
   }
 
   .pronunciation {
@@ -37,5 +39,9 @@
     display: inline-block;
     width: 20px;
     height: 20px;
+  }
+
+  .WordLink {
+    font-size: 16px;
   }
 }
