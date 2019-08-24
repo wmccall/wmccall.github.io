@@ -51,10 +51,6 @@
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
-        .title-main {
-          margin: auto;
-          text-align: center;
-        }
         .words {
           margin: auto;
           text-align: center;
@@ -69,7 +65,7 @@
             line-height: 20px;
             text-decoration: underline;
             padding: 0;
-            &:hover {
+            &:hover, &.selected {
               cursor: pointer;
               &.skill {
                 color: $string-green;
@@ -80,6 +76,10 @@
               &.project {
                 color: $variable-red;
               }
+            }
+            &.selected {
+              cursor: unset;
+              text-decoration: unset;
             }
           }
           .later-comma {
@@ -99,6 +99,7 @@
       align-content: flex-start;
       width: 100%;
       padding-left: 90px;
+      padding-top: 15px;
       font-size: 24px;
       div {
         margin-right: 15px;

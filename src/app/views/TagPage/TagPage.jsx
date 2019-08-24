@@ -23,7 +23,6 @@ const TagPage = props => {
   } = props;
 
   const backArrow = '<=';
-  const nextArrow = '╚>';
   const leftCurlyBrace = '{';
   const rightCurlyBrace = '}';
   const leftBracket = '[';
@@ -33,17 +32,18 @@ const TagPage = props => {
   const comma = ',';
 
   const wordsWithCurrentTag = () => {
-    const filteredWords = allWords.filter(
-      word =>
-        containsTag(word, currentTag, currentTagType) &&
-        word.word !== currentWord,
+    const filteredWords = allWords.filter(word =>
+      containsTag(word, currentTag, currentTagType),
     );
     return filteredWords.map((word, index) => (
       <>
         <button
-          className={`word ${currentTagType}`}
+          className={`word ${currentTagType} ${
+            word.word === currentWord ? 'selected' : ''
+          }`}
           type="button"
           onClick={() =>
+            word.word !== currentWord &&
             goForwardPage('tag', currentTag, currentTagType, word.word)
           }
         >
@@ -81,15 +81,13 @@ const TagPage = props => {
           {backButton()}
           <div className="tag-title ">
             <div className="bracket">{leftBracket}</div>
-            <div className="title-main">{currentWord}</div>
             {showExtraWords() && (
-              <div className="words">, {wordsWithCurrentTag()}</div>
+              <div className="words">{wordsWithCurrentTag()}</div>
             )}
             <div className="bracket">{rightBracket}</div>
           </div>
         </div>
         <div className="level-two">
-          <div className="arrow">{nextArrow}</div>
           <div className="tag">
             <span className="neutral">{leftCurlyBrace}</span>
 

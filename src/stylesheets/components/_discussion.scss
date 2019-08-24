@@ -1,4 +1,9 @@
 .Discussion {
+  .tab {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
   .main-topic {
     .header {
       display: inline-block;
@@ -54,7 +59,7 @@
       padding-right: 10px;
       border-bottom: 2px solid $light-gray;
       padding-bottom: 8px;
-      div{
+      div {
         display: inline-block;
         padding-right: 10px;
       }
@@ -64,10 +69,10 @@
       .italic {
         font-style: italic;
       }
-      .small{
+      .small {
         font-size: 18px;
       }
-      .left-pad{
+      .left-pad {
         padding-left: 10px;
       }
       .no-pad {
@@ -103,14 +108,8 @@
     font-size: 18px;
   }
 
-  .tab {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-  }
-
   .main-photos,
-  .sub-photos{
+  .sub-photos {
     padding-top: 10px
   }
 }
