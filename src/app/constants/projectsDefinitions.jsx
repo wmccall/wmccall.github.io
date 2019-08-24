@@ -122,9 +122,9 @@ export const projectWordDiscussions = {
         <>
           <iframe
             title="PictoCrypt Video"
-            src="https://www.youtube.com/embed/1VpYCKk_Dq4"
+            src="https://www.youtube.com/embed/MMIa-04K1cA?list=PLplNU3zJ099Dnb93CeELZS8AZr3tCuaZ-&rel=0"
             frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </>
@@ -210,9 +210,9 @@ export const projectWordDiscussions = {
         <>
           <iframe
             title="Q'd Up Video"
-            src="https://www.youtube.com/embed/YKRynlZJl0g"
+            src="https://www.youtube.com/embed/889HrRQpi04?list=PLplNU3zJ099AzyxnwtFRmXde9A45-0UvR&rel=0"
             frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </>
