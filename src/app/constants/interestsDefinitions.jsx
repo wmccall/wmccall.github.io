@@ -56,56 +56,56 @@ export const interestWordDiscussions = {
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   Photography: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   Illustrator: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   Photoshop: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   Music: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   Movies: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   'Video Games': [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
   'Mechanical Keyboards': [
     {
       title: null,
       description: <></>,
-      photoElements: [],
+       
     },
   ],
 };

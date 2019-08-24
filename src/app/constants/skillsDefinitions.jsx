@@ -80,91 +80,78 @@ export const skillWordDiscussions = {
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   Javascript: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   'C#': [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   Java: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   AWS: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   Terraform: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   Serverless: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   Docker: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   git: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   GitHub: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   React: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   CSS: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
   HTML: [
     {
       title: null,
       description: <></>,
-      photoElements: [],
     },
   ],
 };

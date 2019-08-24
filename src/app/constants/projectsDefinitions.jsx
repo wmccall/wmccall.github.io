@@ -5,6 +5,7 @@ import { projectObjects } from './projects';
 import { skillObjects } from './skills';
 
 import ClearDownloadsRepeat from '../resources/ClearDownloads/ClearDownloadsRepeat.png';
+import BulkPing from '../resources/BulkPing/BulkPing.png';
 
 export const projectTagDefinitions = {
   Mobile: {
@@ -135,8 +136,42 @@ export const projectWordDiscussions = {
   BulkPing: [
     {
       title: 'Mass Pinging GUI Utility',
-      description: <></>,
-      photoElements: [],
+      description: (
+        <>
+          <div className="tab" />
+          BulkPing was designed as a lightweight GUI program to continually ping
+          a set of IPs and display whether or not they were accessible. This
+          project was given to me when a family member, who works in the HVAC
+          industry, told me they wanted a program to let them know if their
+          internet accessible controllers were available to quickly debug
+          connection issues.
+          <div className="new-line" />
+          <div className="tab" />
+          The program is written entirely in <WordLink {...skillObjects.Java} />
+          , and compiled into a runnable Jar. To use the program, the user can
+          place a file named &quot;IPAddresses.txt&quot; in the same directory
+          as the Jar file and run the program, which will immediately start
+          pinging the IP Addresses in the file. Alternatively the user can run
+          the program and then select a file config through the file menu in the
+          program to then start pinging those IPs. The ping status is displayed
+          as red for unreachable, or green for reachable. Historical information
+          about the IPs&apos; statuses can be found in the console log with
+          timestamps and color coding.
+        </>
+      ),
+      sourceLink: 'https://github.com/wmccall/BulkPing',
+    },
+    {
+      title: 'Photos',
+      photoElements: [
+        {
+          src: BulkPing,
+          thumbnail: BulkPing,
+          thumbnailWidth: 640,
+          thumbnailHeight: 360,
+          caption: 'BulkPing GUI and Console Output',
+        },
+      ],
     },
   ],
   'Clear Downloads': [
@@ -164,6 +199,7 @@ export const projectWordDiscussions = {
           it can be managed and allowed to run.
         </>
       ),
+      sourceLink: 'https://github.com/wmccall/ClearDownloads',
     },
     {
       title: 'Photos',
