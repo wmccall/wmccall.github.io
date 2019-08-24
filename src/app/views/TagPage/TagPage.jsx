@@ -92,14 +92,7 @@ const TagPage = props => {
           <div className="arrow">{nextArrow}</div>
           <div className="tag">
             <span className="neutral">{leftCurlyBrace}</span>
-            <span className="constant">
-              {currentTagType.toUpperCase()}_NAME
-            </span>
-            <span className="neutral">: </span>
-            {doubleQuoteWord ? doubleQuote : singleQuote}
-            {currentWord}
-            {doubleQuoteWord ? doubleQuote : singleQuote}
-            <span className="neutral">{comma} </span>
+
             <span className="constant">
               {currentTagType.toUpperCase()}_CLASS
             </span>
@@ -107,6 +100,17 @@ const TagPage = props => {
             {doubleQuoteTag ? doubleQuote : singleQuote}
             {currentTag}
             {doubleQuoteTag ? doubleQuote : singleQuote}
+
+            <span className="neutral">{comma} </span>
+
+            <span className="constant">
+              {currentTagType.toUpperCase()}_NAME
+            </span>
+            <span className="neutral">: </span>
+            {doubleQuoteWord ? doubleQuote : singleQuote}
+            {currentWord}
+            {doubleQuoteWord ? doubleQuote : singleQuote}
+
             <span className="neutral">{rightCurlyBrace}</span>
           </div>
         </div>
@@ -114,7 +118,6 @@ const TagPage = props => {
       <div className="page-container">
         <div className="page-inner">
           <div className="top-padding" />
-
           <div className="topic-discussion">
             <Definition />
           </div>
