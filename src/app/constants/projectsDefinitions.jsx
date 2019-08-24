@@ -217,7 +217,47 @@ export const projectWordDiscussions = {
   'Program Snapshot': [
     {
       title: 'Program Launcher',
-      description: <></>,
+      description: (
+        <>
+          <div className="tab" />
+          Program Snapshot was developed when talking with a coworker about
+          features on our OS we wish we had while developing. We were both tired
+          of having to manually open our wide array of programs every morning
+          when we came back into work, and wanted a way to do that quickly. I
+          thought it would be neat if I could write something to take a
+          &quot;snapshot&quot; of my running programs when I was fully setup so
+          I could then close them when I was done, and open them all back up
+          when I needed to get working again. This could effectively allow me to
+          switch gears immediately without having to remember what programs a
+          certain project required when another project might not.
+          <div className="new-line" />
+          <div className="tab" />
+          This program is written in <WordLink {...skillObjects.Python} /> for
+          the GUI and logic, and some command line to capture the running
+          programs on the OS. To use the program, the user can manually open the
+          specific programs they would like to use for a project. Once those
+          programs are up and running, the user can open Program Snapshot,
+          specify a name for the current config, and capture the running
+          programs. Now these are saved to Program Snapshot, and it can be
+          closed. When the user would like to bring all of those programs back,
+          they can open up Program Snapshot again, and load a specified
+          configuration. The user can also delete unwanted configurations.
+        </>
+      ),
+    },
+    {
+      title: 'Video Demo',
+      description: (
+        <>
+          <iframe
+            title="Program Snapshot Video"
+            src="https://www.youtube.com/embed/BFiV6EEOkhY?list=PLplNU3zJ099DH6DDWtH1aVOweD5E9IUKW&rel=0"
+            frameBorder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </>
+      ),
     },
   ],
   "Q'd Up": [
