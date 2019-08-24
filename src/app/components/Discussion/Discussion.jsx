@@ -30,7 +30,33 @@ const generateMainTopicTitle = (word, topicTitle, sourceLink) => (
       <>
         <div className="neutral small">-</div>
         <div className="neutral no-pad small">[</div>
-        <a href={sourceLink} className="small">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={sourceLink}
+          className="small"
+        >
+          View Source
+        </a>
+        <div className="neutral no-pad small">]</div>
+      </>
+    )}
+  </>
+);
+
+const generateSubTopicTitle = (topicTitle, sourceLink) => (
+  <>
+    {topicTitle}
+    {sourceLink && (
+      <>
+        <div className="left-pad neutral small">-</div>
+        <div className="neutral no-pad small">[</div>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={sourceLink}
+          className="small"
+        >
           View Source
         </a>
         <div className="neutral no-pad small">]</div>
@@ -40,9 +66,11 @@ const generateMainTopicTitle = (word, topicTitle, sourceLink) => (
 );
 
 const generateSubTopics = (type, subTopics) =>
-  subTopics.map(({ title, description, photoElements }, index) => (
+  subTopics.map(({ title, description, photoElements, sourceLink }, index) => (
     <div className="sub-topic" key={`st_${index.toString()}_${title}`}>
-      <div className={`word ${type}`}>{title}</div>
+      <div className={`sub-header ${type}`}>
+        {generateSubTopicTitle(title, sourceLink)}
+      </div>
       <div className="description">{description}</div>
       <div className="main-photos">
         <Gallery images={photoElements} />
@@ -58,7 +86,7 @@ const Discussion = ({ type, word }) => {
   return (
     <div className="Discussion">
       <div className="main-topic">
-        <div className={`word ${type}`}>
+        <div className={`header ${type}`}>
           {generateMainTopicTitle(word, mainTopic.title, mainTopic.sourceLink)}
         </div>
         <div className="description">{mainTopic.description}</div>

@@ -25,7 +25,9 @@ const WordLink = ({
 
   return (
     <button type="button" className="WordLink" onClick={clickHandler}>
-      <span className={`word ${shouldLink ? linkClasses : 'no-link'}`}>
+      <span
+        className={`word-link-word ${shouldLink ? linkClasses : 'no-link'}`}
+      >
         {word}
       </span>
       <span className="punctuation">{punc}</span>

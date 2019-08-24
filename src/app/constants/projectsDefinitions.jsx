@@ -83,11 +83,15 @@ export const projectWordDiscussions = {
       description: (
         <>
           <div className="tab" />
-          PictoCrypt was written after a &quot;shower thought&quot; I had about
-          seeing encryption in action. I started out by researching key-based
-          permutations since I wanted a calculated rearrangement of pixels based
-          on a password. As I was researching, I found this{' '}
-          <a href="https://pdfs.semanticscholar.org/3372/5b376865f37d2fc9f71e8c2e0bfbbdaf4a6f.pdf">
+          PictoCrypt was stumbled upon after a &quot;shower thought&quot; I had
+          about seeing encryption in action. I started out by researching
+          key-based permutations since I wanted a calculated rearrangement of
+          pixels based on a password. As I was researching, I found this{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://pdfs.semanticscholar.org/3372/5b376865f37d2fc9f71e8c2e0bfbbdaf4a6f.pdf"
+          >
             article
           </a>
           , which I then used as my ground work for writing the program. In a
@@ -98,14 +102,15 @@ export const projectWordDiscussions = {
           but rather a program to play with the idea of seeing encryption.
           <div className="new-line" />
           <div className="tab" />
-          To use the program, an image must be given along with a password. Once
-          both are supplied, the user can click Encrypt to start the permutation
-          process which updates in the screen as it progresses. Once it is done,
-          it will output an image with the original title and suffix
-          &quot;-encrypted&quot; in the original directory. The user may then
-          open the encrypted image in the program and decrypt it using the same
-          password that was used to encrypt it.
-          <div className="new-line" />
+          The program is written in <WordLink {...skillObjects['C#']} /> with
+          the help of Visual Studio to develop the GUI. To use the program, an
+          image must be given along with a password. Once both are supplied, the
+          user can click Encrypt to start the permutation process which updates
+          in the screen as it progresses. Once it is done, it will output an
+          image with the original title and suffix &quot;-encrypted&quot; in the
+          original directory. The user may then open the encrypted image in the
+          program and decrypt it using the same password that was used to
+          encrypt it.
         </>
       ),
       photoElements: [],
@@ -151,7 +156,67 @@ export const projectWordDiscussions = {
   "Q'd Up": [
     {
       title: 'Android App for Parties',
-      description: <></>,
+      description: (
+        <>
+          <div className="tab" />
+          Q&apos;d Up was inspired by a party I went to where one person had
+          their phone hooked up to the speakers and allowed people to put songs
+          on the queue. I had to ask her to enter her phone&apos;s password each
+          time I wanted to add a song since it would lock after a some
+          inactivity. I thought it would be much easier to have a way to simply
+          push the song I wanted to her phone, rather than ask her to give me
+          access to her entire phone to add a song. This would give the host a
+          tool to easily handle song requests while also preventing someone from
+          snooping around on the host&apos;s phone.
+          <div className="new-line" />
+          <div className="tab" />
+          The app is written in <WordLink {...skillObjects.Java} /> and utilizes
+          Spotify&apos;s API to search, access, and play songs. The main focus
+          of the program is to allow many people to connect their phone
+          (clients) to one person&apos;s phone (host), then search
+          Spotify&apos;s songs and push them over the internet to a queue on the
+          server phone. All users have the ability to play/pause, skip forward
+          and back, add tracks, and view tracks. In addition, the server is able
+          to change the queue order, and remove tracks.
+        </>
+      ),
+      photoElements: [],
+      sourceLink: 'https://github.com/wmccall/Q-dUp',
+    },
+    {
+      title: "Q'd Up Router",
+      description: (
+        <>
+          <div className="tab" />
+          In addition to this app, there is a Java server running on an{' '}
+          <WordLink {...skillObjects.AWS} /> EC2 instance managing the hosts and
+          clients. The Java server handles connecting hosts by generating a
+          random unique 6 alpha numeric key, and handles clients by searching
+          for a host with a given key. If a host is found, the server pairs the
+          phones together, and then handles messages sent between the phones.
+          The clients may send messages to add new songs to the queue, or leave
+          the group when they disconnect. In addition the host may send messages
+          to inform the client of a track&apos;s playing status, track change,
+          track addition, queue change, or disconnect. When the host
+          disconnects, all clients will be disconnected.
+        </>
+      ),
+      photoElements: [],
+      sourceLink: 'https://github.com/wmccall/JavaQdUpRouter',
+    },
+    {
+      title: 'Video Demo (slightly outdated)',
+      description: (
+        <>
+          <iframe
+            title="Q'd Up Video"
+            src="https://www.youtube.com/embed/YKRynlZJl0g"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </>
+      ),
       photoElements: [],
     },
   ],

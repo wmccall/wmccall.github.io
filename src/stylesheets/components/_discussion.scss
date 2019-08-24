@@ -1,6 +1,6 @@
 .Discussion {
   .main-topic {
-    .word {
+    .header {
       display: inline-block;
       margin-right: 10px;
       font-size: 26px;
@@ -45,7 +45,7 @@
   }
   .sub-topic {
     padding-top: 10px;
-    .word {
+    .sub-header {
       display: inline-block;
       margin-right: 10px;
       font-size: 20px;
@@ -66,6 +66,12 @@
       }
       .small{
         font-size: 18px;
+      }
+      .left-pad{
+        padding-left: 10px;
+      }
+      .no-pad {
+        padding: 0;
       }
     }
   
@@ -92,6 +98,11 @@
       
     }
   }
+
+  .WordLink {
+    font-size: 18px;
+  }
+
   .tab {
     display: inline-block;
     width: 20px;
