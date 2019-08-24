@@ -71,10 +71,12 @@ const generateSubTopics = (type, subTopics) =>
       <div className={`sub-header ${type}`}>
         {generateSubTopicTitle(title, sourceLink)}
       </div>
-      <div className="description">{description}</div>
-      <div className="main-photos">
-        <Gallery images={photoElements} />
-      </div>
+      {description && <div className="description">{description}</div>}
+      {photoElements && (
+        <div className="main-photos">
+          <Gallery images={photoElements} enableImageSelection={false} />
+        </div>
+      )}
     </div>
   ));
 
@@ -89,10 +91,17 @@ const Discussion = ({ type, word }) => {
         <div className={`header ${type}`}>
           {generateMainTopicTitle(word, mainTopic.title, mainTopic.sourceLink)}
         </div>
-        <div className="description">{mainTopic.description}</div>
-        <div className="photos">
-          <Gallery images={mainTopic.photoElements} />
-        </div>
+        {mainTopic.description && (
+          <div className="description">{mainTopic.description}</div>
+        )}
+        {mainTopic.photoElements && (
+          <div className="photos">
+            <Gallery
+              images={mainTopic.photoElements}
+              enableImageSelection={false}
+            />
+          </div>
+        )}
       </div>
       <div className="sub-topics">{generateSubTopics(type, subTopics)}</div>
     </div>

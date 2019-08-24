@@ -4,6 +4,8 @@ import WordLink from '../components/WordLink';
 import { projectObjects } from './projects';
 import { skillObjects } from './skills';
 
+import ClearDownloadsRepeat from '../resources/ClearDownloads/ClearDownloadsRepeat.png';
+
 export const projectTagDefinitions = {
   Mobile: {
     partOfSpeech: 'noun',
@@ -113,7 +115,6 @@ export const projectWordDiscussions = {
           encrypt it.
         </>
       ),
-      photoElements: [],
       sourceLink: 'https://github.com/wmccall/PictoCrypt',
     },
     {
@@ -129,7 +130,6 @@ export const projectWordDiscussions = {
           ></iframe>
         </>
       ),
-      photoElements: [],
     },
   ],
   BulkPing: [
@@ -142,15 +142,46 @@ export const projectWordDiscussions = {
   'Clear Downloads': [
     {
       title: 'Downloads Cleaner',
-      description: <></>,
-      photoElements: [],
+      description: (
+        <>
+          <div className="tab" />
+          Clear Downloads was designed to alleviate the headache of managing my
+          downloads. My previous computer had a downloads folder that took about
+          a minute to load due to the large volume of files and folders. I later
+          built a new computer and decided to design a program that would help
+          prevent a situation like that again. This program is designed to
+          archive all folders and files into manageable packets or remove them
+          altogether on a timed interval or as a one-off run.
+          <div className="new-line" />
+          <div className="tab" />
+          The program is written in <WordLink {...skillObjects['C#']} /> with
+          the help of Visual Studio to develop the GUI. To use the program, the
+          user specifies what folder to let the program manage, the date(s) and
+          time to run the program, whether to archive or recycle the files, and
+          whether or not to include already archived folders. As it runs it will
+          write to a log feed in the program letting you know when it archived
+          or recycled the folder. The program also minimizes to the tray where
+          it can be managed and allowed to run.
+        </>
+      ),
+    },
+    {
+      title: 'Photos',
+      photoElements: [
+        {
+          src: ClearDownloadsRepeat,
+          thumbnail: ClearDownloadsRepeat,
+          thumbnailWidth: 640,
+          thumbnailHeight: 360,
+          caption: 'Clear Downloads with Repeat Settings',
+        },
+      ],
     },
   ],
   'Program Snapshot': [
     {
       title: 'Program Launcher',
       description: <></>,
-      photoElements: [],
     },
   ],
   "Q'd Up": [
@@ -180,7 +211,6 @@ export const projectWordDiscussions = {
           to change the queue order, and remove tracks.
         </>
       ),
-      photoElements: [],
       sourceLink: 'https://github.com/wmccall/Q-dUp',
     },
     {
@@ -201,7 +231,6 @@ export const projectWordDiscussions = {
           disconnects, all clients will be disconnected.
         </>
       ),
-      photoElements: [],
       sourceLink: 'https://github.com/wmccall/JavaQdUpRouter',
     },
     {
@@ -217,21 +246,18 @@ export const projectWordDiscussions = {
           ></iframe>
         </>
       ),
-      photoElements: [],
     },
   ],
   'Quick Search': [
     {
       title: 'Firefox Plugin',
       description: <></>,
-      photoElements: [],
     },
   ],
   'WillMcCall.com': [
     {
       title: 'Personal Website',
       description: <></>,
-      photoElements: [],
     },
   ],
 };
