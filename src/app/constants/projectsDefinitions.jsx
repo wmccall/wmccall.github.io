@@ -270,12 +270,12 @@ export const projectWordDiscussions = {
       sourceLink: 'https://github.com/wmccall/JavaQdUpRouter',
     },
     {
-      title: 'Video Demo (slightly outdated)',
+      title: 'Video Demo',
       description: (
         <>
           <iframe
             title="Q'd Up Video"
-            src="https://www.youtube.com/embed/889HrRQpi04?list=PLplNU3zJ099AzyxnwtFRmXde9A45-0UvR&rel=0"
+            src="https://www.youtube.com/embed/giS5Lr0HmzQ?list=PLplNU3zJ099AzyxnwtFRmXde9A45-0UvR&rel=0"
             frameBorder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -287,7 +287,27 @@ export const projectWordDiscussions = {
   'Quick Search': [
     {
       title: 'Firefox Plugin',
-      description: <></>,
+      description: (
+        <>
+          <div className="tab" />
+          Quick Search was written after spending some long nights researching
+          for a college assignment. As I fell further into sleep deprivation, I
+          found myself repeatedly attempting to use the command CTRL+s to search
+          for the highlighted text on Google. Instead of working to break that
+          habit, I decided to make a Firefox plugin to allow me to exactly that.
+          <div className="new-line" />
+          <div className="tab" />
+          The extension is written in <WordLink
+            {...skillObjects.HTML}
+          /> and <WordLink {...skillObjects.Javascript} />. It allows a user to
+          select some text on a website, then press CTRL+s to search the web for
+          it. The extension also gives the option choose to search between
+          Google, DuckDuckGo, or Bing, and will remember the choice for the next
+          use. If no there is no highlighted text, the command CTRL+s will
+          default to saving the webpage.
+        </>
+      ),
+      sourceLink: 'https://github.com/wmccall/Quick-Search-Extension',
     },
   ],
   'WillMcCall.com': [
