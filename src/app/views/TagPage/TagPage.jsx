@@ -93,20 +93,20 @@ const TagPage = props => {
           <div className="tag">
             <span className="neutral">{leftCurlyBrace}</span>
             <span className="constant">
-              {currentTagType.toUpperCase()}_CLASS
-            </span>
-            <span className="neutral">: </span>
-            {doubleQuoteTag ? doubleQuote : singleQuote}
-            {currentTag}
-            {doubleQuoteTag ? doubleQuote : singleQuote}
-            <span className="neutral">{comma} </span>
-            <span className="constant">
               {currentTagType.toUpperCase()}_NAME
             </span>
             <span className="neutral">: </span>
             {doubleQuoteWord ? doubleQuote : singleQuote}
             {currentWord}
             {doubleQuoteWord ? doubleQuote : singleQuote}
+            <span className="neutral">{comma} </span>
+            <span className="constant">
+              {currentTagType.toUpperCase()}_CLASS
+            </span>
+            <span className="neutral">: </span>
+            {doubleQuoteTag ? doubleQuote : singleQuote}
+            {currentTag}
+            {doubleQuoteTag ? doubleQuote : singleQuote}
             <span className="neutral">{rightCurlyBrace}</span>
           </div>
         </div>
