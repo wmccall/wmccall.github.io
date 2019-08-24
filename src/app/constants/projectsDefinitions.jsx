@@ -109,6 +109,7 @@ export const projectWordDiscussions = {
         </>
       ),
       photoElements: [],
+      sourceLink: 'https://github.com/wmccall/PictoCrypt',
     },
     {
       title: 'Video Demo',

@@ -17,13 +17,23 @@ const separateMainAndSubTopics = topicDiscussions => ({
   subTopics: topicDiscussions.slice(1),
 });
 
-const generateMainTopicTitle = (type, word, topicTitle) => (
+const generateMainTopicTitle = (word, topicTitle, sourceLink) => (
   <>
     {word}
     {topicTitle && (
       <>
         <div className="neutral">:</div>
         <div className="neutral italic small">{topicTitle}</div>
+      </>
+    )}
+    {sourceLink && (
+      <>
+        <div className="neutral small">-</div>
+        <div className="neutral no-pad small">[</div>
+        <a href={sourceLink} className="small">
+          View Source
+        </a>
+        <div className="neutral no-pad small">]</div>
       </>
     )}
   </>
@@ -49,7 +59,7 @@ const Discussion = ({ type, word }) => {
     <div className="Discussion">
       <div className="main-topic">
         <div className={`word ${type}`}>
-          {generateMainTopicTitle(type, word, mainTopic.title)}
+          {generateMainTopicTitle(word, mainTopic.title, mainTopic.sourceLink)}
         </div>
         <div className="description">{mainTopic.description}</div>
         <div className="photos">

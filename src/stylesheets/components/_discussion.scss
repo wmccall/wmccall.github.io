@@ -6,7 +6,7 @@
       font-size: 26px;
       margin-top: 5px;
       padding-left: 10px;
-      padding-right: 20px;
+      padding-right: 10px;
       border-bottom: 2px solid $light-gray;
       padding-bottom: 8px;
       div{
@@ -21,6 +21,9 @@
       }
       .small{
         font-size: 18px;
+      }
+      .no-pad {
+        padding: 0;
       }
     }
   
@@ -48,7 +51,7 @@
       font-size: 20px;
       margin-top: 5px;
       padding-left: 10px;
-      padding-right: 20px;
+      padding-right: 10px;
       border-bottom: 2px solid $light-gray;
       padding-bottom: 8px;
       div{
