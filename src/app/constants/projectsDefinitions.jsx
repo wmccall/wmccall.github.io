@@ -353,7 +353,15 @@ export const projectWordDiscussions = {
   'WillMcCall.com': [
     {
       title: 'Personal Website',
-      description: <></>,
+      description: (
+        <>
+          <div className="tab" />
+          Please, kick off your shoes, and poke around. I&apos;ve put a lot of
+          love and time into this site, spending long hours to develop a
+          coherent and, hopefully, interesting living resume.
+        </>
+      ),
+      sourceLink: 'https://github.com/wmccall/website',
     },
   ],
 };
