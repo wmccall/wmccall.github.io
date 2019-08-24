@@ -121,11 +121,6 @@ const TagPage = props => {
           <div className="focus-discussion">
             <Discussion />
           </div>
-          <div className="image-gallery">
-            {/* TODO: Add images */}
-            {/* <Gallery images={IMAGES} enableImageSelection={false} /> */}
-          </div>
-
           <div className="bottom-padding"></div>
         </div>
         <div className="bottom-cover"></div>
