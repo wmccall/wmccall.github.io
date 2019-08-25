@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import TagPage from './TagPage';
-import { goForwardPage, goBackPage } from '../ducks/ViewsActions';
+import { goForwardPage, goBackPage, goHome } from '../ducks/ViewsActions';
 
 const mapStateToProps = state => ({
   allWords: state.viewState.allWords,
@@ -13,6 +13,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   goForwardPage,
   goBackPage,
+  goHome,
 };
 
 export default connect(

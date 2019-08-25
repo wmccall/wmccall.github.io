@@ -18,9 +18,7 @@ const Definition = ({ type, word }) => {
     <div className="Definition">
       <div className="word-and-speech">
         <div className={`word ${type}`}>{word}</div>
-        <div className="part-of-speech">{partOfSpeech}</div>
       </div>
-      <div className="pronunciation">{pronunciation}</div>
       <div className="description">
         <div className="tab" />
         {description}

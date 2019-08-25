@@ -5,6 +5,7 @@ import {
   SET_PERMANENT_CATEGORY,
   GO_FORWARD_PAGE,
   GO_BACK_PAGE,
+  GO_HOME,
   SET_CURRENT_TAG,
   SET_CURRENT_WORD,
 } from './ViewsActions';
@@ -37,6 +38,9 @@ export default (baseState = initialState, action) =>
         return draftState;
       case GO_BACK_PAGE:
         draftState.pageSequence.pop();
+        return draftState;
+      case GO_HOME:
+        draftState.pageSequence = initialState.pageSequence;
         return draftState;
       case SET_CURRENT_WORD:
         draftState.word = action.word;

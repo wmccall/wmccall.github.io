@@ -19,7 +19,7 @@ const separateMainAndSubTopics = topicDiscussions => ({
 
 const generateMainTopicTitle = (word, topicTitle, sourceLink) => (
   <>
-    {word}
+    <div className="italic no-pad">{word}</div>
     {topicTitle && (
       <>
         <div className="neutral">:</div>
@@ -46,7 +46,7 @@ const generateMainTopicTitle = (word, topicTitle, sourceLink) => (
 
 const generateSubTopicTitle = (topicTitle, sourceLink) => (
   <>
-    {topicTitle}
+    <div className="italic no-pad">{topicTitle}</div>
     {sourceLink && (
       <>
         <div className="left-pad neutral small">-</div>
@@ -73,7 +73,7 @@ const generateSubTopics = (type, subTopics) =>
       </div>
       {description && <div className="description">{description}</div>}
       {photoElements && (
-        <div className="main-photos">
+        <div className="photos">
           <Gallery images={photoElements} enableImageSelection={false} />
         </div>
       )}

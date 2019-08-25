@@ -20,6 +20,7 @@ const TagPage = props => {
     allWords,
     goForwardPage,
     goBackPage,
+    goHome,
   } = props;
 
   const backArrow = '<=';
@@ -66,6 +67,16 @@ const TagPage = props => {
     </button>
   );
 
+  const homeButton = () => (
+    <button
+      className="back-button home-button home"
+      type="button"
+      onClick={() => goHome()}
+    >
+      <span>~</span>
+    </button>
+  );
+
   const showExtraWords = () => wordsWithCurrentTag().length > 0;
 
   const containsSingleQuote = word => word.search("'") > 0;
@@ -88,6 +99,7 @@ const TagPage = props => {
           </div>
         </div>
         <div className="level-two">
+          {homeButton()}
           <div className="tag">
             <span className="neutral">{leftCurlyBrace}</span>
 
@@ -133,6 +145,7 @@ const TagPage = props => {
 TagPage.propTypes = {
   goForwardPage: PropTypes.func.isRequired,
   goBackPage: PropTypes.func.isRequired,
+  goHome: PropTypes.func.isRequired,
   currentTag: PropTypes.string,
   currentTagType: PropTypes.string,
   previousTagType: PropTypes.string,
