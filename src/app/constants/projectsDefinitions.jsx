@@ -244,6 +244,7 @@ export const projectWordDiscussions = {
           configuration. The user can also delete unwanted configurations.
         </>
       ),
+      sourceLink: 'https://github.com/wmccall/ProgramSnapshot',
     },
     {
       title: 'Video Demo',
