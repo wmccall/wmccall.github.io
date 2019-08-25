@@ -12,7 +12,7 @@ const definitions = {
 };
 
 const Definition = ({ type, word }) => {
-  const { partOfSpeech, pronunciation, description } = definitions[type][word];
+  const { description } = definitions[type][word];
 
   return (
     <div className="Definition">
