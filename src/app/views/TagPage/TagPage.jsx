@@ -24,6 +24,7 @@ const TagPage = props => {
   } = props;
 
   const backArrow = '<=';
+  const homeArrow = '<<=';
   const leftCurlyBrace = '{';
   const rightCurlyBrace = '}';
   const leftBracket = '[';
@@ -73,7 +74,7 @@ const TagPage = props => {
       type="button"
       onClick={() => goHome()}
     >
-      <span>~</span>
+      <span>{homeArrow}</span>
     </button>
   );
 

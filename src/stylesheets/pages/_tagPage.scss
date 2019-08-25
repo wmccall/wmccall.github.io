@@ -20,7 +20,7 @@
       padding: 5px 10px 5px 10px;
       font-size: 30px;
       font-style: italic;
-      width: 60px;
+      width: 70px;
       height: fit-content;
       &:hover {
         cursor: pointer;
@@ -52,7 +52,7 @@
         padding-top: 8px;
         margin-top: auto;
         margin-bottom: auto;
-        padding-left: 15px;
+        padding-left: 5px;
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
@@ -106,7 +106,7 @@
       font-size: 24px;
       div {
         margin-right: 15px;
-        padding-left: 15px;
+        padding-left: 5px;
         &.tag {
           font-size: 25px;
           font-style: italic;
