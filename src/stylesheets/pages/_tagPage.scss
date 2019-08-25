@@ -2,7 +2,7 @@
   overflow: hidden;
   height: 100vh;
   background-color: $darker-gray;
-  font-family: 'Fira Code', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   .top-bar {
     z-index: 10;
     position: fixed;
@@ -59,7 +59,7 @@
             background-color: transparent;
             border: 0;
             outline: 0;
-            font-family: 'Fira Code', monospace;
+            font-family: 'IBM Plex Mono', monospace;
             color: $light-gray;
             font-size: 20px;
             line-height: 20px;
