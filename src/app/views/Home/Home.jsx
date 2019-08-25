@@ -5,7 +5,7 @@ import backgroundCode from '../../constants/backgroundCode';
 
 import ProfilePhoto from '../../resources/WillKeeb-min.jpg';
 
-const ACTIONS_BUTTONS_TYPES = ['skill', 'interest', 'project'];
+const ACTIONS_BUTTONS_TYPES = ['skill', 'project', 'interest'];
 
 const Home = props => {
   const {
