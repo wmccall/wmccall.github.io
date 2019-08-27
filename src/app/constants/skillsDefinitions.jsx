@@ -75,83 +75,109 @@ export const skillTagDefinitions = {
   },
 };
 
-export const skillWordDiscussions = {
-  Python: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  Javascript: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  'C#': [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  Java: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  AWS: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  Terraform: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  Serverless: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  Docker: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  git: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  GitHub: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  React: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  CSS: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
-  HTML: [
-    {
-      title: null,
-      description: <></>,
-    },
-  ],
+export const skillPageData = {
+  Python: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Javascript: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  'C#': {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Java: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  AWS: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Terraform: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Serverless: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Docker: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  git: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  GitHub: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  React: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  CSS: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  HTML: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
 };

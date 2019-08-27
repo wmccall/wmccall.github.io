@@ -2,14 +2,14 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import Gallery from 'react-grid-gallery';
 
-import { skillWordDiscussions } from '../../constants/skillsDefinitions';
-import { interestWordDiscussions } from '../../constants/interestsDefinitions';
-import { projectWordDiscussions } from '../../constants/projectsDefinitions';
+import { skillPageData } from '../../constants/skillsDefinitions';
+import { interestPageData } from '../../constants/interestsDefinitions';
+import { projectPageData } from '../../constants/projectsDefinitions';
 
 const discussions = {
-  skill: skillWordDiscussions,
-  interest: interestWordDiscussions,
-  project: projectWordDiscussions,
+  skill: skillPageData,
+  interest: interestPageData,
+  project: projectPageData,
 };
 
 const separateMainAndSubTopics = topicDiscussions => ({
@@ -82,7 +82,7 @@ const generateSubTopics = (type, subTopics) =>
 
 const Discussion = ({ type, word }) => {
   const { mainTopic, subTopics } = separateMainAndSubTopics(
-    discussions[type][word],
+    discussions[type][word].discussion,
   );
 
   return (

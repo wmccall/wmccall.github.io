@@ -51,61 +51,69 @@ export const interestTagDefinitions = {
   },
 };
 
-export const interestWordDiscussions = {
-  Ceramics: [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  Photography: [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  Illustrator: [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  Photoshop: [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  Music: [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  Movies: [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  'Video Games': [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
-  'Mechanical Keyboards': [
-    {
-      title: null,
-      description: <></>,
-       
-    },
-  ],
+export const interestPageData = {
+  Ceramics: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Photography: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Illustrator: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Photoshop: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Music: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  Movies: {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  'Video Games': {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
+  'Mechanical Keyboards': {
+    discussion: [
+      {
+        title: null,
+        description: <></>,
+      },
+    ],
+  },
 };
