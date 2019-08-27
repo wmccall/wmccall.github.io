@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 
 import Definition from '../../components/Definition';
 import Discussion from '../../components/Discussion';
+import Media from '../../components/Media';
 
 const containsTag = (word, currentTag, currentTagType) => {
   if (word.type === currentTagType) {
@@ -134,6 +135,9 @@ const TagPage = props => {
           </div>
           <div className="focus-discussion">
             <Discussion />
+          </div>
+          <div className="focus-media">
+            <Media />
           </div>
           <div className="bottom-padding"></div>
         </div>

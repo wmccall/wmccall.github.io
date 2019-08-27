@@ -38,7 +38,7 @@
         }
       }
     }
-    .home-button{
+    .home-button {
       margin-top: 5px;
     }
     .level-one {
@@ -70,7 +70,8 @@
             line-height: 20px;
             text-decoration: underline;
             padding: 0;
-            &:hover, &.selected {
+            &:hover,
+            &.selected {
               cursor: pointer;
               &.skill {
                 color: $string-green;
@@ -137,10 +138,12 @@
         background-color: $darker-gray;
         height: 110px;
       }
-      .topic-discussion,
       .Definition,
       .Discussion,
+      .Media,
+      .topic-discussion,
       .focus-discussion,
+      .focus-media,
       .image-gallery {
         padding-right: 80px;
         overflow: auto;
@@ -148,7 +151,8 @@
       }
 
       .Definition,
-      .Discussion {
+      .Discussion,
+      .Media {
         padding: 25px 25px 0px 25px;
       }
 

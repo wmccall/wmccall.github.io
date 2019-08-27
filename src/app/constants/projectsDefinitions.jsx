@@ -119,21 +119,17 @@ export const projectPageData = {
         ),
         sourceLink: 'https://github.com/wmccall/PictoCrypt',
       },
-      {
-        title: 'Video Demo',
-        description: (
-          <>
-            <iframe
-              title="PictoCrypt Video"
-              src="https://www.youtube.com/embed/MMIa-04K1cA?list=PLplNU3zJ099Dnb93CeELZS8AZr3tCuaZ-&rel=0"
-              frameBorder="0"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </>
-        ),
-      },
     ],
+    media: {
+      albums: null,
+      videos: [
+        {
+          title: 'Demo',
+          src:
+            'https://www.youtube.com/embed/MMIa-04K1cA?list=PLplNU3zJ099Dnb93CeELZS8AZr3tCuaZ-&rel=0',
+        },
+      ],
+    },
   },
   BulkPing: {
     discussion: [
@@ -165,19 +161,24 @@ export const projectPageData = {
         ),
         sourceLink: 'https://github.com/wmccall/BulkPing',
       },
-      {
-        title: 'Photos',
-        photoElements: [
-          {
-            src: BulkPing,
-            thumbnail: BulkPing,
-            thumbnailWidth: 640,
-            thumbnailHeight: 360,
-            caption: 'BulkPing GUI and Console Output',
-          },
-        ],
-      },
     ],
+    media: {
+      albums: [
+        {
+          title: null,
+          photoElements: [
+            {
+              src: BulkPing,
+              thumbnail: BulkPing,
+              thumbnailWidth: 640,
+              thumbnailHeight: 360,
+              caption: 'BulkPing GUI and Console Output',
+            },
+          ],
+        },
+      ],
+      videos: null,
+    },
   },
   'Clear Downloads': {
     discussion: [
@@ -207,19 +208,24 @@ export const projectPageData = {
         ),
         sourceLink: 'https://github.com/wmccall/ClearDownloads',
       },
-      {
-        title: 'Photos',
-        photoElements: [
-          {
-            src: ClearDownloadsRepeat,
-            thumbnail: ClearDownloadsRepeat,
-            thumbnailWidth: 640,
-            thumbnailHeight: 360,
-            caption: 'Clear Downloads with Repeat Settings',
-          },
-        ],
-      },
     ],
+    media: {
+      albums: [
+        {
+          title: null,
+          photoElements: [
+            {
+              src: ClearDownloadsRepeat,
+              thumbnail: ClearDownloadsRepeat,
+              thumbnailWidth: 640,
+              thumbnailHeight: 360,
+              caption: 'Clear Downloads with Repeat Settings',
+            },
+          ],
+        },
+      ],
+      videos: null,
+    },
   },
   'Program Snapshot': {
     discussion: [
@@ -255,21 +261,17 @@ export const projectPageData = {
         ),
         sourceLink: 'https://github.com/wmccall/ProgramSnapshot',
       },
-      {
-        title: 'Video Demo',
-        description: (
-          <>
-            <iframe
-              title="Program Snapshot Video"
-              src="https://www.youtube.com/embed/BFiV6EEOkhY?list=PLplNU3zJ099DH6DDWtH1aVOweD5E9IUKW&rel=0"
-              frameBorder="0"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </>
-        ),
-      },
     ],
+    media: {
+      albums: null,
+      videos: [
+        {
+          title: 'Demo',
+          src:
+            'https://www.youtube.com/embed/BFiV6EEOkhY?list=PLplNU3zJ099DH6DDWtH1aVOweD5E9IUKW&rel=0',
+        },
+      ],
+    },
   },
   "Q'd Up": {
     discussion: [
@@ -322,21 +324,17 @@ export const projectPageData = {
         ),
         sourceLink: 'https://github.com/wmccall/JavaQdUpRouter',
       },
-      {
-        title: 'Video Demo',
-        description: (
-          <>
-            <iframe
-              title="Q'd Up Video"
-              src="https://www.youtube.com/embed/giS5Lr0HmzQ?list=PLplNU3zJ099AzyxnwtFRmXde9A45-0UvR&rel=0"
-              frameBorder="0"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </>
-        ),
-      },
     ],
+    media: {
+      albums: null,
+      videos: [
+        {
+          title: 'Demo',
+          src:
+            'https://www.youtube.com/embed/giS5Lr0HmzQ?list=PLplNU3zJ099AzyxnwtFRmXde9A45-0UvR&rel=0',
+        },
+      ],
+    },
   },
   'Quick Search': {
     discussion: [

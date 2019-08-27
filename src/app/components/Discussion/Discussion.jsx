@@ -6,7 +6,7 @@ import { skillPageData } from '../../constants/skillsDefinitions';
 import { interestPageData } from '../../constants/interestsDefinitions';
 import { projectPageData } from '../../constants/projectsDefinitions';
 
-const discussions = {
+const pageData = {
   skill: skillPageData,
   interest: interestPageData,
   project: projectPageData,
@@ -66,23 +66,18 @@ const generateSubTopicTitle = (topicTitle, sourceLink) => (
 );
 
 const generateSubTopics = (type, subTopics) =>
-  subTopics.map(({ title, description, photoElements, sourceLink }, index) => (
+  subTopics.map(({ title, description, sourceLink }, index) => (
     <div className="sub-topic" key={`st_${index.toString()}_${title}`}>
       <div className={`sub-header ${type}`}>
         {generateSubTopicTitle(title, sourceLink)}
       </div>
       {description && <div className="description">{description}</div>}
-      {photoElements && (
-        <div className="photos">
-          <Gallery images={photoElements} enableImageSelection={false} />
-        </div>
-      )}
     </div>
   ));
 
 const Discussion = ({ type, word }) => {
   const { mainTopic, subTopics } = separateMainAndSubTopics(
-    discussions[type][word].discussion,
+    pageData[type][word].discussion,
   );
 
   return (
@@ -93,14 +88,6 @@ const Discussion = ({ type, word }) => {
         </div>
         {mainTopic.description && (
           <div className="description">{mainTopic.description}</div>
-        )}
-        {mainTopic.photoElements && (
-          <div className="photos">
-            <Gallery
-              images={mainTopic.photoElements}
-              enableImageSelection={false}
-            />
-          </div>
         )}
       </div>
       <div className="sub-topics">{generateSubTopics(type, subTopics)}</div>

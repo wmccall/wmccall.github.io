@@ -4,12 +4,11 @@
   font-family: 'Droid Sans Mono';
   font-style: normal;
   font-weight: 900;
-  src:
-    local('Droid Sans Mono'),
+  src: local('Droid Sans Mono'),
     url(../fonts/DroidSansMono-webfont.woff) format('woff'),
     url(../fonts/DroidSansMono-webfont.ttf) format('ttf'),
     url(../fonts/DroidSansMono-webfont.svg) format('svg'),
-    url(../fonts/DroidSansMono-webfont.eot) format('eot'),
+    url(../fonts/DroidSansMono-webfont.eot) format('eot');
 }
 
 @import './variables';
@@ -18,6 +17,7 @@
 @import './components/wordLink';
 @import './components/definition';
 @import './components/discussion';
+@import './components/media';
 
 // pages
 @import './pages/base';
