@@ -51,7 +51,7 @@ export const projectTagDefinitions = {
         As well, I was more interested in logic and at the time of writing my
         first site, I found that little logic was in play - I was building a
         static site of links. Since then I have learned a thing or two about{' '}
-        <WordLink {...skillObjects.Javascript} /> and{' '}
+        <WordLink {...skillObjects.JavaScript} /> and{' '}
         <WordLink {...skillObjects.React} /> and now know that I can get
         seriously logical about developing websites.
       </>
@@ -353,7 +353,7 @@ export const projectPageData = {
             <div className="tab" />
             The extension is written in <WordLink
               {...skillObjects.HTML}
-            /> and <WordLink {...skillObjects.Javascript} />. It allows a user
+            /> and <WordLink {...skillObjects.JavaScript} />. It allows a user
             to select some text on a website, then press CTRL+s to search the
             web for it. The extension also gives the option choose to search
             between Google, DuckDuckGo, or Bing, and will remember the choice

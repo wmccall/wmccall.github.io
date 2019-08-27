@@ -1,6 +1,6 @@
 const SKILLS_WORDS = {
   Python: 'Language',
-  Javascript: 'Language',
+  JavaScript: 'Language',
   'C#': 'Language',
   Java: 'Language',
   AWS: 'Infrastructure',

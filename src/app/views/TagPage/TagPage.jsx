@@ -130,14 +130,18 @@ const TagPage = props => {
       <div className="page-container">
         <div className="page-inner">
           <div className="top-padding" />
-          <div className="topic-discussion">
-            <Definition />
-          </div>
-          <div className="focus-discussion">
-            <Discussion />
-          </div>
-          <div className="focus-media">
-            <Media />
+          <div className="page-body">
+            <div className="topic-focus">
+              <div className="topic-discussion">
+                <Definition />
+              </div>
+              <div className="focus-discussion">
+                <Discussion />
+              </div>
+            </div>
+            <div className="focus-media">
+              <Media />
+            </div>
           </div>
           <div className="bottom-padding"></div>
         </div>

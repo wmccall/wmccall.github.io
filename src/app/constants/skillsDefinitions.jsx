@@ -16,7 +16,7 @@ export const skillTagDefinitions = {
         <WordLink {...skillObjects['C#']} punc="." /> Python quickly became my
         favorite language to work with because of its ease in prototyping and
         quick scripting. Most recently I have been using{' '}
-        <WordLink {...skillObjects.Javascript} /> to work with{' '}
+        <WordLink {...skillObjects.JavaScript} /> to work with{' '}
         <WordLink {...skillObjects.React} /> to build webpages personally and
         professionally.
       </>
@@ -33,7 +33,7 @@ export const skillTagDefinitions = {
         I worked for a education technology company, Amplify, where I learned
         about <WordLink {...skillObjects.React} punc="." /> React turned out to
         be the perfect blend of logic and UI for me. It beautifully combined{' '}
-        <WordLink {...skillObjects.Javascript} punc="," />{' '}
+        <WordLink {...skillObjects.JavaScript} punc="," />{' '}
         <WordLink {...skillObjects.CSS} punc="," /> and{' '}
         <WordLink {...skillObjects.HTML} /> into a straight forward mechanism
         for building websites, and since then I&apos;ve been hooked on web
@@ -84,7 +84,7 @@ export const skillPageData = {
       },
     ],
   },
-  Javascript: {
+  JavaScript: {
     discussion: [
       {
         title: null,
