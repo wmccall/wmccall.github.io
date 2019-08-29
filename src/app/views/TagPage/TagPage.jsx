@@ -87,46 +87,55 @@ const TagPage = props => {
 
   const doubleQuoteWord = containsSingleQuote(currentWord);
 
+  const navigation = (
+    <>
+      <div className="bracket">{leftBracket}</div>
+      {showExtraWords() && <div className="words">{wordsWithCurrentTag()}</div>}
+      <div className="bracket">{rightBracket}</div>
+    </>
+  );
+
+  const pageName = (
+    <>
+      <div className="inline">
+        <span className="neutral">{leftCurlyBrace}</span>
+
+        <span className="constant">{currentTagType.toUpperCase()}_CLASS</span>
+        <span className="neutral">: </span>
+        {doubleQuoteTag ? doubleQuote : singleQuote}
+        {currentTag}
+        {doubleQuoteTag ? doubleQuote : singleQuote}
+
+        <span className="neutral">{comma} </span>
+      </div>
+      <div className="inline">
+        <span className="constant">{currentTagType.toUpperCase()}_NAME</span>
+        <span className="neutral">: </span>
+        {doubleQuoteWord ? doubleQuote : singleQuote}
+        {currentWord}
+        {doubleQuoteWord ? doubleQuote : singleQuote}
+
+        <span className="neutral">{rightCurlyBrace}</span>
+      </div>
+    </>
+  );
+
+  const generateTopBar = () => (
+    <>
+      <div className="level-one ">
+        {backButton()}
+        <div className="tag-title ">{navigation}</div>
+      </div>
+      <div className="level-two">
+        {homeButton()}
+        <div className="tag">{pageName}</div>
+      </div>
+    </>
+  );
+
   return (
     <div className="tag-page">
-      <div className={`top-bar ${currentTagType}`}>
-        <div className="level-one ">
-          {backButton()}
-          <div className="tag-title ">
-            <div className="bracket">{leftBracket}</div>
-            {showExtraWords() && (
-              <div className="words">{wordsWithCurrentTag()}</div>
-            )}
-            <div className="bracket">{rightBracket}</div>
-          </div>
-        </div>
-        <div className="level-two">
-          {homeButton()}
-          <div className="tag">
-            <span className="neutral">{leftCurlyBrace}</span>
-
-            <span className="constant">
-              {currentTagType.toUpperCase()}_CLASS
-            </span>
-            <span className="neutral">: </span>
-            {doubleQuoteTag ? doubleQuote : singleQuote}
-            {currentTag}
-            {doubleQuoteTag ? doubleQuote : singleQuote}
-
-            <span className="neutral">{comma} </span>
-
-            <span className="constant">
-              {currentTagType.toUpperCase()}_NAME
-            </span>
-            <span className="neutral">: </span>
-            {doubleQuoteWord ? doubleQuote : singleQuote}
-            {currentWord}
-            {doubleQuoteWord ? doubleQuote : singleQuote}
-
-            <span className="neutral">{rightCurlyBrace}</span>
-          </div>
-        </div>
-      </div>
+      <div className={`top-bar ${currentTagType}`}>{generateTopBar()}</div>
       <div className="page-container">
         <div className="page-inner">
           <div className="top-padding" />
