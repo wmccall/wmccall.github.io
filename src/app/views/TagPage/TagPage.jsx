@@ -120,7 +120,7 @@ const TagPage = props => {
     </>
   );
 
-  const generateTopBar = () => (
+  const topBar = (
     <>
       <div className="level-one ">
         {backButton()}
@@ -135,10 +135,9 @@ const TagPage = props => {
 
   return (
     <div className="tag-page">
-      <div className={`top-bar ${currentTagType}`}>{generateTopBar()}</div>
+      <div className={`top-bar ${currentTagType}`}>{topBar}</div>
       <div className="page-container">
         <div className="page-inner">
-          <div className="top-padding" />
           <div className="page-body">
             <div className="topic-focus">
               <div className="topic-discussion">
