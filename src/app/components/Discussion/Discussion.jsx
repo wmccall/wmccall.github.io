@@ -1,6 +1,5 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import Gallery from 'react-grid-gallery';
 
 import { skillPageData } from '../../constants/skillsDefinitions';
 import { interestPageData } from '../../constants/interestsDefinitions';
