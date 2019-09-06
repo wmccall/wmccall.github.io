@@ -53,7 +53,12 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            I had not expected to get into ceramics when I first was introduced
+            to it in 2014.
+          </>
+        ),
       },
     ],
     media: {
@@ -194,6 +199,12 @@ export const interestPageData = {
               caption: 'Speckled Pot',
             },
             {
+              src: 'https://imgur.com/EJuoBds.jpg',
+              thumbnail: 'https://imgur.com/EJuoBds.jpg',
+              thumbnailWidth: 640,
+              caption: 'Cigar Ash Tray',
+            },
+            {
               src: 'https://imgur.com/KxAFnn9.jpg',
               thumbnail: 'https://imgur.com/KxAFnn9.jpg',
               thumbnailWidth: 640,
@@ -214,7 +225,6 @@ export const interestPageData = {
           ],
         },
       ],
-      videos: null,
     },
   },
   Photography: {
