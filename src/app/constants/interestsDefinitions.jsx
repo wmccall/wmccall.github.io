@@ -55,8 +55,39 @@ export const interestPageData = {
         title: null,
         description: (
           <>
-            I had not expected to get into ceramics when I first was introduced
-            to it in 2014.
+            <div className="tab" />I had not expected to fall in love with
+            ceramics when I first was introduced to it back in 2014. I was
+            digitally focussed at the time, tinkering with{' '}
+            <WordLink {...interestObjects.Photoshop} /> mostly, and the shine of
+            physical art lost its luster around early high school. However, I
+            had just moved and after all of the change I wanted to try something
+            new. My mom found that we had a{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://communityartscenter.org"
+            >
+              Community Arts Center
+            </a>{' '}
+            in our area, so we decided I should give a ceramics class a shot.
+            Despite the challenge of centering the clay and patience required to
+            bring my ideas to life, I was hooked.
+            <div className="new-line" />
+            <div className="tab" />
+            Since then I have taken a handful of classes both during school and
+            my internships, but most recently I threw at{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/bklynclay/"
+            >
+              BKLYN CLAY
+            </a>{' '}
+            in NYC. I truly found my love for mug making there! Some say I may
+            have went overboard on the quantity, but I felt they were the right
+            challenge: making an appropriately sized vessel, pulling a proper
+            handle, and attaching it comfortably. Not to mention, the colors at
+            BKLYN CLAY were phenomenal!
           </>
         ),
       },
@@ -64,7 +95,7 @@ export const interestPageData = {
     media: {
       albums: [
         {
-          title: null,
+          title: 'BKLYN CLAY Work [2019]',
           photoElements: [
             {
               src: 'https://imgur.com/bYdxsHx.jpg',
@@ -119,12 +150,6 @@ export const interestPageData = {
               thumbnail: 'https://imgur.com/0Ncv1ZT.jpg',
               thumbnailWidth: 640,
               caption: 'Fish Bone Mug',
-            },
-            {
-              src: 'https://imgur.com/N3RhFBV.jpg',
-              thumbnail: 'https://imgur.com/N3RhFBV.jpg',
-              thumbnailWidth: 640,
-              caption: 'Blue Dip Mug',
             },
             {
               src: 'https://imgur.com/cjfWmxh.jpg',
@@ -205,22 +230,113 @@ export const interestPageData = {
               caption: 'Cigar Ash Tray',
             },
             {
+              src: 'https://imgur.com/0VrzL4V.jpg',
+              thumbnail: 'https://imgur.com/0VrzL4V.jpg',
+              thumbnailWidth: 640,
+              caption: 'Turquoise and Brown Tumbler',
+            },
+          ],
+        },
+        {
+          title: 'RIT Course Work [2018]',
+          photoElements: [
+            {
+              src: 'https://imgur.com/omVBdW3.jpg',
+              thumbnail: 'https://imgur.com/omVBdW3.jpg',
+              thumbnailWidth: 640,
+              caption: 'Blue Dip Mugs',
+            },
+            {
+              src: 'https://imgur.com/N3RhFBV.jpg',
+              thumbnail: 'https://imgur.com/N3RhFBV.jpg',
+              thumbnailWidth: 640,
+              caption: 'Blue Dip Mug',
+            },
+            {
               src: 'https://imgur.com/KxAFnn9.jpg',
               thumbnail: 'https://imgur.com/KxAFnn9.jpg',
               thumbnailWidth: 640,
               caption: 'Togepi Tumbler',
             },
             {
-              src: 'https://imgur.com/0VrzL4V.jpg',
-              thumbnail: 'https://imgur.com/0VrzL4V.jpg',
-              thumbnailWidth: 640,
-              caption: 'Turquoise and Brown Tumbler',
-            },
-            {
               src: 'https://imgur.com/js0Mx14.jpg',
               thumbnail: 'https://imgur.com/js0Mx14.jpg',
               thumbnailWidth: 640,
               caption: 'Ceramic Lamp',
+            },
+            {
+              src: 'https://imgur.com/mYn53NX.jpg',
+              thumbnail: 'https://imgur.com/mYn53NX.jpg',
+              thumbnailWidth: 640,
+              caption: 'Color Band Mugs',
+            },
+            {
+              src: 'https://imgur.com/dmMAOuw.jpg',
+              thumbnail: 'https://imgur.com/dmMAOuw.jpg',
+              thumbnailWidth: 640,
+              caption: 'Blue Dip Pourers',
+            },
+            {
+              src: 'https://imgur.com/sHIMDiZ.jpg',
+              thumbnail: 'https://imgur.com/sHIMDiZ.jpg',
+              thumbnailWidth: 640,
+              caption: 'Unglazed Mugs',
+            },
+          ],
+        },
+        {
+          title: 'Community Arts Center Work [2014]',
+          photoElements: [
+            {
+              src: 'https://imgur.com/JmOWbow.jpg',
+              thumbnail: 'https://imgur.com/JmOWbow.jpg',
+              thumbnailWidth: 640,
+              caption: 'Eye Bowl',
+            },
+
+            {
+              src: 'https://imgur.com/LAGfyVD.jpg',
+              thumbnail: 'https://imgur.com/LAGfyVD.jpg',
+              thumbnailWidth: 640,
+              caption: 'Green Mug',
+            },
+            {
+              src: 'https://imgur.com/WOZCwMH.jpg?1',
+              thumbnail: 'https://imgur.com/WOZCwMH.jpg?1',
+              thumbnailWidth: 640,
+              caption: 'Tall Dish',
+            },
+
+            {
+              src: 'https://imgur.com/vEMhfqL.jpg?1',
+              thumbnail: 'https://imgur.com/vEMhfqL.jpg?1',
+              thumbnailWidth: 640,
+              caption: "Blue Hare's Fur Pieces",
+            },
+
+            {
+              src: 'https://imgur.com/hZsgeXF.jpg',
+              thumbnail: 'https://imgur.com/hZsgeXF.jpg',
+              thumbnailWidth: 640,
+              caption: 'Colorful Dishes',
+            },
+            {
+              src: 'https://imgur.com/LT8y2xo.jpg?1',
+              thumbnail: 'https://imgur.com/LT8y2xo.jpg?1',
+              thumbnailWidth: 640,
+              caption: 'Colorful Dishes',
+            },
+            {
+              src: 'https://imgur.com/IVonQEY.jpg',
+              thumbnail: 'https://imgur.com/IVonQEY.jpg',
+              thumbnailWidth: 640,
+              caption: 'Striped Plate',
+            },
+            {
+              src: 'https://imgur.com/0HeiCix.jpg',
+              thumbnail: 'https://imgur.com/0HeiCix.jpg',
+              thumbnailWidth: 640,
+              caption: 'Beginning Pieces',
             },
           ],
         },
