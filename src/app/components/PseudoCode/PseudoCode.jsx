@@ -1,5 +1,7 @@
 import React from 'react';
 
+import uniqueId from 'lodash.uniqueid';
+
 import PseudoCodeUtils from '../../utils/PseudoCodeUtils';
 import PseudoElement from './PseudoElement';
 
@@ -7,7 +9,11 @@ const mockWord = { word: 'theGrid' };
 const mockConstant = { word: 'DIGITAL_FRONTIER' };
 const mockString = { word: "'break it to me'" };
 
-const pseudoCode = code => <div className="pseudo-code">{code}</div>;
+const pseudoCode = code => (
+  <div className="pseudo-code" key={`pseudo_code_${uniqueId('pseudo-code_')}`}>
+    {code}
+  </div>
+);
 
 const pseudoImport = (moduleName = mockWord, packageName = mockWord) =>
   pseudoCode([

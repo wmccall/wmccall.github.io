@@ -9,7 +9,6 @@ import BulkPing from '../resources/BulkPing/BulkPing.png';
 
 export const projectTagDefinitions = {
   Mobile: {
-    partOfSpeech: 'noun',
     description: (
       <>
         Since mobile phones and devices have become virtual extensions of most
@@ -23,7 +22,6 @@ export const projectTagDefinitions = {
     ),
   },
   Plugin: {
-    partOfSpeech: 'noun',
     description: (
       <>
         While I have only limited experience writing plugins,{' '}
@@ -35,7 +33,6 @@ export const projectTagDefinitions = {
     ),
   },
   Web: {
-    partOfSpeech: 'noun',
     description: (
       <>
         I was not expecting to enjoy developing websites as much as I have. My
@@ -55,7 +52,6 @@ export const projectTagDefinitions = {
     ),
   },
   'Desktop Application': {
-    partOfSpeech: 'noun',
     description: (
       <>
         GUI applications, along with CLI applications, were the first

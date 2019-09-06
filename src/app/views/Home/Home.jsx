@@ -42,6 +42,7 @@ const Home = props => {
           className={`${actType}s-button ${
             permanentCategory === actType ? 'active' : ''
           }`}
+          key={`${actType}s-button`}
           type="button"
           onMouseEnter={() => setHoverCategory(actType)}
           onMouseLeave={() => setHoverCategory(null)}
