@@ -6,7 +6,6 @@ import { interestObjects } from './interests';
 export const interestTagDefinitions = {
   Art: {
     partOfSpeech: 'noun',
-    pronunciation: '/ärt/',
     description: (
       <>
         Just like virtually everyone, I was introduced to art at a young age.
@@ -23,7 +22,6 @@ export const interestTagDefinitions = {
   },
   Entertainment: {
     partOfSpeech: 'noun',
-    pronunciation: '/ˌen(t)ərˈtānmənt/',
     description: (
       <>
         I mean, who doesn&apos;t like some form of entertainment?{' '}
@@ -38,7 +36,6 @@ export const interestTagDefinitions = {
   },
   Technology: {
     partOfSpeech: 'noun',
-    pronunciation: '/tekˈnäləjē/',
     description: (
       <>
         Growing up with a CRT with a built in web cam as my shiny main display I

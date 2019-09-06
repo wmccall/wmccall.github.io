@@ -6,7 +6,6 @@ import { skillObjects } from './skills';
 export const skillTagDefinitions = {
   Language: {
     partOfSpeech: 'noun',
-    pronunciation: '/ˈlaNGɡwij/',
     description: (
       <>
         I started working with programming languages in 2011 when I took my
@@ -24,7 +23,6 @@ export const skillTagDefinitions = {
   },
   'Web Development': {
     partOfSpeech: 'noun',
-    pronunciation: '/web dəˈveləpmənt/',
     description: (
       <>
         Web development is the latest area of software development that I have
@@ -43,7 +41,6 @@ export const skillTagDefinitions = {
   },
   Infrastructure: {
     partOfSpeech: 'noun',
-    pronunciation: '/ˈinfrəˌstrək(t)SHər/',
     description: (
       <>
         Putting services on the cloud can be cumbersome, but after working with{' '}
@@ -59,7 +56,6 @@ export const skillTagDefinitions = {
   },
   'Version Control': {
     partOfSpeech: 'noun',
-    pronunciation: '/ˈvərZHən kənˈtrōl/',
     description: (
       <>
         Version control has likely become my favorite tool within software
