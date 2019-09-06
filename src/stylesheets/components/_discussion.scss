@@ -37,6 +37,10 @@
       color: $light-gray;
       padding: 10px 10px 10px 10px;
       font-size: 16px;
+      .heart {
+        font-size: 22px;
+        line-height: 16px;
+      }
       div {
         display: inline-block;
       }

@@ -1,7 +1,10 @@
 import React from 'react';
 
+import Emoji from 'a11y-react-emoji';
+
 import WordLink from '../components/WordLink';
 import { skillObjects } from './skills';
+import { projectObjects } from './projects';
 
 export const skillTagDefinitions = {
   Language: {
@@ -72,7 +75,37 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I don&apos;t think that I can say it enough;
+            I <Emoji symbol="❤" label="love" className="heart" /> Python! Like
+            many people, I find it to be an incredibly easy language to work
+            with. It makes prototyping new ideas incredibly quick, and offers so
+            many tools to make data manipulation a breeze. I personally use it
+            for scripts most of the time. When I have a large set of photos from
+            a day of taking pictures, I can use a quickly written script to go
+            through the photos in the directory to append or replace the file
+            name for ease of management. It also allows for easy interfacing
+            with command line calls, so to familiarize myself with that side of
+            Python, I worked on my personal project{' '}
+            <WordLink {...projectObjects['Program Snapshot']} />.
+            <div className="new-line" />
+            <div className="tab" />
+            While working for Amplify, I use it a ton for our internal{' '}
+            <WordLink {...skillObjects.Serverless} /> Authentication APIs which
+            opened my eyes to the production value of Python. They were so quick
+            to be built and changed when new requirements came through. I also
+            used it for writing scripts to analyze and manipulate data contained
+            in large CSV files. I tasked with updating outdated tags and
+            analyzing phonemes in our assessment texts. It was really neat to
+            have a script that allowed me to apply my algorithms&apos; knowledge
+            on to figure out the most efficient way to work with the data.
+            <div className="new-line" />
+            <div className="tab" />
+            Some people call Python &quot;pseudo code&quot;, but I see it
+            something more than that. It&apos;s... production grade pseudo code.
+          </>
+        ),
       },
     ],
   },
