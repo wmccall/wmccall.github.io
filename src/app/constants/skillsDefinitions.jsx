@@ -113,7 +113,34 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" /> Until January 2019, I had never truly used
+            JavaScript. I used scripts here and there for various things on the
+            internet, but stayed away from writing it myself for the longest
+            time.
+            <div className="new-line" />
+            <div className="tab" />
+            Then along came my Web Development position at Amplify, and my usage
+            of JavaScript boomed. I quickly learned it was similar in nature to{' '}
+            <WordLink {...skillObjects.Python} /> with its ease of use and lack
+            of typing, which made it an easy language for me to transition to. I
+            ended up using it largely for the development of{' '}
+            <WordLink {...skillObjects.React} /> webpages and components. The
+            components I wrote were full of logic so I got familiar with many
+            neat, helpful features at my disposal. Object destructuring? You got
+            it. Map, Filter, and Reduce? You bet. Arrow functions? Ohhhh yeah!
+            Bless{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://developer.mozilla.org/en-US/"
+            >
+              MDN
+            </a>{' '}
+            <Emoji symbol="🙏" label="pray" /> for all the new knowledge.
+          </>
+        ),
       },
     ],
   },
