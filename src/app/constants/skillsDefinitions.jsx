@@ -96,10 +96,10 @@ export const skillPageData = {
             opened my eyes to the production value of Python. They were so quick
             to be built and changed when new requirements came through. I also
             used it for writing scripts to analyze and manipulate data contained
-            in large CSV files. I tasked with updating outdated tags and
+            in large CSV files. I was tasked with updating outdated tags and
             analyzing phonemes in our assessment texts. It was really neat to
             have a script that allowed me to apply my algorithms&apos; knowledge
-            on to figure out the most efficient way to work with the data.
+            to figure out the most efficient way to work with the data.
             <div className="new-line" />
             <div className="tab" />
             Some people call Python &quot;pseudo code&quot;, but I see it
