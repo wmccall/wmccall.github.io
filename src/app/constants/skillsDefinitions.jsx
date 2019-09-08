@@ -155,7 +155,7 @@ export const skillPageData = {
             (CoPaDS) course. After spending so much time writing{' '}
             <WordLink {...skillObjects.Java} />, it was a nice change of pace to
             write something similar, but with friendlier syntax. Writing
-            &quot;Console.WriteLine()&quot; &quot;System.out.println()&quot;
+            &quot;Console.WriteLine()&quot; vs &quot;System.out.println()&quot;
             just felt more user friendly. Silly example I&apos;m sure; however
             that, among other reasons, lead me to using it for some personal
             projects that I really enjoyed writing.
@@ -244,7 +244,28 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I used to be terrified of CSS. There are so
+            many ways to make a certain style work, and which one to choose{' '}
+            <Emoji symbol="🤯" label="mindblown" />. That actually later became
+            the fun in it! I love having an idea in my mind of how a page should
+            look or act, and spending some time trying to figure out what css
+            patterns I should use to best manage the elements in my{' '}
+            <WordLink {...skillObjects.HTML} /> hierarchy. While it can get
+            complicated at times, finding a silver bullet that cleanly
+            transforms a dingy page into a slick one is always a reward.
+            <div className="new-line" />
+            <div className="tab" />
+            This entire site was styled with custom CSS. Getting the
+            &quot;code&quot; to appear out of the background still blows my mind
+            how simple it was to accomplish. I had never seen that done before,
+            and it intrigues me with what else can be accomplished with simple
+            class changes and transitions. I find that to be the beauty in CSS.
+            Every moment I had tweaking it on this site felt like I was honing
+            in closer and closer on my vision of this site.
+          </>
+        ),
       },
     ],
   },
