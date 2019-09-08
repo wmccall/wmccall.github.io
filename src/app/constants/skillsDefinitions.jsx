@@ -115,10 +115,10 @@ export const skillPageData = {
         title: null,
         description: (
           <>
-            <div className="tab" /> Until January 2019, I had never truly used
-            JavaScript. I used scripts here and there for various things on the
-            internet, but stayed away from writing it myself for the longest
-            time.
+            <div className="tab" />
+            Until January 2019, I had never truly used JavaScript. I used
+            scripts here and there for various things on the internet, but
+            stayed away from writing it myself for the longest time.
             <div className="new-line" />
             <div className="tab" />
             Then along came my Web Development position at Amplify, and my usage
@@ -148,7 +148,31 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I got really into C# in 2017 around the time
+            of my &quot;Concepts of Parallel and Distributed Systems&quot;
+            (CoPaDS) course. After spending so much time writing{' '}
+            <WordLink {...skillObjects.Java} />, it was a nice change of pace to
+            write something similar, but with friendlier syntax. Writing
+            &quot;Console.WriteLine()&quot; &quot;System.out.println()&quot;
+            just felt more user friendly. Silly example I&apos;m sure; however
+            that, among other reasons, lead me to using it for some personal
+            projects that I really enjoyed writing.
+            <div className="new-line" />
+            <div className="tab" />I took my final project from that CoPaDS
+            course and used its core functionality as the beginning of my{' '}
+            <WordLink {...projectObjects["Q'd Up"]} /> backend server. I later
+            converted it to Java for consistency between itself and the Android
+            app, but it <div className="italic">served</div> me well for quite
+            some time. I then wrote my two Windows GUI programs{' '}
+            <WordLink {...projectObjects.PictoCrypt} /> and{' '}
+            <WordLink {...projectObjects['Clear Downloads']} /> in C# utilizing
+            Visual Studio&apos;s easy front end development tools. Both were a
+            ton of fun to write, and had few headaches attaching the backend to
+            the front end.
+          </>
+        ),
       },
     ],
   },
