@@ -7,7 +7,7 @@ const SKILLS_WORDS = {
   Terraform: 'Infrastructure',
   Serverless: 'Infrastructure',
   Docker: 'Infrastructure',
-  git: 'Version Control',
+  Git: 'Version Control',
   GitHub: 'Version Control',
   React: 'Web Development',
   CSS: 'Web Development',

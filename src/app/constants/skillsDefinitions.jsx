@@ -59,7 +59,7 @@ export const skillTagDefinitions = {
       <>
         Version control has likely become my favorite tool within software
         development. Managing new development branches with{' '}
-        <WordLink {...skillObjects.git} punc="," /> tracking down when a bug
+        <WordLink {...skillObjects.Git} punc="," /> tracking down when a bug
         arose by blaming in <WordLink {...skillObjects.GitHub} punc="," /> and
         hashing out differing thoughts on a PR all made for simple and effective
         collaboration between developers. No more are the days of manually
@@ -83,12 +83,11 @@ export const skillPageData = {
             with. It makes prototyping new ideas incredibly quick, and offers so
             many tools to make data manipulation a breeze. I personally use it
             for scripts most of the time. When I have a large set of photos from
-            a day of taking pictures, I can use a quickly written script to go
-            through the photos in the directory to append or replace the file
-            name for ease of management. It also allows for easy interfacing
-            with command line calls, so to familiarize myself with that side of
-            Python, I worked on my personal project{' '}
-            <WordLink {...projectObjects['Program Snapshot']} />.
+            a day of taking pictures, I can use a quickly written script to
+            update all of the filenames to something better than IMG-XX. It also
+            allows for easy interfacing with command line calls, so to
+            familiarize myself with that side of Python I worked on my personal
+            project <WordLink {...projectObjects['Program Snapshot']} />.
             <div className="new-line" />
             <div className="tab" />
             While working for Amplify, I use it a ton for our internal{' '}
@@ -216,11 +215,37 @@ export const skillPageData = {
       },
     ],
   },
-  git: {
+  Git: {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            Every project I have worked on since 2016 is versioned with Git; I
+            cannot escape it. Nor would I want to! I&apos;ve used SVN and CVS
+            previously, and they both felt clunky. Git on the other hand felt
+            simple yet effective. Everything in Git is quick command, branch
+            management is fast and easy, and releases are simple. Heck, if you
+            mess up a release, it is also trivial to undo those changes.
+            It&apos;s forgiving when you make a mistake, and effortless when
+            tracking down changes that might have lead to a mistake. Everything
+            I learned about Git started from{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.learnenough.com/git-tutorial/getting_started"
+            >
+              Learn Enough Git to Be Dangerous
+            </a>{' '}
+            and I highly recommend it to every developer I&apos;ve met who was
+            unfamiliar with this beautiful Version Control program.
+            <div className="new-line" />
+            <div className="tab" />
+            Git makes development easy, and I don&apos;t see anything surpassing
+            it soon.
+          </>
+        ),
       },
     ],
   },
@@ -228,7 +253,28 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            GitHub takes the effectiveness of <WordLink
+              {...skillObjects.Git}
+            />{' '}
+            and turns it into something even better. Every project I work on
+            ends up in GitHub for two general reasons: code safety, and easy
+            collaboration. I never have to worry about losing my code because
+            every change I make gets pushed into GitHub soon after it is
+            committed. After all the computer trouble I&apos;ve seen in my life
+            as an IT Technician, I don&apos;t like to trust that my computer
+            will be working just as I left it when I come back to it. GitHub has
+            yet to fail me. Furthermore, collaborating with coworkers or
+            teammates is super simple on GitHub. Everything is tracked and
+            concerns can be discussed right alongside the code so figuring out
+            why we did X over Y can be explained with a simple search. In my
+            personal and professional life, I try to leverage as much as I can
+            out of GitHub, and I&apos;m happy to see how far I&apos;ve come with
+            it.
+          </>
+        ),
       },
     ],
   },
@@ -247,14 +293,13 @@ export const skillPageData = {
         description: (
           <>
             <div className="tab" />I used to be terrified of CSS. There are so
-            many ways to make a certain style work, and which one to choose{' '}
-            <Emoji symbol="🤯" label="mindblown" />. That actually later became
-            the fun in it! I love having an idea in my mind of how a page should
-            look or act, and spending some time trying to figure out what css
-            patterns I should use to best manage the elements in my{' '}
-            <WordLink {...skillObjects.HTML} /> hierarchy. While it can get
-            complicated at times, finding a silver bullet that cleanly
-            transforms a dingy page into a slick one is always a reward.
+            many ways to make a certain style work. Which one to choose??{' '}
+            <Emoji symbol="🤯" label="mindblown" /> That actually later became
+            the fun in it! I love having an idea of how a page should look or
+            act, and spending some time trying to figure out what css patterns I
+            should use. While it can get complicated at times, finding a silver
+            bullet that cleanly transforms a dingy page into a slick one is
+            always a reward.
             <div className="new-line" />
             <div className="tab" />
             This entire site was styled with custom CSS. Getting the
