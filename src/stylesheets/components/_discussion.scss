@@ -77,18 +77,18 @@
   }
 
   .neutral {
-    color: $light-gray;
+    color: $light-gray !important;
   }
   .italic {
-    font-style: italic;
+    font-style: italic !important;
   }
   .small {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .left-pad {
-    padding-left: 10px;
+    padding-left: 10px !important;
   }
   .no-pad {
-    padding: 0;
+    padding: 0 !important;
   }
 }
