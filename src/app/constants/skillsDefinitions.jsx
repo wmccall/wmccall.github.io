@@ -187,7 +187,24 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I was first introduced to AWS when I was
+            working on the server for my project{' '}
+            <WordLink {...projectObjects["Q'd Up"]} />. I initially hosted the
+            server on a local machine that was port forwarded through my router.
+            This proved to have some difficulties, so I looked into
+            alternatives. I found that I could get a free micro EC2 instance as
+            a student, and quickly migrated over to it.
+            <div className="new-line" />
+            <div className="tab" />
+            Since then I have used a good bit more of AWS. Using{' '}
+            <WordLink {...skillObjects.Terraform} /> I setup code pipelines to
+            invoke PR checkers, and deploy Lambdas and S3 sites to higher
+            environments. I feel comfortable working with AWS (despite its
+            clunky console) and love all of the options I have with it.
+          </>
+        ),
       },
     ],
   },
