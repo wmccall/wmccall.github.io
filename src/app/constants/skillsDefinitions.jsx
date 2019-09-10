@@ -167,7 +167,7 @@ export const skillPageData = {
             some time. I then wrote my two Windows GUI programs{' '}
             <WordLink {...projectObjects.PictoCrypt} /> and{' '}
             <WordLink {...projectObjects['Clear Downloads']} /> in C# utilizing
-            Visual Studio&apos;s easy front end development tools. Both were a
+            Visual Studio&apos;s easy front-end development tools. Both were a
             ton of fun to write, and had few headaches attaching the backend to
             the front end.
           </>
@@ -182,8 +182,8 @@ export const skillPageData = {
         description: (
           <>
             <div className="tab" />
-            Java get&apos;s a bad wrap. And while I know full well it isn&apos;t
-            the most fun to write, it can get the job done pretty well. It was
+            Java gets a bad wrap. And while I know full well it isn&apos;t the
+            most fun to write, it can get the job done pretty well. It was
             especially useful while developing my Android project{' '}
             <WordLink {...projectObjects["Q'd Up"]} punc="." /> It interfaced
             perfectly with Spotify&apos;s APIs and ran natively on the intended
