@@ -179,7 +179,29 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            Java get&apos;s a bad wrap. And while I know full well it isn&apos;t
+            the most fun to write, it can get the job done pretty well. It was
+            especially useful while developing my Android project{' '}
+            <WordLink {...projectObjects["Q'd Up"]} punc="." /> It interfaced
+            perfectly with Spotify&apos;s APIs and ran natively on the intended
+            devices. Later on, while thinking about developing my project{' '}
+            <WordLink {...projectObjects.BulkPing} /> I knew I had no idea what
+            operating systems it could be running on. I immediately thought,
+            &quot;Well, everyone and their mother has a JVM,&quot; and decided
+            that I could evade the OS problem by using Java. This proved to be
+            effective as I only had to write the program once, and then the
+            program was consistent across all platforms, granted that I compiled
+            it for the right JVM.
+            <div className="new-line" />
+            <div className="tab" />
+            While it may not be glamorous to work in Java, I do find myself
+            coming back to it from time to time, at least just to make sure I
+            still know how to write a proper class.
+          </>
+        ),
       },
     ],
   },
@@ -326,7 +348,34 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            This website could not have been possible without React. I have
+            attempted multiple times to write a website, but always fell flat on
+            my face. I was writing plain <WordLink
+              {...skillObjects.HTML}
+            /> and <WordLink {...skillObjects.CSS} /> websites, and felt like I
+            did not have the control I wanted to make my website interesting or
+            useful. Then along came React with its tools that allowed me to bake
+            logic directly into my sites. I finally could design websites that
+            lined up with the way I think.
+            <div className="new-line" />
+            <div className="tab" />I love working on a part of a site and
+            realizing a piece is repeating itself a lot. I see the opportunity
+            to make a component to save me some typing. The fun doesn&apos;t end
+            there! Typically these components need to interact with my state, so
+            getting them talking with redux is a great time. Sometimes the state
+            just needs to be held locally, so integrating with state hooks makes
+            that super simple to accomplish.
+            <div className="new-line" />
+            <div className="tab" />
+            All the facets to React have been rewarding to learn, and I have
+            enjoyed holding discussions with coworkers about best practices.
+            React quickly became an important development tool that I am going
+            to practice to keep sharp.
+          </>
+        ),
       },
     ],
   },
@@ -362,7 +411,21 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I can&apos;t get too far in Web Development
+            without using HTML, can I?
+            <div className="new-line" />
+            <div className="tab" />I really enjoy tinkering with HTML structures
+            to find the best hierarchy to play nicely with{' '}
+            <WordLink {...skillObjects.CSS} punc="." /> I&apos;ll start out with
+            this seemingly great structure, then start adding my CSS into it...
+            Then I&apos;m finding out that I need this div to be there, and oh
+            no this other div definitely needs to be in a container div. The
+            whole process is a puzzle, and unlike a jigsaw puzzle, I&apos;m
+            happily satisfied with the use of my time by the end of it.
+          </>
+        ),
       },
     ],
   },
