@@ -198,11 +198,10 @@ export const skillPageData = {
             a student, and quickly migrated over to it.
             <div className="new-line" />
             <div className="tab" />
-            Since then I have used a good bit more of AWS. Using{' '}
-            <WordLink {...skillObjects.Terraform} /> I setup code pipelines to
-            invoke PR checkers, and deploy Lambdas and S3 sites to higher
-            environments. I feel comfortable working with AWS (despite its
-            clunky console) and love all of the options I have with it.
+            Since then I have used a good bit more of AWS, also interfacing with{' '}
+            <WordLink {...skillObjects.Terraform} />. I feel comfortable working
+            with AWS (despite its clunky console) and love all of the options I
+            have with it.
           </>
         ),
       },
@@ -212,7 +211,14 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I wrote Terraform configs to include new
+            services to our AWS infrastructure while working at Amplify. These
+            configs set up code pipelines to invoke PR checkers, and deploy
+            Lambdas and S3 websites to higher environments.
+          </>
+        ),
       },
     ],
   },
@@ -220,7 +226,18 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            I&apos;m comfortable writing serverless.yml files to setup a lambda
+            and define its endpoints. After doing so I am capable of running
+            them either locally or off in an environment. I have yet to write
+            any in my free time, but I set up an authentication lambda and
+            accessed it from other services, and integrated PR checker lambdas I
+            designed with our <WordLink {...skillObjects.GitHub} /> repos while
+            working at Amplify.
+          </>
+        ),
       },
     ],
   },
