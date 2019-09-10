@@ -29,9 +29,9 @@ export const skillTagDefinitions = {
         Web development is the latest area of software development that I have
         taken on. With little experience until 2019 I saw web dev work as
         complicated and misaligned with my interests in logic. This changed when
-        I worked for a education technology company, Amplify, where I learned
-        about <WordLink {...skillObjects.React} punc="." /> React turned out to
-        be the perfect blend of logic and UI for me. It beautifully combined{' '}
+        I worked for Amplify, where I learned about{' '}
+        <WordLink {...skillObjects.React} punc="." /> React turned out to be the
+        perfect blend of logic and UI for me. It beautifully combined{' '}
         <WordLink {...skillObjects.JavaScript} punc="," />{' '}
         <WordLink {...skillObjects.CSS} punc="," /> and{' '}
         <WordLink {...skillObjects.HTML} /> into a straight forward mechanism
@@ -89,16 +89,16 @@ export const skillPageData = {
             familiarize myself with that side of Python I worked on my personal
             project <WordLink {...projectObjects['Program Snapshot']} />.
             <div className="new-line" />
-            <div className="tab" />
-            While working for Amplify, I use it a ton for our internal{' '}
-            <WordLink {...skillObjects.Serverless} /> Authentication APIs which
-            opened my eyes to the production value of Python. They were so quick
-            to be built and changed when new requirements came through. I also
-            used it for writing scripts to analyze and manipulate data contained
-            in large CSV files. I was tasked with updating outdated tags and
-            analyzing phonemes in our assessment texts. It was really neat to
-            have a script that allowed me to apply my algorithms&apos; knowledge
-            to figure out the most efficient way to work with the data.
+            <div className="tab" />I use python a ton in a professional setting
+            for our internal <WordLink {...skillObjects.Serverless} />{' '}
+            Authentication APIs which opened my eyes to the production value of
+            Python. They were so quick to be built and changed when new
+            requirements came through. I also used it for writing scripts to
+            analyze and manipulate data contained in large CSV files. I was
+            tasked with updating outdated tags and analyzing phonemes in our
+            assessment texts. It was really neat to have a script that allowed
+            me to apply my algorithms&apos; knowledge to figure out the most
+            efficient way to work with the data.
             <div className="new-line" />
             <div className="tab" />
             Some people call Python &quot;pseudo code&quot;, but I see it
@@ -213,10 +213,11 @@ export const skillPageData = {
         title: null,
         description: (
           <>
-            <div className="tab" />I wrote Terraform configs to include new
-            services to our AWS infrastructure while working at Amplify. These
-            configs set up code pipelines to invoke PR checkers, and deploy
-            Lambdas and S3 websites to higher environments.
+            <div className="tab" />I have written Terraform configs to include
+            new services to existing professional AWS infrastructure. These
+            configs defined what permissions our services had, set up code
+            pipelines to invoke PR checkers and deploy applications to higher
+            environments.
           </>
         ),
       },
@@ -245,7 +246,16 @@ export const skillPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I think Docker is super neat. When I learned
+            that you could essentially create a VM without packaging an OS, I
+            was intrigued. I quickly became familiar with setting up and running
+            Docker containers while in a professional setting. I have yet to
+            find a use for them in my personal life, but witnessed the
+            production value of switching away from VMs to containers.
+          </>
+        ),
       },
     ],
   },
