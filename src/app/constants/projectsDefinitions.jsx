@@ -16,8 +16,8 @@ export const projectTagDefinitions = {
         with nearly everyone around me. Being able to put a program on a
         platform so readily available is incredibly exciting. With my only true
         attempt at a mobile specific app being{' '}
-        <WordLink {...projectObjects["Q'd Up"]} />, I understand the challenges,
-        but I am still interested in giving new ideas a shot.
+        <WordLink {...projectObjects["Q'd Up"]} punc="," /> I understand the
+        challenges, but I am still interested in giving new ideas a shot.
       </>
     ),
   },
@@ -25,9 +25,9 @@ export const projectTagDefinitions = {
     description: (
       <>
         While I have only limited experience writing plugins,{' '}
-        <WordLink {...projectObjects['Quick Search']} />, I loved the quick
-        development time to add a tiny feature that I wanted from Firefox. I
-        have yet to run into more desired features, but am prepared to jump
+        <WordLink {...projectObjects['Quick Search']} punc="," /> I loved the
+        quick development time to add a tiny feature that I wanted from Firefox.
+        I have yet to run into more desired features, but am prepared to jump
         right in when the next opportunity appears.
       </>
     ),
@@ -139,8 +139,8 @@ export const projectPageData = {
             <div className="new-line" />
             <div className="tab" />
             The program is written entirely in{' '}
-            <WordLink {...skillObjects.Java} />, and compiled into a runnable
-            Jar. To use the program, the user can place a file named
+            <WordLink {...skillObjects.Java} punc="," /> and compiled into a
+            runnable Jar. To use the program, the user can place a file named
             &quot;IPAddresses.txt&quot; in the same directory as the Jar file
             and run the program, which will immediately start pinging the IP
             Addresses in the file. Alternatively the user can run the program

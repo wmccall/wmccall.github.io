@@ -46,7 +46,7 @@ export const skillTagDefinitions = {
         Putting services on the cloud can be cumbersome, but after working with{' '}
         <WordLink {...skillObjects.AWS} /> in a professional setting, I became
         quite familiar with the tools of the trade. I launched API lambdas
-        quickly with <WordLink {...skillObjects.Serverless} />, deployed
+        quickly with <WordLink {...skillObjects.Serverless} punc="," /> deployed
         webpages to S3 buckets using <WordLink {...skillObjects.Terraform} />{' '}
         built AWS Pipelines, and helped shrink down a frustratingly large
         Vagrant server into lightweight <WordLink {...skillObjects.Docker} />{' '}
@@ -152,8 +152,8 @@ export const skillPageData = {
             <div className="tab" />I got really into C# in 2017 around the time
             of my &quot;Concepts of Parallel and Distributed Systems&quot;
             (CoPaDS) course. After spending so much time writing{' '}
-            <WordLink {...skillObjects.Java} />, it was a nice change of pace to
-            write something similar, but with friendlier syntax. Writing
+            <WordLink {...skillObjects.Java} punc="," /> it was a nice change of
+            pace to write something similar, but with friendlier syntax. Writing
             &quot;Console.WriteLine()&quot; vs &quot;System.out.println()&quot;
             just felt more user friendly. Silly example I&apos;m sure; however
             that, among other reasons, lead me to using it for some personal
