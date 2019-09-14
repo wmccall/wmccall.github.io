@@ -65,15 +65,15 @@ const ALBUMS = [
       { src: 'https://imgur.com/JmOWbow.jpg', caption: 'Eye Bowl' },
 
       { src: 'https://imgur.com/LAGfyVD.jpg', caption: 'Green Mug' },
-      { src: 'https://imgur.com/WOZCwMH.jpg?1', caption: 'Tall Dish' },
+      { src: 'https://imgur.com/WOZCwMH.jpg', caption: 'Tall Dish' },
 
       {
-        src: 'https://imgur.com/vEMhfqL.jpg?1',
+        src: 'https://imgur.com/vEMhfqL.jpg',
         caption: "Blue Hare's Fur Pieces",
       },
 
       { src: 'https://imgur.com/hZsgeXF.jpg', caption: 'Colorful Dishes' },
-      { src: 'https://imgur.com/LT8y2xo.jpg?1', caption: 'Colorful Dishes' },
+      { src: 'https://imgur.com/LT8y2xo.jpg', caption: 'Colorful Dishes' },
       { src: 'https://imgur.com/IVonQEY.jpg', caption: 'Striped Plate' },
       { src: 'https://imgur.com/0HeiCix.jpg', caption: 'Beginning Pieces' },
     ],

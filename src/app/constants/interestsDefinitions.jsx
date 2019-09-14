@@ -3,6 +3,9 @@ import React from 'react';
 import WordLink from '../components/WordLink';
 import { interestObjects } from './interests';
 import ceramicsPhotoElements from './ceramicsPhotoElements';
+import illustratorPhotoElements from './illustratorPhotoElements';
+import photoshopPhotoElements from './photoshopPhotoElements';
+import mechKeebPhotoElements from './mechKeebPhotoElements';
 
 export const interestTagDefinitions = {
   Art: {
@@ -109,6 +112,9 @@ export const interestPageData = {
         description: <></>,
       },
     ],
+    media: {
+      albums: [...illustratorPhotoElements],
+    },
   },
   Photoshop: {
     discussion: [
@@ -117,6 +123,9 @@ export const interestPageData = {
         description: <></>,
       },
     ],
+    media: {
+      albums: [...photoshopPhotoElements],
+    },
   },
   Music: {
     discussion: [
@@ -149,5 +158,8 @@ export const interestPageData = {
         description: <></>,
       },
     ],
+    media: {
+      albums: [...mechKeebPhotoElements],
+    },
   },
 };
