@@ -147,7 +147,75 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I grew up playing games on the PlayStation 2
+            and XBOX. I have a ton of good memories staying up late with friends
+            playing after school. It was nearly a daily ritual to play with
+            them, but as I started to think about University, I knew I had to
+            put school first, and my time spent on video games withered.
+            <div className="new-line" />
+            <div className="tab" />
+            By the time I was in University I mainly played{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+            >
+              CS:GO
+            </a>
+            , which my friends and I bonded over around freshmen year. I soon
+            found that I didn&apos;t have much time to sink long hours into a
+            game, so I got interested in games my friends and I could quickly
+            pick up and put down. We got really into{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.cleverendeavourgames.com/ultimate-chicken-horse"
+            >
+              Ultimate Chicken Horse
+            </a>
+            ,{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://jackboxgames.com/party-pack-three/"
+            >
+              Jackbox Party Pack 3
+            </a>
+            , and a couple other multiplayer games.
+            <div className="new-line" />
+            <div className="tab" />
+            After the bulk of my school was over and I was either Co-Oping or
+            taking less Computer Science heavy semesters, I found I had some
+            more time to try out new games. I got a Nintendo Switch and upgraded
+            my desktop. Lately I find myself occasionally playing{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.zelda.com/breath-of-the-wild/"
+            >
+              Zelda: Breath of the Wild
+            </a>
+            ,{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://subsetgames.com/itb.html"
+            >
+              Into the Breach
+            </a>
+            , and{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.satisfactorygame.com/"
+            >
+              Satisfactory
+            </a>{' '}
+            when I have some time to spare in my day.
+          </>
+        ),
       },
     ],
   },
@@ -155,7 +223,60 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            Ever since middle school I wanted to build my own computer, which I
+            did eventually get around to. I put all of my money into the
+            computer itself and skimped out on the peripherals. I was using some
+            dinky old membrane keyboard and an uncomfortable mouse, but I was
+            happy to have built a computer of my own. I was so excited about my
+            new machine that I shared it with everyone I could, and soon found
+            out that there was more to the desktop computer experience than the
+            tower and screen.
+            <div className="new-line" />
+            <div className="tab" />A friend of mine had a Razer Black Widow back
+            in the day, and the moment I felt the click of the keys, I knew I
+            was missing out. Fast forward a year or so, I had a Black Widow of
+            my own and I was happy. Sure it was loud, and my family often asked
+            me to stop playing games late into the night, but the feeling of
+            typing on it was great. It served me well for a long while, and
+            eventually I did start to feel bad that it was so loud. I&apos;d
+            often stay up late working on homework as my roommate slept, and I
+            tried to click the keys ever so gently, but it never fully stifled
+            them. I just couldn&apos;t part with it; beyond the sound, it was
+            still functioning fine.
+            <div className="new-line" />
+            <div className="tab" />
+            Eventually some keys started to get stuck and I realized I
+            didn&apos;t need such a bulky keyboard, so I looked into
+            alternatives and wound up in the DIY realm. I had soldered before,
+            and I like being able to make things my own, so I thought it was a
+            no brainer. I got my first build from{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://sentraq.com/"
+            >
+              Sentraq
+            </a>{' '}
+            in Feb 2019, and the rest is history.
+            <div className="new-line" />
+            <div className="tab" />I enjoyed picking out the parts, putting it
+            together, and even customizing the firmware by adding my own configs
+            to a forked{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/wmccall/qmk_firmware"
+            >
+              QMK Firmware Repo
+            </a>
+            . I have since convinced some friends to build their own, and it
+            brought back good memories of building computers with people back
+            when I was just starting out with all of this tech work.
+          </>
+        ),
       },
     ],
     media: {
