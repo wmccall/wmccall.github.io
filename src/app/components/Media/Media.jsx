@@ -1,6 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import Gallery from 'react-grid-gallery';
+import SpotifyPlayer from 'react-spotify-player';
 
 import { skillPageData } from '../../constants/skillsDefinitions';
 import { interestPageData } from '../../constants/interestsDefinitions';
@@ -43,14 +44,13 @@ const generatePlaylists = playlistGroup => {
   return (
     <div className="playlist-group">
       {groupTitle && <div className="title">{groupTitle}</div>}
-      {playlists.map(({ playlistURL, title }) => (
-        <iframe
-          className="playlist"
-          src={playlistURL}
-          title={title}
-          frameBorder="0"
-          allow="encrypted-media"
-        ></iframe>
+      {playlists.map(({ playlistURI }) => (
+        <SpotifyPlayer
+          uri={playlistURI}
+          size="compact"
+          view="coverart"
+          theme="black"
+        />
       ))}
     </div>
   );
