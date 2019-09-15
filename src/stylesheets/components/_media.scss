@@ -28,4 +28,15 @@
       }
     }
   }
+  .playlists {
+    padding-top: 10px;
+    .playlist-group {
+      padding: 10px;
+      iframe {
+        width: 240px;
+        height: 80px;
+        padding-right: 10px;
+      }
+    }
+  }
 }

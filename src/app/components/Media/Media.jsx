@@ -38,6 +38,23 @@ const generatePhotos = albumData => {
     </div>
   );
 };
+const generatePlaylists = playlistGroup => {
+  const { groupTitle, playlists } = playlistGroup;
+  return (
+    <div className="playlist-group">
+      {groupTitle && <div className="title">{groupTitle}</div>}
+      {playlists.map(({ playlistURL, title }) => (
+        <iframe
+          className="playlist"
+          src={playlistURL}
+          title={title}
+          frameBorder="0"
+          allow="encrypted-media"
+        ></iframe>
+      ))}
+    </div>
+  );
+};
 
 const Media = ({ type, word }) => {
   const currentPageMedia = pageData[type][word].media;
@@ -54,6 +71,14 @@ const Media = ({ type, word }) => {
         <div className="photos">
           <div>Photos</div>
           {currentPageMedia.albums.map(albumData => generatePhotos(albumData))}
+        </div>
+      )}
+      {currentPageMedia.playlistGroups && (
+        <div className="playlists">
+          <div>Playlists</div>
+          {currentPageMedia.playlistGroups.map(playlistGroup =>
+            generatePlaylists(playlistGroup),
+          )}
         </div>
       )}
     </div>

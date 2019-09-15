@@ -134,6 +134,30 @@ export const interestPageData = {
         description: <></>,
       },
     ],
+    media: {
+      playlistGroups: [
+        {
+          groupTitle: null,
+          playlists: [
+            {
+              playlistURL:
+                'https://open.spotify.com/embed/playlist/3DUAv4ZHasMtMw2wTo74FX',
+              title: 'Run.sh',
+            },
+            {
+              playlistURL:
+                'https://open.spotify.com/embed/playlist/4A3BizRP5tNBHAutmpu392',
+              title: 'Good Feels',
+            },
+            {
+              playlistURL:
+                'https://open.spotify.com/embed/playlist/0U9YVaWab1fW0N0qcx9d1d',
+              title: 'Awol Dragons',
+            },
+          ],
+        },
+      ],
+    },
   },
   Movies: {
     discussion: [
