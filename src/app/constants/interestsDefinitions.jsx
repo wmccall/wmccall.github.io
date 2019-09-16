@@ -109,7 +109,27 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            After getting comfortable with{' '}
+            <WordLink {...interestObjects.Photoshop} punc="," /> I noticed its
+            limitaions and looked for something that allowed me to create easily
+            scaled works. Starting in 2018 I was playing around with
+            Illustrator. Thanks to the help of my coworker and friend{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.dinahbaergas.com"
+            >
+              Dinah Baergas
+            </a>
+            , I was able to make real progress picking it up and using it
+            properly. Since then I have done plenty personal work designing
+            stickers and reworking my logo, and semi-professional work designing
+            my team&apos;s logo at Amplify.
+          </>
+        ),
       },
     ],
     media: {
@@ -120,7 +140,18 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            Starting in High School with my computer graphics class, I have been
+            using Photoshop off and on again for years. When I found out I could
+            add or remove things in photos, I was hooked. It ties in nicely with
+            my interest in <WordLink {...interestObjects.Photography} /> and I
+            have used it to fix images or convert them into something completely
+            new. Photoshop allowed me to start my interest in digital art, and
+            even make my first personal logo.
+          </>
+        ),
       },
     ],
     media: {
