@@ -13,7 +13,7 @@ const ALBUMS = [
       { src: 'https://imgur.com/PCNAF3u.png', caption: 'SWAT Profile Attempt' },
       { src: 'https://imgur.com/KxbbQn7.png', caption: 'Wallpaper' },
       { src: 'https://imgur.com/YiC2PAa.png', caption: 'Shaqulator' },
-      { src: 'https://imgur.com/XD3NXwS.png', caption: "Q'd Up" },
+      { src: 'https://imgur.com/XD3NXwS.png', caption: "Q'd Up Logo" },
     ],
   },
 ];
