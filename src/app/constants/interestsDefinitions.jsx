@@ -246,7 +246,38 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I really enjoy a good action movie. Kill
+            Bill, John Wick, and Hot Fuzz are probably my top movies in the
+            genre. They all are a bit over the top, but I think that adds to the
+            movie&apos;s entertainment. They do the action so well, and I get so
+            involved in all that is happening, that when they take a moment for
+            us to catch our breath and recollect our thoughts, they become
+            funny. Almost like when you instinctually dodge an unexpected ball
+            flying your way: When you realize what just happened, you can&apos;t
+            help yourself but laugh at the situation. I have found that contrast
+            between tension and relaxation to be so enjoyable.
+            <div className="new-line" />
+            <div className="tab" />I think just beyond what is going on
+            visually, the <WordLink {...interestObjects.Music} /> and sound
+            effects can add so much to a scene. Tying a powerful song to an
+            emotional scene can enhance both the song and scene. And the level
+            of detail that an Edgar Write film has in terms of music and sound
+            effects is incredible. The beat of the song matching the actions in
+            Baby Driver, or the camera focus sound as the Police Chief squints
+            at Simon Pegg in Hot Fuzz gets me every time. So well done, and
+            without that, the movies just wouldn&apos;t be on the same level as
+            they are now.
+            <div className="new-line" />
+            <div className="tab" />
+            While action is my favorite genre, I understand how vast and varied
+            the world of movies is, and try out new and unexpected movies. I was
+            never so into dramas, but when I found out Bo Burnham was Directing
+            Eigth Grade I just had to give it a watch. Wow, what a movie I had
+            never expected to love.
+          </>
+        ),
       },
     ],
   },
