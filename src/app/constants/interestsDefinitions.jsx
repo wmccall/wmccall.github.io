@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Emoji from 'a11y-react-emoji';
+
 import WordLink from '../components/WordLink';
 import { interestObjects } from './interests';
 import ceramicsPhotoElements from './ceramicsPhotoElements';
@@ -101,7 +103,33 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />
+            Ever since I was young I enjoyed photography, or at least some form
+            of it. My first film camera was an odd one: It had 4 lenses in 2x2
+            grid, and would shoot all four one after the other to capture frame
+            by frame motion of some action shot. It was quite the camera. Years
+            later, after using either my mom&apos;s point and shoot digital
+            camera, or my iPod&apos;s camera, I got a Digital Fujifilm from
+            Costco. That camera, strapped with a 30x zoom nobody asked for
+            became my main device. I took it everywhere with me. But as I grew
+            older, I knew that it was lacking that sturdy feeling I recalled
+            from trying out my dad&apos;s Canon 50D. Sooner or later, he
+            upgraded, and I got the old guy and really got into photography. I
+            shot RAW and imported it into Adobe Lightroom to give the shots new
+            life. I love getting in and tweaking every part of my shot until it
+            looks just the way I want it.
+            <div className="new-line" />
+            <div className="tab" />
+            Today, I am still rocking that 50D and have no plans to upgrade (I
+            do NOT have the money for that). For now, I&apos;ll just use{' '}
+            <WordLink {...interestObjects.Photoshop} /> to correct the dead
+            pixels and shoot with it until the shutter gives up on me.
+            Here&apos;s to hoping that won&apos;t be anytime soon{' '}
+            <Emoji symbol="🙏" label="pray" />
+          </>
+        ),
       },
     ],
   },
