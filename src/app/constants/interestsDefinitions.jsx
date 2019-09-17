@@ -7,6 +7,7 @@ import { interestObjects } from './interests';
 import ceramicsPhotoElements from './ceramicsPhotoElements';
 import illustratorPhotoElements from './illustratorPhotoElements';
 import photoshopPhotoElements from './photoshopPhotoElements';
+import photographyPhotoElements from './photographyPhotoElements';
 import mechKeebPhotoElements from './mechKeebPhotoElements';
 
 export const interestTagDefinitions = {
@@ -132,6 +133,9 @@ export const interestPageData = {
         ),
       },
     ],
+    media: {
+      albums: [...photographyPhotoElements],
+    },
   },
   Illustrator: {
     discussion: [
