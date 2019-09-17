@@ -194,7 +194,30 @@ export const interestPageData = {
     discussion: [
       {
         title: null,
-        description: <></>,
+        description: (
+          <>
+            <div className="tab" />I love music! I remember the first time I
+            heard about Spotify when it was releasing in the UK, I was already
+            signing up for their open invitation to the service. I even
+            rationalized to my parents that I will be listening to more than one
+            album a month, which usually came out to be $10 dollars (the same
+            price of Spotify). They were sold, and I have been listening to mass
+            amounts of music since.
+            <div className="new-line" />
+            <div className="tab" />I have mainly enjoyed Modern Rock, with bands
+            like Cage the Elephant, Arctic Monkeys, and Awolnation. However,
+            this is a small slice of all that I enjoy listening to. The linked
+            playlists are just a few that I have put together over the years.
+            Awol Dragons, specifically, is a culmination of years of
+            Modern/Alt/Indie Rock that I have been updating since 2013.
+            <div className="new-line" />
+            <div className="tab" />
+            Music has always been an outlet for me, and the day ahead determines
+            what I end up listening to. As I write this I&apos;m hanging out
+            with some Bon Iver, sipping some coffee. And I&apos;m betting that
+            I&apos;ll be jamming to some Muse tonight when I get to work.
+          </>
+        ),
       },
     ],
     media: {
@@ -203,16 +226,16 @@ export const interestPageData = {
           groupTitle: null,
           playlists: [
             {
+              playlistURI: 'spotify:playlist:0U9YVaWab1fW0N0qcx9d1d',
+              title: 'Awol Dragons',
+            },
+            {
               playlistURI: 'spotify:playlist:3DUAv4ZHasMtMw2wTo74FX',
               title: 'Run.sh',
             },
             {
               playlistURI: 'spotify:playlist:4A3BizRP5tNBHAutmpu392',
               title: 'Good Feels',
-            },
-            {
-              playlistURI: 'spotify:playlist:0U9YVaWab1fW0N0qcx9d1d',
-              title: 'Awol Dragons',
             },
           ],
         },
