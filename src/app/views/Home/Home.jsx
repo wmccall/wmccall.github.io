@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 
 import backgroundCode from '../../constants/backgroundCode';
 
-import WillHoodie from '../../resources/WillHoodie.jpg';
+import ProfilePhoto from '../../resources/WillKeeb-min.jpg';
 
-const ACTIONS_BUTTONS_TYPES = ['skill', 'interest', 'achievement'];
+const ACTIONS_BUTTONS_TYPES = ['skill', 'project', 'interest'];
 
 const Home = props => {
   const {
@@ -18,35 +18,51 @@ const Home = props => {
 
   const hideProfile = hoverCategory || permanentCategory;
 
+  const [loaded, setLoaded] = useState(false);
+
+  const profile = () => (
+    <div
+      className={`profile-container ${
+        hideProfile || !loaded ? 'opaque' : 'show'
+      }`}
+    >
+      <img
+        className="profile-picture"
+        src={ProfilePhoto}
+        alt="Will's profile"
+        onLoad={() => setLoaded(true)}
+      />
+    </div>
+  );
+
+  const actionButtons = () => (
+    <div className="action-buttons">
+      {ACTIONS_BUTTONS_TYPES.map(actType => (
+        <button
+          className={`${actType}s-button ${
+            permanentCategory === actType ? 'active' : ''
+          }`}
+          key={`${actType}s-button`}
+          type="button"
+          onMouseEnter={() => setHoverCategory(actType)}
+          onMouseLeave={() => setHoverCategory(null)}
+          onClick={() =>
+            setPermanentCategory(permanentCategory === actType ? null : actType)
+          }
+        >
+          <span className="button-will">Will</span>
+          <span className="button-dot">.</span>
+          <span className="button-type">{`${actType}s`}</span>
+        </button>
+      ))}
+    </div>
+  );
+
   return (
-    <div className="home">
+    <div className={`home ${!loaded ? 'opaque' : 'show'}`}>
       <div className="code-container">{backgroundCode(allWords)}</div>
-      <div className={`profile-container ${hideProfile ? 'opaque' : 'show'}`}>
-        <img
-          className="profile-picture"
-          src={WillHoodie}
-          alt="Will's profile"
-        />
-      </div>
-      <div className="action-buttons">
-        {ACTIONS_BUTTONS_TYPES.map(actType => (
-          <button
-            className={`${actType}s-button ${
-              permanentCategory === actType ? 'active' : ''
-            }`}
-            type="button"
-            onMouseEnter={() => setHoverCategory(actType)}
-            onMouseLeave={() => setHoverCategory(null)}
-            onClick={() =>
-              setPermanentCategory(
-                permanentCategory === actType ? null : actType,
-              )
-            }
-          >
-            {`what are my ${actType}s`}
-          </button>
-        ))}
-      </div>
+      {profile()}
+      {actionButtons()}
     </div>
   );
 };

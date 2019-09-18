@@ -1,6 +1,122 @@
 $profile-image-height: 375px;
 
 .home {
+  transition: opacity 0.15s ease-in-out 0.05s;
+
+  &.opaque {
+    opacity: 0;
+  }
+
+  .action-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7vh;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      color: $white;
+      outline: 0;
+      border-radius: 100px;
+      border: solid 3px $white;
+      font-size: 25px;
+      font-family: 'Droid Sans Mono', monospace;
+      min-width: 250px;
+      padding: 17px 21px 17px 21px;
+      background-color: $darker-gray;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out,
+        margin-top 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        margin-bottom 0.15s ease-in-out, margin-top 0.15s ease-in-out;
+      box-shadow: 0px 9px 0px $dark-gray;
+
+      span {
+        transition: color 0.15s ease-in-out;
+      }
+
+      &:hover span,
+      &.active span {
+        &.button-will {
+          color: $constant-yellow;
+        }
+
+        &.button-dot {
+          color: $light-gray;
+        }
+      }
+
+      &.skills-button:hover span,
+      &.skills-button.active span {
+        &.button-type {
+          color: $string-green;
+        }
+      }
+
+      &.skills-button:hover {
+        border: solid 3px $string-green;
+        box-shadow: 0px 7px 0px $dark-string-green;
+        margin-bottom: -2px;
+        margin-top: 2px;
+      }
+
+      &.skills-button.active {
+        border: solid 3px $string-green;
+        box-shadow: 0px 3px 0px $dark-string-green;
+        margin-bottom: -6px;
+        margin-top: 6px;
+      }
+
+      &.interests-button:hover span,
+      &.interests-button.active span {
+        &.button-type {
+          color: $pastel-blue;
+        }
+      }
+
+      &.interests-button:hover {
+        border: solid 3px $pastel-blue;
+        box-shadow: 0px 7px 0px $dark-pastel-blue;
+        margin-bottom: -2px;
+        margin-top: 2px;
+      }
+
+      &.interests-button.active {
+        border: solid 3px $pastel-blue;
+        box-shadow: 0px 3px 0px $dark-pastel-blue;
+        margin-bottom: -6px;
+        margin-top: 6px;
+      }
+
+      &.projects-button:hover span,
+      &.projects-button.active span {
+        &.button-type {
+          color: $variable-red;
+        }
+      }
+
+      &.projects-button:hover {
+        border: solid 3px $variable-red;
+        box-shadow: 0px 7px 0px $dark-variable-red;
+        margin-bottom: -2px;
+        margin-top: 2px;
+      }
+
+      &.projects-button.active {
+        border: solid 3px $variable-red;
+        box-shadow: 0px 3px 0px $dark-variable-red;
+        margin-bottom: -6px;
+        margin-top: 6px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   .code-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,58 +124,111 @@ $profile-image-height: 375px;
     overflow: hidden;
     height: 100vh;
     background-color: $darker-gray;
+
     .pseudo-code {
       user-select: none;
       display: flex;
-      font-size: 23px;
-      height: 23px;
-      width: fit-content;
-      font-family: 'Courier New', Courier, monospace;
-      padding: 5px 0 5px 0;
+      padding: 0 3px 0 3px;
+
+      button,
       div {
+        font-size: 1.25vw;
+        line-height: 1.45vw;
+        width: fit-content;
+        font-family: 'Droid Sans Mono', monospace;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        margin-top: 2px;
+        padding: 0 5px 0 5px;
         transition: text-shadow 0.15s ease-in-out;
         display: inline-block;
-        padding: 0 5px 0 5px;
+
         &.pseudo-reserved {
           color: transparent;
           text-shadow: 0 0 15px $variable-red;
+
           &.visible {
             text-shadow: 0 0 0px $variable-red;
+
+            &:hover {
+              cursor: pointer;
+            }
           }
+
           &.underline {
             text-decoration: underline;
           }
         }
+
+        &.pseudo-constant {
+          color: transparent;
+          text-shadow: 0 0 15px $constant-yellow;
+
+          &.visible {
+            text-shadow: 0 0 0px $constant-yellow;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          &.underline {
+            text-decoration: underline;
+          }
+        }
+
         &.pseudo-string {
           color: transparent;
           text-shadow: 0 0 15px $string-green;
+
           &.visible {
             text-shadow: 0 0 0px $string-green;
+
+            &:hover {
+              cursor: pointer;
+            }
           }
+
           &.underline {
             text-decoration: underline;
           }
         }
+
         &.pseudo-global {
           color: transparent;
           text-shadow: 0 0 15px $global-purple;
+
           &.visible {
             text-shadow: 0 0 0px $global-purple;
+
+            &:hover {
+              cursor: pointer;
+            }
           }
+
           &.underline {
             text-decoration: underline;
           }
         }
+
         &.pseudo-method {
           color: transparent;
           text-shadow: 0 0 15px $pastel-blue;
+
           &.visible {
             text-shadow: 0 0 0px $pastel-blue;
+
+            &:hover {
+              cursor: pointer;
+            }
           }
+
           &.underline {
             text-decoration: underline;
           }
         }
+
         &.none-type-code {
           padding: 0;
           color: transparent;
@@ -68,6 +237,7 @@ $profile-image-height: 375px;
       }
     }
   }
+
   .profile-container {
     position: absolute;
     top: 0;
@@ -78,54 +248,19 @@ $profile-image-height: 375px;
     margin-right: auto;
     height: $profile-image-height;
     transition: all 0.15s ease-in-out;
+    z-index: 100;
+
     &.opaque {
       opacity: 0;
+      z-index: -1;
     }
+
     .profile-picture {
       user-select: none;
       border-radius: $profile-image-height;
       border: solid 3px $white;
       max-width: 100%;
       height: 100%;
-    }
-  }
-  .action-buttons {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vh;
-    display: flex;
-    justify-content: space-around;
-
-    button {
-      color: $white;
-      outline: 0;
-      border-radius: 100px;
-      border: solid 3px $white;
-      font-size: 25px;
-      font-family: 'Courier New', Courier, monospace;
-      padding: 17px 21px 17px 21px;
-      background-color: $darker-gray;
-      transition: border 0.15s ease-in-out, color 0.15s ease-in-out,
-        margin-top 0.15s ease-in-out;
-      &.skills-button:hover,
-      &.skills-button.active {
-        color: $string-green;
-        border: solid 3px $string-green;
-      }
-      &.interests-button:hover,
-      &.interests-button.active {
-        color: $pastel-blue;
-        border: solid 3px $pastel-blue;
-      }
-      &.achievements-button:hover,
-      &.achievements-button.active {
-        color: $variable-red;
-        border: solid 3px $variable-red;
-      }
     }
   }
 }
