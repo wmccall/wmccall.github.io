@@ -22,6 +22,7 @@ const TagPage = props => {
     goForwardPage,
     goBackPage,
     goHome,
+    showHomeButton,
   } = props;
 
   const backArrow = '<=';
@@ -71,7 +72,9 @@ const TagPage = props => {
 
   const homeButton = () => (
     <button
-      className="back-button home-button home"
+      className={`back-button home-button home ${
+        showHomeButton ? 'visible' : 'hidden'
+      }`}
       type="button"
       onClick={() => goHome()}
     >
@@ -159,6 +162,7 @@ TagPage.propTypes = {
   previousTagType: PropTypes.string,
   currentWord: PropTypes.string,
   allWords: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  showHomeButton: PropTypes.bool.isRequired,
 };
 
 TagPage.defaultProps = {

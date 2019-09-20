@@ -37,6 +37,9 @@
     }
     .home-button {
       margin-top: 5px;
+      &.hidden {
+        visibility: hidden;
+      }
     }
     .level-one {
       display: flex;

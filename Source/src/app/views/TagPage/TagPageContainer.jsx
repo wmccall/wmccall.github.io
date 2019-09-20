@@ -8,6 +8,7 @@ const mapStateToProps = state => ({
   currentTag: state.viewState.pageSequence.slice(-1)[0].tag,
   currentTagType: state.viewState.pageSequence.slice(-1)[0].tagType,
   previousTagType: state.viewState.pageSequence.slice(-2)[0].tagType,
+  showHomeButton: state.viewState.pageSequence.length > 2,
 });
 
 const mapDispatchToProps = {
