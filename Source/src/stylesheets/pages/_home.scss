@@ -1,4 +1,5 @@
 $profile-image-height: 375px;
+$blur-level: calc(9px + 0.3vw);
 
 .home {
   transition: opacity 0.15s ease-in-out 0.05s;
@@ -146,7 +147,7 @@ $profile-image-height: 375px;
 
         &.pseudo-reserved {
           color: transparent;
-          text-shadow: 0 0 15px $variable-red;
+          text-shadow: 0 0 $blur-level $variable-red;
 
           &.visible {
             text-shadow: 0 0 0px $variable-red;
@@ -163,7 +164,7 @@ $profile-image-height: 375px;
 
         &.pseudo-constant {
           color: transparent;
-          text-shadow: 0 0 15px $constant-yellow;
+          text-shadow: 0 0 $blur-level $constant-yellow;
 
           &.visible {
             text-shadow: 0 0 0px $constant-yellow;
@@ -180,7 +181,7 @@ $profile-image-height: 375px;
 
         &.pseudo-string {
           color: transparent;
-          text-shadow: 0 0 15px $string-green;
+          text-shadow: 0 0 $blur-level $string-green;
 
           &.visible {
             text-shadow: 0 0 0px $string-green;
@@ -197,7 +198,7 @@ $profile-image-height: 375px;
 
         &.pseudo-global {
           color: transparent;
-          text-shadow: 0 0 15px $global-purple;
+          text-shadow: 0 0 $blur-level $global-purple;
 
           &.visible {
             text-shadow: 0 0 0px $global-purple;
@@ -214,7 +215,7 @@ $profile-image-height: 375px;
 
         &.pseudo-method {
           color: transparent;
-          text-shadow: 0 0 15px $pastel-blue;
+          text-shadow: 0 0 $blur-level $pastel-blue;
 
           &.visible {
             text-shadow: 0 0 0px $pastel-blue;
@@ -232,7 +233,7 @@ $profile-image-height: 375px;
         &.none-type-code {
           padding: 0;
           color: transparent;
-          text-shadow: 0 0 15px $gray;
+          text-shadow: 0 0 $blur-level $gray;
         }
       }
     }
