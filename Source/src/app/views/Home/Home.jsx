@@ -60,7 +60,9 @@ const Home = props => {
 
   return (
     <div className={`home ${!loaded ? 'opaque' : 'show'}`}>
-      <div className="code-container">{backgroundCode(allWords)}</div>
+      <div className="code">
+        <div className="code-container">{backgroundCode(allWords)}</div>
+      </div>
       {profile()}
       {actionButtons()}
     </div>

@@ -117,123 +117,125 @@ $blur-level: calc(9px + 0.3vw);
       }
     }
   }
-
-  .code-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  .code {
     overflow: hidden;
     height: 100vh;
     background-color: $darker-gray;
-
-    .pseudo-code {
-      user-select: none;
+    .code-container {
+      padding: 35px 30px 30px 30px;
       display: flex;
-      padding: 0 3px 0 3px;
+      flex-wrap: wrap;
+      align-content: flex-start;
 
-      button,
-      div {
-        font-size: 1.25vw;
-        line-height: 1.45vw;
-        width: fit-content;
-        font-family: 'Droid Sans Mono', monospace;
-        background: transparent;
-        outline: 0;
-        border: 0;
-        margin-top: 2px;
-        padding: 0 5px 0 5px;
-        transition: text-shadow 0.15s ease-in-out;
-        display: inline-block;
+      .pseudo-code {
+        user-select: none;
+        display: flex;
+        padding: 0 3px 0 3px;
 
-        &.pseudo-reserved {
-          color: transparent;
-          text-shadow: 0 0 $blur-level $variable-red;
+        button,
+        div {
+          font-size: 1.25vw;
+          line-height: 1.45vw;
+          width: fit-content;
+          font-family: 'Droid Sans Mono', monospace;
+          background: transparent;
+          outline: 0;
+          border: 0;
+          margin-top: 2px;
+          padding: 0 5px 0 5px;
+          transition: text-shadow 0.15s ease-in-out;
+          display: inline-block;
 
-          &.visible {
-            text-shadow: 0 0 0px $variable-red;
+          &.pseudo-reserved {
+            color: transparent;
+            text-shadow: 0 0 $blur-level $variable-red;
 
-            &:hover {
-              cursor: pointer;
+            &.visible {
+              text-shadow: 0 0 0px $variable-red;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            &.underline {
+              text-decoration: underline;
             }
           }
 
-          &.underline {
-            text-decoration: underline;
-          }
-        }
+          &.pseudo-constant {
+            color: transparent;
+            text-shadow: 0 0 $blur-level $constant-yellow;
 
-        &.pseudo-constant {
-          color: transparent;
-          text-shadow: 0 0 $blur-level $constant-yellow;
+            &.visible {
+              text-shadow: 0 0 0px $constant-yellow;
 
-          &.visible {
-            text-shadow: 0 0 0px $constant-yellow;
+              &:hover {
+                cursor: pointer;
+              }
+            }
 
-            &:hover {
-              cursor: pointer;
+            &.underline {
+              text-decoration: underline;
             }
           }
 
-          &.underline {
-            text-decoration: underline;
-          }
-        }
+          &.pseudo-string {
+            color: transparent;
+            text-shadow: 0 0 $blur-level $string-green;
 
-        &.pseudo-string {
-          color: transparent;
-          text-shadow: 0 0 $blur-level $string-green;
+            &.visible {
+              text-shadow: 0 0 0px $string-green;
 
-          &.visible {
-            text-shadow: 0 0 0px $string-green;
+              &:hover {
+                cursor: pointer;
+              }
+            }
 
-            &:hover {
-              cursor: pointer;
+            &.underline {
+              text-decoration: underline;
             }
           }
 
-          &.underline {
-            text-decoration: underline;
-          }
-        }
+          &.pseudo-global {
+            color: transparent;
+            text-shadow: 0 0 $blur-level $global-purple;
 
-        &.pseudo-global {
-          color: transparent;
-          text-shadow: 0 0 $blur-level $global-purple;
+            &.visible {
+              text-shadow: 0 0 0px $global-purple;
 
-          &.visible {
-            text-shadow: 0 0 0px $global-purple;
+              &:hover {
+                cursor: pointer;
+              }
+            }
 
-            &:hover {
-              cursor: pointer;
+            &.underline {
+              text-decoration: underline;
             }
           }
 
-          &.underline {
-            text-decoration: underline;
-          }
-        }
+          &.pseudo-method {
+            color: transparent;
+            text-shadow: 0 0 $blur-level $pastel-blue;
 
-        &.pseudo-method {
-          color: transparent;
-          text-shadow: 0 0 $blur-level $pastel-blue;
+            &.visible {
+              text-shadow: 0 0 0px $pastel-blue;
 
-          &.visible {
-            text-shadow: 0 0 0px $pastel-blue;
+              &:hover {
+                cursor: pointer;
+              }
+            }
 
-            &:hover {
-              cursor: pointer;
+            &.underline {
+              text-decoration: underline;
             }
           }
 
-          &.underline {
-            text-decoration: underline;
+          &.none-type-code {
+            padding: 0;
+            color: transparent;
+            text-shadow: 0 0 $blur-level $gray;
           }
-        }
-
-        &.none-type-code {
-          padding: 0;
-          color: transparent;
-          text-shadow: 0 0 $blur-level $gray;
         }
       }
     }
