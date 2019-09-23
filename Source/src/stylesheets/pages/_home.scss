@@ -1,15 +1,15 @@
 $profile-image-height: 35vh;
 $blur-level: calc(9px + 0.3vw);
-$border-length: 0.15vw;
-$drop-shadow: 0.45vw;
+$border-length: 0.3vh;
+$drop-shadow: 0.9vh;
 
-$hover-drop-shadow: 0.35vw;
-$hover-margin-bottom: -0.1vw;
-$hover-margin-top: 0.1vw;
+$hover-drop-shadow: 0.7vh;
+$hover-margin-bottom: 0.8vh;
+$hover-margin-top: 0.2vh;
 
-$click-drop-shadow: 0.1vw;
-$click-margin-bottom: -0.35vw;
-$click-margin-top: 0.35vw;
+$click-drop-shadow: 0.2vh;
+$click-margin-bottom: 0.3vh;
+$click-margin-top: 0.7vh;
 
 .home {
   // scroll bar
@@ -49,6 +49,7 @@ $click-margin-top: 0.35vw;
     padding-bottom: 7vh;
     padding-top: 4vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background: linear-gradient(
       180deg,
@@ -58,6 +59,7 @@ $click-margin-top: 0.35vw;
     pointer-events: none;
 
     button {
+      margin-bottom: 1vh;
       pointer-events: all !important;
       color: $white;
       outline: 0;
@@ -167,6 +169,8 @@ $click-margin-top: 0.35vw;
       background-color: $darker-gray;
 
       .pseudo-code {
+        display: flex;
+        flex-wrap: wrap;
         align-self: flex-start;
         user-select: none;
         display: flex;
@@ -174,8 +178,8 @@ $click-margin-top: 0.35vw;
 
         button,
         div {
-          font-size: 1.25vw;
-          line-height: 1.45vw;
+          font-size: 2.5vh;
+          line-height: 2.7vh;
           width: fit-content;
           font-family: 'Droid Sans Mono', monospace;
           background: transparent;
