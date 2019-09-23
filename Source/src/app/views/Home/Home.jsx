@@ -61,7 +61,16 @@ const Home = props => {
   return (
     <div className={`home ${!loaded ? 'opaque' : 'show'}`}>
       <div className="code">
-        <div className="code-container">{backgroundCode(allWords)}</div>
+        {
+          // eslint-disable-next-line jsx-a11y/interactive-supports-focus, jsx-a11y/click-events-have-key-events
+          <div
+            className="code-container"
+            onClick={() => setPermanentCategory(null)}
+            role="button"
+          >
+            {backgroundCode(allWords)}
+          </div>
+        }
       </div>
       {profile()}
       {actionButtons()}
