@@ -4,10 +4,10 @@ import skills from './skills';
 
 const allWords = () =>
   [...skills, ...projects, ...interests].sort((a, b) => {
-    if (a.tag.toLowerCase() < b.tag.toLowerCase()) {
+    if (a.word.toLowerCase() < b.word.toLowerCase()) {
       return -1;
     }
-    if (a.tag.toLowerCase() > b.tag.toLowerCase()) {
+    if (a.word.toLowerCase() > b.word.toLowerCase()) {
       return 1;
     }
     return 0;

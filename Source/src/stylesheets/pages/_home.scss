@@ -1,5 +1,15 @@
-$profile-image-height: 375px;
+$profile-image-height: 35vh;
 $blur-level: calc(9px + 0.3vw);
+$border-length: 0.15vw;
+$drop-shadow: 0.45vw;
+
+$hover-drop-shadow: 0.35vw;
+$hover-margin-bottom: -0.1vw;
+$hover-margin-top: 0.1vw;
+
+$click-drop-shadow: 0.1vw;
+$click-margin-bottom: -0.35vw;
+$click-margin-top: 0.35vw;
 
 .home {
   transition: opacity 0.15s ease-in-out 0.05s;
@@ -23,16 +33,16 @@ $blur-level: calc(9px + 0.3vw);
       color: $white;
       outline: 0;
       border-radius: 100px;
-      border: solid 3px $white;
-      font-size: 25px;
+      border: solid $border-length $white;
+      font-size: 3vh;
       font-family: 'Droid Sans Mono', monospace;
-      min-width: 250px;
-      padding: 17px 21px 17px 21px;
+      min-width: 16vw;
+      padding: 1.4vh 1.7vh 1.4vh 1.7vh;
       background-color: $darker-gray;
       transition: border 0.15s ease-in-out, color 0.15s ease-in-out,
         margin-top 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
         margin-bottom 0.15s ease-in-out, margin-top 0.15s ease-in-out;
-      box-shadow: 0px 9px 0px $dark-gray;
+      box-shadow: 0px $drop-shadow 0px $dark-gray;
 
       span {
         transition: color 0.15s ease-in-out;
@@ -57,17 +67,17 @@ $blur-level: calc(9px + 0.3vw);
       }
 
       &.skills-button:hover {
-        border: solid 3px $string-green;
-        box-shadow: 0px 7px 0px $dark-string-green;
-        margin-bottom: -2px;
-        margin-top: 2px;
+        border: solid $border-length $string-green;
+        box-shadow: 0px $hover-drop-shadow 0px $dark-string-green;
+        margin-bottom: $hover-margin-bottom;
+        margin-top: $hover-margin-top;
       }
 
       &.skills-button.active {
-        border: solid 3px $string-green;
-        box-shadow: 0px 3px 0px $dark-string-green;
-        margin-bottom: -6px;
-        margin-top: 6px;
+        border: solid $border-length $string-green;
+        box-shadow: 0px $click-drop-shadow 0px $dark-string-green;
+        margin-bottom: $click-margin-bottom;
+        margin-top: $click-margin-top;
       }
 
       &.interests-button:hover span,
@@ -78,17 +88,17 @@ $blur-level: calc(9px + 0.3vw);
       }
 
       &.interests-button:hover {
-        border: solid 3px $pastel-blue;
-        box-shadow: 0px 7px 0px $dark-pastel-blue;
-        margin-bottom: -2px;
-        margin-top: 2px;
+        border: solid $border-length $pastel-blue;
+        box-shadow: 0px $hover-drop-shadow 0px $dark-pastel-blue;
+        margin-bottom: $hover-margin-bottom;
+        margin-top: $hover-margin-top;
       }
 
       &.interests-button.active {
-        border: solid 3px $pastel-blue;
-        box-shadow: 0px 3px 0px $dark-pastel-blue;
-        margin-bottom: -6px;
-        margin-top: 6px;
+        border: solid $border-length $pastel-blue;
+        box-shadow: 0px $click-drop-shadow 0px $dark-pastel-blue;
+        margin-bottom: $click-margin-bottom;
+        margin-top: $click-margin-top;
       }
 
       &.projects-button:hover span,
@@ -99,17 +109,17 @@ $blur-level: calc(9px + 0.3vw);
       }
 
       &.projects-button:hover {
-        border: solid 3px $variable-red;
-        box-shadow: 0px 7px 0px $dark-variable-red;
-        margin-bottom: -2px;
-        margin-top: 2px;
+        border: solid $border-length $variable-red;
+        box-shadow: 0px $hover-drop-shadow 0px $dark-variable-red;
+        margin-bottom: $hover-margin-bottom;
+        margin-top: $hover-margin-top;
       }
 
       &.projects-button.active {
-        border: solid 3px $variable-red;
-        box-shadow: 0px 3px 0px $dark-variable-red;
-        margin-bottom: -6px;
-        margin-top: 6px;
+        border: solid $border-length $variable-red;
+        box-shadow: 0px $click-drop-shadow 0px $dark-variable-red;
+        margin-bottom: $click-margin-bottom;
+        margin-top: $click-margin-top;
       }
 
       &:hover {
