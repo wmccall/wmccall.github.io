@@ -288,6 +288,7 @@ $click-margin-top: 0.7vh;
   }
 
   .profile-container {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -305,6 +306,7 @@ $click-margin-top: 0.7vh;
     }
 
     .profile-picture {
+      pointer-events: all !important;
       user-select: none;
       border-radius: $profile-image-height;
       border: solid 3px $white;

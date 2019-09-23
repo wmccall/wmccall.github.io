@@ -29,9 +29,10 @@ const PseudoElement = props => {
       } ${
         hoverCategory === word.type || isCategoryActive() ? 'visible' : 'blur'
       } ${isCategoryActive() ? 'underline' : 'noline'}`}
-      onClick={() =>
+      onClick={e =>
         isCategoryActive() &&
-        goForwardPage('tag', word.tag, word.type, word.word)
+        goForwardPage('tag', word.tag, word.type, word.word) &&
+        e.stopPropagation()
       }
       type="button"
     >
