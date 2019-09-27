@@ -285,8 +285,24 @@ $click-margin-top: 0.7vh;
             text-shadow: 0 0 $blur-level $gray;
           }
         }
+      }
+      .pseudo-code {
         &:last-child {
           padding: 0 5px 18vh 5px;
+        }
+      }
+      @media (max-width: 718px) {
+        .pseudo-code {
+          &:last-child {
+            padding: 0 5px 25vh 5px;
+          }
+        }
+      }
+      @media (max-width: 461px) {
+        .pseudo-code {
+          &:last-child {
+            padding: 0 5px 32vh 5px;
+          }
         }
       }
     }
