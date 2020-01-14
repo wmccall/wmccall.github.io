@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c0b50e28f15fe937c6673214b8c7c82",
+    "revision": "6f162198412a24b0efc4bf36428ed323",
     "url": "/index.html"
   },
   {
-    "revision": "dc4d909c528c37dc7081",
+    "revision": "c87182cd4033469acd07",
     "url": "/static/css/main.be0f905c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5d740964.chunk.js"
   },
   {
-    "revision": "dc4d909c528c37dc7081",
-    "url": "/static/js/main.c62f39fc.chunk.js"
+    "revision": "c87182cd4033469acd07",
+    "url": "/static/js/main.5e4e37bb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/DroidSansMono-webfont.a91b581d.woff"
   },
   {
-    "revision": "37b3bb8a136c1b0d208ee2b17ec92625",
-    "url": "/static/media/WillKeeb-min.37b3bb8a.jpg"
+    "revision": "8676770030d64cfc6e948f8e8aa73744",
+    "url": "/static/media/LogoSquare-min.86767700.png"
   }
 ]);
